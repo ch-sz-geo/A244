@@ -1,0 +1,46 @@
+== Klassenbeschreibung
+=== Topic `+Stammdaten+`
+Das Topic `+Stammdaten+` umfasst alle statischen Werte. Darunter fallen z.B. die Aufzählwerte von Listen (INTERLIS-Datentyp «Aufzählung»). Jede Liste wird in einer eigenen Klasse modelliert. +
+
+Die Stammdaten werden durch die zuständige Stelle vorgegeben und bei Bedarf durch die Abteilung Geoinformation nachgeführt und . Die Stammdaten werden durch die Abteilung Geoinformation im Internet veröffentlicht.
+
+==== Klasse `+Katalogeintrag+`
+Die Klasse `+Katalogeintrag+` enthält die allgemeinen, für alle Kataloge gemeinsamen Attribute. Die Klasse selber ist abstrakt: Es gibt keine Objekte +Katalogeintrag+, sondern nur Objekte von den spezialisierten Klassen.
+
+[cols=4*,options="header"]
+|===
+| Name | Beschreibung | Beispiel | Freigabe
+m| OID
+| technischer Objektidentifikator
+| ceaa37a9-8614-43fc-9a8b-688f95c30218
+| öffentlich
+m| Code
+| Code des Listeneintrages; entspricht in INTERLIS dem Wert der Aufzählung und muss ein gültiger INTERLIS-Name sein (siehe https://www.interlis.ch/dokumentation[INTERLIS-Referenzhandbuch])
+| in_Aenderung
+| öffentlich
+m| Name
+| Bezeichnung des Katalogeintrages, wie er den Nutzenden angezeigt wird
+| in Änderung
+| öffentlich
+m| SortierNr
+| Reihenfolge des Katalogeintrages in der Auswahlliste
+| 1
+| öffentlich
+m| Bemerkung
+| Erläuterung, welche den Katalogeintrag näher beschreibt
+| Dieser Status wird für alle Objekte verwendet, bei denen aktuell eine Nachführung läuft.
+| öffentlich
+m| Bemerkung_intern
+| Erläuterung, welche den Katalogeintrag näher beschreibt
+| Dieser Status wird für alle Objekte verwendet, bei denen aktuell eine Nachführung läuft.
+| +++<span style="color:red;">amtsintern</span>+++
+|===
+
+[%header, cols="10%, 10%, 10%, 60%, 10%", format=csv, separator=;]
+|=======
+include::../table/klasse_katalogeintrag.csv[]
+|=======
+
+ifdef::backend-pdf[]
+<<<
+endif::[]
