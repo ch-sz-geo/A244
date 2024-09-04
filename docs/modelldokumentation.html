@@ -213,6 +213,11 @@ th {
 <li><a href="#_klasse_katalogeintrag">4.1.1. Klasse <code>Katalogeintrag</code></a></li>
 </ul>
 </li>
+<li><a href="#_topic_bohrprofile">4.2. Topic <code>Bohrprofile</code></a>
+<ul class="sectlevel3">
+<li><a href="#_klasse_bohrung">4.2.1. Klasse <code>Bohrung</code></a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -250,7 +255,7 @@ th {
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">letzte Änderung</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2024-09-03</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2024-09-04</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Themen-Nummer</p></td>
@@ -499,50 +504,146 @@ Ausarbeitung eines Geodatenmodells zuständig sind.</p>
 </tr>
 </tbody>
 </table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_topic_bohrprofile"><a class="anchor" href="#_topic_bohrprofile"></a><a class="link" href="#_topic_bohrprofile">4.2. Topic <code>Bohrprofile</code></a></h3>
+<div class="sect3">
+<h4 id="_klasse_bohrung"><a class="anchor" href="#_klasse_bohrung"></a><a class="link" href="#_klasse_bohrung">4.2.1. Klasse <code>Bohrung</code></a></h4>
+<div class="paragraph">
+<p>Die Klasse <code>Bohrung</code> beschreibt eine Bohrung mit ihren Eigenschaften.</p>
+</div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
-<col style="width: 10%;">
-<col style="width: 10%;">
-<col style="width: 10%;">
-<col style="width: 60%;">
-<col style="width: 10%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Attribute</th>
-<th class="tableblock halign-left valign-top">Anzahl</th>
-<th class="tableblock halign-left valign-top">Typ</th>
+<th class="tableblock halign-left valign-top">Name</th>
 <th class="tableblock halign-left valign-top">Beschreibung</th>
+<th class="tableblock halign-left valign-top">Beispiel</th>
 <th class="tableblock halign-left valign-top">Freigabe</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Code</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Code des Katalogeintrages; entspricht dem Wert der Aufzählung in einem INTERLIS-Modell. Der Code beinhaltet den "Wert für die Maschine" und dient z.B. zur Steuerung einer Applikation (z.B. Farbvergabe); Änderungen am Code sind mit allen Parteien, die am Datenaustausch beteiligt sind, abzusprechen.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>OID</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">technischer Objektidentifikator</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ceaa37a9-8614-43fc-9a8b-688f95c30218</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Name</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Zahl</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">für den Benutzer lesbarer Name des Katalogeintrages Der Name beinhaltet den Wert "für den Menschen".</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>erfasstVon</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Loginname der Person, welche den Datensatz erstellt hat (Autor); wird durch das System gesetzt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Musterha</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span style="color:red;">intern</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>erfasstAm</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datum und Zeit, an dem der Datensatz erstellt wurde; wird durch das System gesetzt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1980-03-21T15:38:12</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span style="color:red;">intern</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>geaendertVon</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Loginname der Person, welche den Datensatz zuletzt geändert hat (Editor); wird durch das System gesetzt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Muelleran</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span style="color:red;">intern</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>geaendertAm</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datum und Zeit, an dem der Datensatz zuletzt geändert wurde; wird durch das System gesetzt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2024-07-30T08:07:57</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span style="color:red;">intern</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>???Identifikator???</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">todo: Klären, ob es dieses Attribut braucht, da die Objekte über eine OID verfügen. Hinweis AFU: "in SQLight-DB bereits bestehendes Attribut fuer Fremdschluessel zur Verknuepfung von Erdwaermesonden in a034"</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">- - -</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">SortierNr</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Zahl</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Die Sortiernummer bestimmt die Position eines Wertes in der Liste: je tiefer die Zahl, desto weiter oben steht der Wert in der Liste.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Ansatzhoehe</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ansatzhöhe des Bohrstandortes in Meter über Meer. Als Referenzpunkt gilt die Geländeoberfläche (Oberkannte Terrain, OKT). Ist die Ansatzhöhe nicht bekannt oder nicht mehr nachvollziehbar, so gilt -9999. [Borehole.Elevation_Z]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">785.86</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Bemerkung</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Erläuterungen zum Objekt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Laenge</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gemessene Länge der Bohrung in Meter. [Borehole.Length]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">112.56</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Tiefe</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tatsächliche, vertikale Tiefe der Bohrung; Höhendifferenz zwischen dem Bohrlandepunkt und der Ansatzhöhe.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">95.71</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Felstiefe</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Distanz entlang der Bohrung ab dem Ansatzpunkt bis zum Auftreffen auf Fels.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6.5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Bohrbeginn</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datum, an dem mit der Bohrung gestartet wurde.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1985-09-27</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Bohrende</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datum der Fertigstellung der Bohrung. Ist nur das Jahr bekannt, so gilt yyyy0l01, ist kein Datum bekannt, so gilt 11110101. [Borehole.Date]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1985-10-02</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Einfallswinkel</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gemessener Wert des Einfallens der Bohrung am Bohransatz in Grad. Alternativ kann das Einfallen als geschätzer Werte angegeben werden, die als Auswahlliste zur Verfügung gestellt werden (siehe <code>rEinfallkategorie</code>).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Baugesuchsnummer</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nummer des Baugesuches für die entsprechende Bohrung.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">B2022-0064</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Nummer</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bohrnummer im neuen Archiv</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GA1218</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NummerAlt</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bohrnummer im alten Archiv</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GA12.2.1179</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>hatWasser</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Schalter, um anzugeben, ob bei der Bohrung auf Wasser gestossen wurde (ja/nein).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ja</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Bemerkung</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentliche Bemerkung zum Objekt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ab 50m geringe Wasserzutritte</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><strong>Geometrie</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Geometrie</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Geometrie des Objektes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(ohne Beispiel)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 </tbody>
@@ -554,7 +655,7 @@ Ausarbeitung eines Geodatenmodells zuständig sind.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-09-03 14:49:00 UTC
+Last updated 2024-09-04 14:40:05 UTC
 </div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js"></script>
