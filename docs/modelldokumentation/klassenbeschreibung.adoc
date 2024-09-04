@@ -36,10 +36,94 @@ m| Bemerkung_intern
 | +++<span style="color:red;">amtsintern</span>+++
 |===
 
-[%header, cols="10%, 10%, 10%, 60%, 10%", format=csv, separator=;]
-|=======
-include::../table/klasse_katalogeintrag.csv[]
-|=======
+=== Topic `+Bohrprofile+`
+
+==== Klasse `+Bohrung+`
+Die Klasse `+Bohrung+` beschreibt eine Bohrung mit ihren Eigenschaften.
+
+[cols=4*,options="header"]
+|===
+| Name | Beschreibung | Beispiel | Freigabe
+m| OID
+| technischer Objektidentifikator
+| ceaa37a9-8614-43fc-9a8b-688f95c30218
+| öffentlich
+m| erfasstVon
+| Loginname der Person, welche den Datensatz erstellt hat (Autor); wird durch das System gesetzt
+| Musterha
+| +++<span style="color:red;">intern</span>+++
+m| erfasstAm
+| Datum und Zeit, an dem der Datensatz erstellt wurde; wird durch das System gesetzt
+| 1980-03-21T15:38:12
+| +++<span style="color:red;">intern</span>+++
+m| geaendertVon
+| Loginname der Person, welche den Datensatz zuletzt geändert hat (Editor); wird durch das System gesetzt
+| Muelleran
+| +++<span style="color:red;">intern</span>+++
+m| geaendertAm
+| Datum und Zeit, an dem der Datensatz zuletzt geändert wurde; wird durch das System gesetzt
+| 2024-07-30T08:07:57
+| +++<span style="color:red;">intern</span>+++
+m| ???Identifikator???
+| todo: Klären, ob es dieses Attribut braucht, da die Objekte über eine OID verfügen. Hinweis AFU: "in SQLight-DB bereits bestehendes Attribut fuer Fremdschluessel zur Verknuepfung von Erdwaermesonden in a034"
+| - - -
+| öffentlich
+m| Ansatzhoehe
+| Ansatzhöhe des Bohrstandortes in Meter über Meer. Als Referenzpunkt gilt die Geländeoberfläche (Oberkannte Terrain, OKT). Ist die Ansatzhöhe nicht bekannt oder nicht mehr nachvollziehbar, so gilt -9999. [Borehole.Elevation_Z]
+| 785.86
+| öffentlich
+m| Laenge
+| Gemessene Länge der Bohrung in Meter. [Borehole.Length]
+| 112.56
+| öffentlich
+m| Tiefe
+| Tatsächliche, vertikale Tiefe der Bohrung; Höhendifferenz zwischen dem Bohrlandepunkt und der Ansatzhöhe.
+| 95.71
+| öffentlich
+m| Felstiefe
+| Distanz entlang der Bohrung ab dem Ansatzpunkt bis zum Auftreffen auf Fels.
+| 6.5
+| öffentlich
+m| Bohrbeginn
+| Datum, an dem mit der Bohrung gestartet wurde.
+| 1985-09-27
+| öffentlich
+m| Bohrende
+| Datum der Fertigstellung der Bohrung. Ist nur das Jahr bekannt, so gilt yyyy0l01, ist kein Datum bekannt, so gilt 11110101. [Borehole.Date]
+| 1985-10-02
+| öffentlich
+m| Einfallswinkel
+| Gemessener Wert des Einfallens der Bohrung am Bohransatz in Grad. Alternativ kann das Einfallen als geschätzer Werte angegeben werden, die als Auswahlliste zur Verfügung gestellt werden (siehe `+rEinfallkategorie+`).
+| 0
+| öffentlich
+m| Baugesuchsnummer
+| Nummer des Baugesuches für die entsprechende Bohrung.
+| B2022-0064
+| öffentlich
+m| Nummer
+| Bohrnummer im neuen Archiv
+| GA1218
+| öffentlich
+m| NummerAlt
+| Bohrnummer im alten Archiv
+| GA12.2.1179
+| öffentlich
+m| hatWasser
+| Schalter, um anzugeben, ob bei der Bohrung auf Wasser gestossen wurde (ja/nein).
+| ja
+| öffentlich
+m| Bemerkung
+| öffentliche Bemerkung zum Objekt
+| ab 50m geringe Wasserzutritte
+| öffentlich
+4+| *Geometrie*
+m| Geometrie
+| Geometrie des Objektes
+| (ohne Beispiel)
+| öffentlich
+|===
+
+
 
 ifdef::backend-pdf[]
 <<<
