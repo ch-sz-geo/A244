@@ -106,6 +106,20 @@ m|Name
 3+| Die Werte müssen eindeutig sein
 |===
 
+==== Klasse `+Einfallswinkelcode+` -> todo: Werte in Masterkatalog aufnehmen
+Klasse, welche die Codes der Einfallswinkel als Auswahlliste zur Verfügung stellt. Hintergrund: Kapitel 1.1.8 in [3]
+
+[cols=4*,options="header"]
+|===
+| Name | Beschreibung | Beispiel | Freigabe
+4+| _Diese Klasse führt keine zusätzlichen Attribute_
+4+| *Anforderungen*
+m|Code
+3+| Die Werte müssen eindeutig sein
+m|Name
+3+| Die Werte müssen eindeutig sein
+|===
+
 === Topic `+Bohrprofile+`
 
 ==== Klasse `+Bohrung+`
@@ -137,22 +151,27 @@ m| geaendertAm
 | +++<span style="color:red;">intern</span>+++
 m| ???Identifikator???
 | todo: Klären, ob es dieses Attribut braucht, da die Objekte über eine OID verfügen. Hinweis AFU: "in SQLight-DB bereits bestehendes Attribut fuer Fremdschluessel zur Verknuepfung von Erdwaermesonden in a034"
-| - - -
+| - - - +
+(in Datenquelle: [id])
 | öffentlich
 m| Ansatzhoehe
-| Ansatzhöhe des Bohrstandortes in Meter über Meer. Als Referenzpunkt gilt die Geländeoberfläche (Oberkannte Terrain, OKT). Ist die Ansatzhöhe nicht bekannt oder nicht mehr nachvollziehbar, so gilt -9999. [Borehole.Elevation_Z]
+| Ansatzhöhe des Bohrstandortes in Meter über Meer. Als Referenzpunkt gilt die Geländeoberfläche (Oberkannte Terrain, OKT). Ist die Ansatzhöhe nicht bekannt oder nicht mehr nachvollziehbar, so gilt -9999. +
+(in [3]: [Borehole.Elevation_Z]; in Datenquelle: [okt])
 | 785.86
 | öffentlich
 m| Laenge
-| Gemessene Länge der Bohrung in Meter. [Borehole.Length]
+| Gemessene Länge der Bohrung in Meter. +
+(in [3]: [Borehole.Length]; in Datenquelle: [tiefe])
 | 112.56
 | öffentlich
 m| Tiefe
-| Tatsächliche, vertikale Tiefe der Bohrung; Höhendifferenz zwischen dem Bohrlandepunkt und der Ansatzhöhe.
+| Tatsächliche, vertikale Tiefe der Bohrung; Höhendifferenz zwischen dem Bohrlandepunkt und der Ansatzhöhe (siehe Abb. 9 in [3]). +
+(in Datenquelle nicht erfasst)
 | 95.71
 | öffentlich
 m| Felstiefe
-| Distanz entlang der Bohrung ab dem Ansatzpunkt bis zum Auftreffen auf Fels.
+| Distanz entlang der Bohrung ab dem Ansatzpunkt `+Ansatzhoehe+` bis zum Auftreffen auf Fels (Felsoberfläche). +
+(in [3]: [Borehole_Extended.Top_Bedrock]; in Datenquelle: [tiefefelsoberflaeche])
 | 6.5
 | öffentlich
 m| Bohrbeginn
@@ -160,28 +179,34 @@ m| Bohrbeginn
 | 1985-09-27
 | öffentlich
 m| Bohrende
-| Datum der Fertigstellung der Bohrung. Ist nur das Jahr bekannt, so gilt yyyy0l01, ist kein Datum bekannt, so gilt 11110101. [Borehole.Date]
+| Datum der Fertigstellung der Bohrung. Ist nur das Jahr bekannt, so gilt yyyy0l01, ist kein Datum bekannt, so gilt 11110101. +
+(in [3]: [Borehole.Date]; in Datenquelle: [datum])
 | 1985-10-02
 | öffentlich
 m| Einfallswinkel
-| Gemessener Wert des Einfallens der Bohrung am Bohransatz in Grad. Alternativ kann das Einfallen als geschätzer Werte angegeben werden, die als Auswahlliste zur Verfügung gestellt werden (siehe `+rEinfallkategorie+`).
+| Gemessener Wert des Einfallens der Bohrung am Bohransatz in Grad. Alternativ kann das Einfallen als geschätzer Werte angegeben werden, die als Auswahlliste zur Verfügung gestellt werden (siehe `+rEinfallkategorie+`). +
+(in [3]: [Borehole.Borejnc]; in Datenquelle: [datum])
 | 0
 | öffentlich
+m| hatWasser
+| Schalter, um anzugeben, ob bei der Bohrung auf Wasser gestossen wurde (ja/nein). +
+(in [3]: [Borehole_Extended.Groundwater]; in Datenquelle: [grundwasserangetroffen])
+| ja
+| öffentlich
 m| Baugesuchsnummer
-| Nummer des Baugesuches für die entsprechende Bohrung.
+| Nummer des Baugesuches für die entsprechende Bohrung. +
+(in Datenquelle: [baugesuchsnummer])
 | B2022-0064
 | öffentlich
 m| Nummer
-| Bohrnummer im neuen Archiv
+| Bohrnummer im neuen Archiv; relevant bei analogen Abgaben +
+(in Datenquelle: [nummer])
 | GA1218
 | öffentlich
 m| NummerAlt
-| Bohrnummer im alten Archiv
+| Bohrnummer im alten Archiv +
+(in Datenquelle: [nummeralt])
 | GA12.2.1179
-| öffentlich
-m| hatWasser
-| Schalter, um anzugeben, ob bei der Bohrung auf Wasser gestossen wurde (ja/nein).
-| ja
 | öffentlich
 m| Bemerkung
 | öffentliche Bemerkung zum Objekt
@@ -204,6 +229,10 @@ m| rBohrzweck
 m| rWassertyp
 | Verweis auf ein oder mehrere Wassertypen, falls auf Wasser gestossen wurde
 | (ID der Beziehungstabelle)
+| öffentlich
+m| rEinfallswinkelcode
+| Verweis auf den Einfallswinkelcode
+| (OID des Einfallswinkelscodes)
 | öffentlich
 |===
 
@@ -234,32 +263,36 @@ m| geaendertAm
 | Datum und Zeit, an dem der Datensatz zuletzt geändert wurde; wird durch das System gesetzt
 | 2024-07-30T08:07:57
 | +++<span style="color:red;">intern</span>+++
-m| Name
-| todo: Name oder Titel der Bohrung ==> Weshalb auf dem Bohrprofil?
+m| Titel
+| todo: Dieses Attribut gibt es nicht mehr in [3]. Soll es als kantonale Erweiterung geführt werden?
 | todo
 | öffentlich
 m| Bericht
-| ID des Berichtes, in welchem das Bohrprofil beschrieben wird. Das Attribut erfüllt den Zweck eines lose gekoppelten Fremdschlüssels.
+| OID des Berichtes, in welchem das Bohrprofil beschrieben wird. Das Attribut erfüllt den Zweck eines lose gekoppelten Fremdschlüssels.
 | 418de878-b3e6-4649-be04-b4a95fa70716
 | öffentlich
 m| Bezeichnung
-| Bezeichnung, wie das Bohrloch im zugeordneten Bericht gekennzeichnet wird.
+| Bezeichnung, wie das Bohrloch im zugeordneten Bericht benannt ist. +
+(in [3]: [Borehole_Extended.Original_Name]; in Datenquelle: [bezeichnunggeobericht])
 | SB 12.05-08
 | öffentlich
 m| Erstelldatum
-| Datum, an dem das Profil fertiggestellt wurde.
+| Datum, an dem das Profil fertiggestellt wurde. +
+(in Datenquelle: [erstelldatum])
 | 1988-07-31
 | öffentlich
 m| Autor
 | ID des Geologieunternehmens, welches das Profil erstellt hat. Das Attribut erfüllt den Zweck eines lose gekoppelten Fremdschlüssels.
-| 1988-07-31
+| CHE-218.399.949
 | öffentlich
 m| istHauptprofil
-| Schalter, um anzugeben, ob es sich um das Hauptprofil handelt (ja/nein).
+| Schalter, um anzugeben, ob es sich um das Hauptprofil handelt (ja/nein). +
+(in [3]: [Borehole_Extended.Groundwater]; in Datenquelle: [grundwasserangetroffen])
 | ja
 | öffentlich
 m| Dokumentlink
-| Dateipfad, über welchen man zum Profildokument gelangt.
+| Dateipfad, über welchen man zum Profildokument gelangt. +
+(in Datenquelle: [profil])
 | Q:\...\2021-12-27-0856_N4AxenstrasseLageDerSondierungen2013_CSD.pdf
 | +++<span style="color:red;">intern</span>+++
 4+| *Geometrie*
@@ -311,15 +344,24 @@ m| geaendertAm
 | 2024-07-30T08:07:57
 | +++<span style="color:red;">intern</span>+++
 m| Laenge
-| Gesamtlänge des Ausbaus in gebohrten Metern. Diese Länge entspricht der Summe der Längen der Ausbausegmente. Sie kann sich von der Gesamtlänge der Bohrung und der Länge des Bohrprofils unterscheiden.
+|
+* Gesamtlänge des Ausbaus in gebohrten Metern. Diese Länge entspricht der Summe der Längen der Ausbausegmente. Sie kann sich von der Gesamtlänge der Bohrung und der Länge des Bohrprofils unterscheiden. +
+(in [4]: [DrillCompl.Length])
+oder
+
+* Länge des vermessenen Bohrpfads in gebohrten Metern (Measured Depth); Der Wert entspricht dem grössten gemessenen Tiefenwert (Attribut «Depth» in der Klasse «DevSurvMeasure») + 
+(in [4]: [DeviationSurvey.Length])
 | 123.45
 | öffentlich
 m| Referenzhoehe
-| Höhenangabe der Referenzhöhe in m ü.M.
+| Höhenangabe der Referenzhöhe in m ü.M. +
+(in [4]: [DeviationSurvey.ElvRefHeight]) oder +
+(in [4]: [DrillCompl.ElvRefHeight])
 | 871.02
 | öffentlich
 m| Beschreibung
-| Beschreibung des Bohrlochausbaus.
+| Beschreibung des Bohrlochausbaus. +
+(in [4]: [DrillCompl.Descr])
 | Das Bohrloch wurde zwecks Aufnahme der Instrumente vollständig verrohrt.
 | öffentlich
 4+| *Geometrie*
@@ -337,8 +379,6 @@ m| rAusbautyp
 | (OID des Ausbautyps)
 | öffentlich
 |===
-
-
 
 ifdef::backend-pdf[]
 <<<
