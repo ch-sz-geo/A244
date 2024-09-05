@@ -6,15 +6,15 @@
 ====
 [cols="1, 3"]
 |=======
-|Erstelldatum | 2024-01-01
+|Erstelldatum | 2024-09-04
 |letzte Änderung | {docdate}
-| Themen-Nummer | Annn
+| Themen-Nummer | A244
 | ID nach kGeoiV | --- 
-| Beteiligte | Person 1 (Kürzel 1), Amt 1 + 
-Person 2 (Kürzel 2), Amt 2
-| Status a| - [ ] Entwurf 
+| Beteiligte | Kuno Epper (Kep), Amt für Geoinformation (AGI) + 
+Zlatko Mrnjec (ZM), Amt für Umwelt und Energie (AfU)
+| Status a| - [x] Entwurf 
 - [ ] bereit für Vernehmlassung
-- [x] gültig
+- [ ] gültig
 |=======
 ====
 
@@ -36,6 +36,7 @@ h| Version h| Datum h| Koreferent h| Prüfstelle
 h| Nr. h| Titel h| Autor(en) h| Version
 | [01] | kantonales Geoinformationsgesetz (kGeoiG) (SRSZ 214.110) | Kt. SZ | 24.06.2010
 | [02] | Verordnung zum kantonalen Geoinformationsgesetz (kGeoiV) (SRSZ 214.111) | Kt. SZ | 18.12.2012
+| [03] | Datenmodell Bohrdaten; Beschreibung des Kernmodells mit Objektkatalog und UML-Modell | Bundesamt für Landestopografie swisstopo | 2.0 vom September 2014
 |=======
 ====
 
