@@ -16,8 +16,16 @@ Ausarbeitung eines Geodatenmodells zuständig sind.
 ===  Zweck des Dokuments
 Dieses Dokument beschreibt den Geobasisdatensatz
  
-* *__Bohrdaten des Bereichs "Umwelt"__.* +
+* *__Bohrdaten des Bereichs "Umwelt" (A244)__.* +
 
+
+Verschiedene Ämter vefügen über Informationen zu Bohrdaten und pflgen diese in je einem separaten Thema. Diese sind:
+
+* Das Amt für Umwelt und Energie führt Bohrdaten, welche sich aus dem Umweltbereicht (z.B. Erdwärmesonden) ergeben -> A244
+* Das Amt für Wald und Natur führt Bohrdaten, welche sich aus geologischen Untersuchungen ergeben -> A???
+* Das Tiefbauamt führt Bohrdaten, welche sich aus der Bautätigkeit ergeben -> A???
+
+Der Bund (swisstopo) hat dieses Thema über den Geobasisdatensatz "Archiv Bohrdaten" (ID 50.4) modelliert. Die Modelldokumentation [3] ist über das https://www.geologieportal.ch/[Geologie-Portal des Bundes] einsehbar. Der Kanton SZ orientiert sich am Bundesmodell und erweitert dieses an wenigen Stellen.
 
 ===  Verweise auf andere Themen
 In allgemeiner Form sind Bohrdaten im Thema
