@@ -37,6 +37,7 @@ h| Nr. h| Titel h| Autor(en) h| Version
 | [01] | kantonales Geoinformationsgesetz (kGeoiG) (SRSZ 214.110) | Kt. SZ | 24.06.2010
 | [02] | Verordnung zum kantonalen Geoinformationsgesetz (kGeoiV) (SRSZ 214.111) | Kt. SZ | 18.12.2012
 | [03] | Datenmodell Bohrdaten; Beschreibung des Kernmodells mit Objektkatalog und UML-Modell | Bundesamt für Landestopografie swisstopo | 2.0 vom September 2014
+| [04] | Datenmodell Bohrdaten - Module Geology, Documents, Well-track, Drilling & Completion (unveröffentlichter Entwurf)| Bundesamt für Landestopografie swisstopo | 1.03 vom 23.06.2017
 |=======
 ====
 
