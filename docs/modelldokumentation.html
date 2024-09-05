@@ -216,6 +216,7 @@ th {
 <li><a href="#_klasse_profilart_todo_werte_in_masterkatalog_aufnehmen">4.1.4. Klasse <code>Profilart</code> &#8594; todo: Werte in Masterkatalog aufnehmen</a></li>
 <li><a href="#_klasse_profiltyp_todo_werte_in_masterkatalog_aufnehmen">4.1.5. Klasse <code>Profiltyp</code> &#8594; todo: Werte in Masterkatalog aufnehmen</a></li>
 <li><a href="#_klasse_ausbautyp_todo_werte_in_masterkatalog_aufnehmen">4.1.6. Klasse <code>Ausbautyp</code> &#8594; todo: Werte in Masterkatalog aufnehmen</a></li>
+<li><a href="#_klasse_einfallswinkelcode_todo_werte_in_masterkatalog_aufnehmen">4.1.7. Klasse <code>Einfallswinkelcode</code> &#8594; todo: Werte in Masterkatalog aufnehmen</a></li>
 </ul>
 </li>
 <li><a href="#_topic_bohrprofile">4.2. Topic <code>Bohrprofile</code></a>
@@ -727,6 +728,44 @@ Ausarbeitung eines Geodatenmodells zuständig sind.</p>
 </tbody>
 </table>
 </div>
+<div class="sect3">
+<h4 id="_klasse_einfallswinkelcode_todo_werte_in_masterkatalog_aufnehmen"><a class="anchor" href="#_klasse_einfallswinkelcode_todo_werte_in_masterkatalog_aufnehmen"></a><a class="link" href="#_klasse_einfallswinkelcode_todo_werte_in_masterkatalog_aufnehmen">4.1.7. Klasse <code>Einfallswinkelcode</code> &#8594; todo: Werte in Masterkatalog aufnehmen</a></h4>
+<div class="paragraph">
+<p>Klasse, welche die Codes der Einfallswinkel als Auswahlliste zur Verfügung stellt. Hintergrund: Kapitel 1.1.8 in [3]</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Beschreibung</th>
+<th class="tableblock halign-left valign-top">Beispiel</th>
+<th class="tableblock halign-left valign-top">Freigabe</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><em>Diese Klasse führt keine zusätzlichen Attribute</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><strong>Anforderungen</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Code</code></p></td>
+<td class="tableblock halign-left valign-top" colspan="3"><p class="tableblock">Die Werte müssen eindeutig sein</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Name</code></p></td>
+<td class="tableblock halign-left valign-top" colspan="3"><p class="tableblock">Die Werte müssen eindeutig sein</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_topic_bohrprofile"><a class="anchor" href="#_topic_bohrprofile"></a><a class="link" href="#_topic_bohrprofile">4.2. Topic <code>Bohrprofile</code></a></h3>
@@ -787,30 +826,35 @@ Ausarbeitung eines Geodatenmodells zuständig sind.</p>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>???Identifikator???</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">todo: Klären, ob es dieses Attribut braucht, da die Objekte über eine OID verfügen. Hinweis AFU: "in SQLight-DB bereits bestehendes Attribut fuer Fremdschluessel zur Verknuepfung von Erdwaermesonden in a034"</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">- - -</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">- - -<br>
+(in Datenquelle: [id])</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>Ansatzhoehe</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ansatzhöhe des Bohrstandortes in Meter über Meer. Als Referenzpunkt gilt die Geländeoberfläche (Oberkannte Terrain, OKT). Ist die Ansatzhöhe nicht bekannt oder nicht mehr nachvollziehbar, so gilt -9999. [Borehole.Elevation_Z]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ansatzhöhe des Bohrstandortes in Meter über Meer. Als Referenzpunkt gilt die Geländeoberfläche (Oberkannte Terrain, OKT). Ist die Ansatzhöhe nicht bekannt oder nicht mehr nachvollziehbar, so gilt -9999.<br>
+(in [3]: [Borehole.Elevation_Z]; in Datenquelle: [okt])</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">785.86</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>Laenge</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Gemessene Länge der Bohrung in Meter. [Borehole.Length]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gemessene Länge der Bohrung in Meter.<br>
+(in [3]: [Borehole.Length]; in Datenquelle: [tiefe])</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">112.56</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>Tiefe</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Tatsächliche, vertikale Tiefe der Bohrung; Höhendifferenz zwischen dem Bohrlandepunkt und der Ansatzhöhe.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tatsächliche, vertikale Tiefe der Bohrung; Höhendifferenz zwischen dem Bohrlandepunkt und der Ansatzhöhe (siehe Abb. 9 in [3]).<br>
+(in Datenquelle nicht erfasst)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">95.71</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>Felstiefe</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Distanz entlang der Bohrung ab dem Ansatzpunkt bis zum Auftreffen auf Fels.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Distanz entlang der Bohrung ab dem Ansatzpunkt <code>Ansatzhoehe</code> bis zum Auftreffen auf Fels (Felsoberfläche).<br>
+(in [3]: [Borehole_Extended.Top_Bedrock]; in Datenquelle: [tiefefelsoberflaeche])</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">6.5</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
@@ -822,38 +866,44 @@ Ausarbeitung eines Geodatenmodells zuständig sind.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>Bohrende</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Datum der Fertigstellung der Bohrung. Ist nur das Jahr bekannt, so gilt yyyy0l01, ist kein Datum bekannt, so gilt 11110101. [Borehole.Date]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datum der Fertigstellung der Bohrung. Ist nur das Jahr bekannt, so gilt yyyy0l01, ist kein Datum bekannt, so gilt 11110101.<br>
+(in [3]: [Borehole.Date]; in Datenquelle: [datum])</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">1985-10-02</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>Einfallswinkel</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Gemessener Wert des Einfallens der Bohrung am Bohransatz in Grad. Alternativ kann das Einfallen als geschätzer Werte angegeben werden, die als Auswahlliste zur Verfügung gestellt werden (siehe <code>rEinfallkategorie</code>).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gemessener Wert des Einfallens der Bohrung am Bohransatz in Grad. Alternativ kann das Einfallen als geschätzer Werte angegeben werden, die als Auswahlliste zur Verfügung gestellt werden (siehe <code>rEinfallkategorie</code>).<br>
+(in [3]: [Borehole.Borejnc]; in Datenquelle: [datum])</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>hatWasser</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Schalter, um anzugeben, ob bei der Bohrung auf Wasser gestossen wurde (ja/nein).<br>
+(in [3]: [Borehole_Extended.Groundwater]; in Datenquelle: [grundwasserangetroffen])</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ja</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>Baugesuchsnummer</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Nummer des Baugesuches für die entsprechende Bohrung.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nummer des Baugesuches für die entsprechende Bohrung.<br>
+(in Datenquelle: [baugesuchsnummer])</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">B2022-0064</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>Nummer</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Bohrnummer im neuen Archiv</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bohrnummer im neuen Archiv; relevant bei analogen Abgaben<br>
+(in Datenquelle: [nummer])</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">GA1218</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>NummerAlt</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Bohrnummer im alten Archiv</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bohrnummer im alten Archiv<br>
+(in Datenquelle: [nummeralt])</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">GA12.2.1179</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>hatWasser</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Schalter, um anzugeben, ob bei der Bohrung auf Wasser gestossen wurde (ja/nein).</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ja</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 <tr>
@@ -890,6 +940,12 @@ Ausarbeitung eines Geodatenmodells zuständig sind.</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>rWassertyp</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Verweis auf ein oder mehrere Wassertypen, falls auf Wasser gestossen wurde</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">(ID der Beziehungstabelle)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>rEinfallswinkelcode</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verweis auf den Einfallswinkelcode</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(OID des Einfallswinkelscodes)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 </tbody>
@@ -950,44 +1006,48 @@ Ausarbeitung eines Geodatenmodells zuständig sind.</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><span style="color:red;">intern</span></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Name</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">todo: Name oder Titel der Bohrung =&#8658; Weshalb auf dem Bohrprofil?</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Titel</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">todo: Dieses Attribut gibt es nicht mehr in [3]. Soll es als kantonale Erweiterung geführt werden?</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">todo</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>Bericht</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ID des Berichtes, in welchem das Bohrprofil beschrieben wird. Das Attribut erfüllt den Zweck eines lose gekoppelten Fremdschlüssels.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">OID des Berichtes, in welchem das Bohrprofil beschrieben wird. Das Attribut erfüllt den Zweck eines lose gekoppelten Fremdschlüssels.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">418de878-b3e6-4649-be04-b4a95fa70716</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>Bezeichnung</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Bezeichnung, wie das Bohrloch im zugeordneten Bericht gekennzeichnet wird.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bezeichnung, wie das Bohrloch im zugeordneten Bericht benannt ist.<br>
+(in [3]: [Borehole_Extended.Original_Name]; in Datenquelle: [bezeichnunggeobericht])</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">SB 12.05-08</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>Erstelldatum</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Datum, an dem das Profil fertiggestellt wurde.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datum, an dem das Profil fertiggestellt wurde.<br>
+(in Datenquelle: [erstelldatum])</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">1988-07-31</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>Autor</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ID des Geologieunternehmens, welches das Profil erstellt hat. Das Attribut erfüllt den Zweck eines lose gekoppelten Fremdschlüssels.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1988-07-31</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CHE-218.399.949</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>istHauptprofil</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Schalter, um anzugeben, ob es sich um das Hauptprofil handelt (ja/nein).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Schalter, um anzugeben, ob es sich um das Hauptprofil handelt (ja/nein).<br>
+(in [3]: [Borehole_Extended.Groundwater]; in Datenquelle: [grundwasserangetroffen])</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ja</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>Dokumentlink</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Dateipfad, über welchen man zum Profildokument gelangt.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dateipfad, über welchen man zum Profildokument gelangt.<br>
+(in Datenquelle: [profil])</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Q:...\2021-12-27-0856_N4AxenstrasseLageDerSondierungen2013_CSD.pdf</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><span style="color:red;">intern</span></p></td>
 </tr>
@@ -1080,19 +1140,26 @@ Ausarbeitung eines Geodatenmodells zuständig sind.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>Laenge</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Gesamtlänge des Ausbaus in gebohrten Metern. Diese Länge entspricht der Summe der Längen der Ausbausegmente. Sie kann sich von der Gesamtlänge der Bohrung und der Länge des Bohrprofils unterscheiden.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">* Gesamtlänge des Ausbaus in gebohrten Metern. Diese Länge entspricht der Summe der Längen der Ausbausegmente. Sie kann sich von der Gesamtlänge der Bohrung und der Länge des Bohrprofils unterscheiden.<br>
+(in [4]: [DrillCompl.Length])
+oder</p>
+<p class="tableblock">* Länge des vermessenen Bohrpfads in gebohrten Metern (Measured Depth); Der Wert entspricht dem grössten gemessenen Tiefenwert (Attribut «Depth» in der Klasse «DevSurvMeasure»)<br>
+(in [4]: [DeviationSurvey.Length])</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">123.45</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>Referenzhoehe</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Höhenangabe der Referenzhöhe in m ü.M.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Höhenangabe der Referenzhöhe in m ü.M.<br>
+(in [4]: [DeviationSurvey.ElvRefHeight]) oder<br>
+(in [4]: [DrillCompl.ElvRefHeight])</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">871.02</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>Beschreibung</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Beschreibung des Bohrlochausbaus.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Beschreibung des Bohrlochausbaus.<br>
+(in [4]: [DrillCompl.Descr])</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Das Bohrloch wurde zwecks Aufnahme der Instrumente vollständig verrohrt.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
@@ -1129,7 +1196,7 @@ Ausarbeitung eines Geodatenmodells zuständig sind.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-09-05 13:21:49 UTC
+Last updated 2024-09-05 14:59:14 UTC
 </div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js"></script>
