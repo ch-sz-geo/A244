@@ -36,7 +36,8 @@ m| Bemerkung_intern
 | +++<span style="color:red;">amtsintern</span>+++
 |===
 
-==== Klasse `+Bohrtyp+` -> todo: Werte in Masterkatalog aufnehmen
+==== Klasse `+Bohrtyp+`
+-> todo: Werte in Masterkatalog aufnehmen
 Klasse, welche die verschiedenen Bohrtypen als Auswahlliste zur Verfügung stellt.
 
 [cols=4*,options="header"]
@@ -50,7 +51,8 @@ m|Name
 3+| Die Werte müssen eindeutig sein
 |===
 
-==== Klasse `+Bohrzweck+` -> todo: Werte in Masterkatalog aufnehmen
+==== Klasse `+Bohrzweck+`
+-> todo: Werte in Masterkatalog aufnehmen
 Klasse, welche die Zwecke einer Bohrung als Auswahlliste zur Verfügung stellt.
 
 [cols=4*,options="header"]
@@ -64,7 +66,8 @@ m|Name
 3+| Die Werte müssen eindeutig sein
 |===
 
-==== Klasse `+Profilart+` -> todo: Werte in Masterkatalog aufnehmen
+==== Klasse `+Profilart+`
+-> todo: Werte in Masterkatalog aufnehmen
 Klasse, welche die Art eines Bohrprofils als Auswahlliste zur Verfügung stellt (entweder geologische Einheit oder tektonische Strukturen).
 
 [cols=4*,options="header"]
@@ -78,7 +81,8 @@ m|Name
 3+| Die Werte müssen eindeutig sein
 |===
 
-==== Klasse `+Profiltyp+` -> todo: Werte in Masterkatalog aufnehmen
+==== Klasse `+Profiltyp+`
+-> todo: Werte in Masterkatalog aufnehmen
 Klasse, welche den Typ des Bohrprofils als Auswahlliste zur Verfügung stellt (z.B. "Originalaufnahme").
 
 [cols=4*,options="header"]
@@ -92,7 +96,8 @@ m|Name
 3+| Die Werte müssen eindeutig sein
 |===
 
-==== Klasse `+Ausbautyp+` -> todo: Werte in Masterkatalog aufnehmen
+==== Klasse `+Ausbautyp+`
+-> todo: Werte in Masterkatalog aufnehmen
 Klasse, welche den Typ des Bohrlochausbaus als Auswahlliste zur Verfügung stellt.
 
 [cols=4*,options="header"]
@@ -106,7 +111,8 @@ m|Name
 3+| Die Werte müssen eindeutig sein
 |===
 
-==== Klasse `+Einfallswinkelcode+` -> todo: Werte in Masterkatalog aufnehmen
+==== Klasse `+Einfallswinkelcode+`
+-> todo: Werte in Masterkatalog aufnehmen
 Klasse, welche die Codes der Einfallswinkel als Auswahlliste zur Verfügung stellt. Hintergrund: Kapitel 1.1.8 in [3]
 
 [cols=4*,options="header"]
@@ -150,9 +156,9 @@ m| geaendertAm
 | 2024-07-30T08:07:57
 | +++<span style="color:red;">intern</span>+++
 m| ???Identifikator???
-| todo: Klären, ob es dieses Attribut braucht, da die Objekte über eine OID verfügen. Hinweis AFU: "in SQLight-DB bereits bestehendes Attribut fuer Fremdschluessel zur Verknuepfung von Erdwaermesonden in a034"
-| - - - +
+| todo: Klären, ob es dieses Attribut braucht, da die Objekte über eine OID verfügen. Hinweis AFU: "in SQLight-DB bereits bestehendes Attribut fuer Fremdschluessel zur Verknuepfung von Erdwaermesonden in a034"+
 (in Datenquelle: [id])
+| - - -
 | öffentlich
 m| Ansatzhoehe
 | Ansatzhöhe des Bohrstandortes in Meter über Meer. Als Referenzpunkt gilt die Geländeoberfläche (Oberkannte Terrain, OKT). Ist die Ansatzhöhe nicht bekannt oder nicht mehr nachvollziehbar, so gilt -9999. +
