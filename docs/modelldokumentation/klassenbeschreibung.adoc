@@ -299,7 +299,8 @@ m| Titel
 | todo
 | öffentlich
 m| Bericht
-| OID des Berichtes, in welchem das Bohrprofil beschrieben wird. Das Attribut erfüllt den Zweck eines lose gekoppelten Fremdschlüssels.
+| OID des Berichtes, in welchem das Bohrprofil beschrieben wird. Das Attribut erfüllt den Zweck eines lose gekoppelten Fremdschlüssels. +
+(in Datenquelle: [namebericht] -> muss in OID-Wert umgewandelt werden)
 | 418de878-b3e6-4649-be04-b4a95fa70716
 | öffentlich
 m| Bezeichnung
