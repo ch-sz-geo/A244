@@ -32,6 +32,21 @@ m| Bemerkung
 | öffentlich
 |===
 
+==== Klasse `+Freigabestufe+`
+-> todo: Werte in Masterkatalog aufnehmen
+Klasse, welche die verschiedenen Freigabestufen als Auswahlliste zur Verfügung stellt. Die Freigabestufen regelt für jedes Objekt, für welche Gruppe es einsehbar ist.
+
+[cols=4*,options="header"]
+|===
+| Name | Beschreibung | Beispiel | Freigabe
+4+| _Diese Klasse führt keine zusätzlichen Attribute_
+4+| *Anforderungen*
+m|Code
+3+| Die Werte müssen eindeutig sein
+m|Name
+3+| Die Werte müssen eindeutig sein
+|===
+
 ==== Klasse `+Bohrtyp+`
 -> todo: Werte in Masterkatalog aufnehmen
 Klasse, welche die verschiedenen Bohrtypen als Auswahlliste zur Verfügung stellt.
@@ -226,7 +241,7 @@ m| Geometrie
 | (ohne Beispiel)
 | öffentlich
 4+| *Beziehungsattribute*
-m| rFreigabe
+m| rFreigabestufe
 | Verweis auf die Freigabestufe
 | (OID der Freigabestufe)
 | öffentlich
