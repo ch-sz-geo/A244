@@ -1,0 +1,31 @@
+==== Katalog `+Wassertyp+`
+
+[cols=5*,options="header"]
+|===
+| OID | Code | Name | SortierNr | Bemerkung
+m| c6a8fa02-3937-4532-870d-8006d65c9c01
+| Grundwasser
+| Grundwasser
+| 10
+| - - -
+m| ff444878-72ac-421e-8d09-c4e25af6aff8
+| Hangwasser
+| Hangwasser
+| 20
+| - - -
+m| 16ab100e-d8aa-44aa-a48d-ea60f5ae16c7
+| Rinne
+| Rinne
+| 30
+| - - -
+m| 87219c1e-53c1-44a9-80c4-d1ca0fd94092
+| Kluftwasser
+| Kluftwasser
+| 40
+| - - -
+m| b6fcd4b5-0baa-434c-91dc-faa15264fd76
+| keine_Angabe
+| keine Angabe
+| 50
+| - - -
+|===
