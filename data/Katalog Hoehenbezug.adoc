@@ -1,0 +1,52 @@
+==== Katalog `+Hoehenbezug+`
+In Dokument [4]: [Stack.RefHeight]
+
+[cols=5*,options="header"]
+|===
+| OID | Code | Name | SortierNr | Bemerkung
+m| 862af5b8-ee10-41a2-a29e-1f98df06dbe0
+| OKT
+| Oberkante Terrain (OKT)
+| 1
+| - - -
+m| 28653cac-db1b-48a6-b7f8-9355cc1b599d
+| RT
+| Rotary Table (RT)
+| 2
+| - - -
+m| 09b05baf-caac-4882-ab42-d16a564ea91b
+| RKB
+| Rotary Kelly Bushing (RKB)
+| 3
+| - - -
+m| 611e7c16-922b-48a1-a7dc-93f9b886d5d3
+| OKR
+| Oberkante Rohr (OKR)
+| 4
+| - - -
+m| d6729924-82f8-4f3a-ae03-54f2767e3d5f
+| SD
+| Schachtdeckel (SD)
+| 5
+| - - -
+m| a0b420e3-cc7d-49d2-9e83-99443622aea0
+| Sohle
+| Sohle
+| 6
+| - - -
+m| 52110430-e299-40e3-8e95-1367cbd05e4c
+| Wand
+| Wand
+| 7
+| - - -
+m| a4a0af1c-066c-423e-9502-4a9fcf478ac6
+| Decke
+| Decke
+| 8
+| - - -
+m| 71386003-f921-4a68-abcf-4c52d9c1ef5b
+| anderer
+| anderer
+| 9
+| - - -
+|===
