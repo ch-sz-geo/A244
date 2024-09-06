@@ -1,0 +1,46 @@
+==== Katalog `+Ausbautyp+`
+
+[cols=5*,options="header"]
+|===
+| OID | Code | Name | SortierNr | Bemerkung
+m| da2e6e40-3907-46ad-9c07-39c1c21249f8
+| 1
+| Verrohrung
+| 10
+| - - -
+m| 9f95be72-7163-4452-bf73-01393629a21f
+| 2
+| Messstelle
+| 20
+| - - -
+m| ce7222b2-38f6-45ed-b896-a8f431acafbf
+| 3
+| Erdwärmesonde
+| 30
+| - - -
+m| 8a675d91-6031-45bb-a50e-82c97c02090d
+| 4
+| Instrumentation
+| 40
+| - - -
+m| 486b647d-246a-42a0-88c3-c5e67e5cb66a
+| 4.1
+| Piezometer
+| 41
+| - - -
+m| 1ca93f01-8f9e-480f-985c-39580a59cb31
+| 5
+| Hinterfüllung
+| 50
+| - - -
+m| af4ba1ea-c96c-4964-b6ff-45c82a636ec3
+| 6
+| Bohrlochabschnitt
+| 60
+| - - -
+m| 27d54289-8552-46e2-85ef-f49ac1ac3d24
+| 7
+| anderer
+| 98
+| - - -
+|===
