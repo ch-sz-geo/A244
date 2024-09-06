@@ -19,7 +19,7 @@ Dieses Dokument beschreibt den Geobasisdatensatz
 * *__Bohrdaten des Bereichs "Umwelt" (A244)__.* +
 
 
-Verschiedene Ämter vefügen über Informationen zu Bohrdaten und pflgen diese in je einem separaten Thema. Diese sind:
+Verschiedene Ämter vefügen über Informationen zu Bohrdaten und pflegen diese in je einem separaten Thema. Diese sind:
 
 * Das Amt für Umwelt und Energie führt Bohrdaten, welche sich aus dem Umweltbereicht (z.B. Erdwärmesonden) ergeben -> A244
 * Das Amt für Wald und Natur führt Bohrdaten, welche sich aus geologischen Untersuchungen ergeben -> A???
