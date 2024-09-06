@@ -211,12 +211,13 @@ th {
 <li><a href="#_topic_stammdaten">4.1. Topic <code>Stammdaten</code></a>
 <ul class="sectlevel3">
 <li><a href="#_klasse_katalogeintrag">4.1.1. Klasse <code>Katalogeintrag</code></a></li>
-<li><a href="#_klasse_bohrtyp">4.1.2. Klasse <code>Bohrtyp</code></a></li>
-<li><a href="#_klasse_bohrzweck">4.1.3. Klasse <code>Bohrzweck</code></a></li>
-<li><a href="#_klasse_profilart">4.1.4. Klasse <code>Profilart</code></a></li>
-<li><a href="#_klasse_profiltyp">4.1.5. Klasse <code>Profiltyp</code></a></li>
-<li><a href="#_klasse_ausbautyp">4.1.6. Klasse <code>Ausbautyp</code></a></li>
-<li><a href="#_klasse_einfallswinkelcode">4.1.7. Klasse <code>Einfallswinkelcode</code></a></li>
+<li><a href="#_klasse_freigabestufe">4.1.2. Klasse <code>Freigabestufe</code></a></li>
+<li><a href="#_klasse_bohrtyp">4.1.3. Klasse <code>Bohrtyp</code></a></li>
+<li><a href="#_klasse_bohrzweck">4.1.4. Klasse <code>Bohrzweck</code></a></li>
+<li><a href="#_klasse_profilart">4.1.5. Klasse <code>Profilart</code></a></li>
+<li><a href="#_klasse_profiltyp">4.1.6. Klasse <code>Profiltyp</code></a></li>
+<li><a href="#_klasse_ausbautyp">4.1.7. Klasse <code>Ausbautyp</code></a></li>
+<li><a href="#_klasse_einfallswinkelbereich">4.1.8. Klasse <code>Einfallswinkelbereich</code></a></li>
 </ul>
 </li>
 <li><a href="#_topic_bohrprofile">4.2. Topic <code>Bohrprofile</code></a>
@@ -539,7 +540,46 @@ Ausarbeitung eines Geodatenmodells zuständig sind.</p>
 </table>
 </div>
 <div class="sect3">
-<h4 id="_klasse_bohrtyp"><a class="anchor" href="#_klasse_bohrtyp"></a><a class="link" href="#_klasse_bohrtyp">4.1.2. Klasse <code>Bohrtyp</code></a></h4>
+<h4 id="_klasse_freigabestufe"><a class="anchor" href="#_klasse_freigabestufe"></a><a class="link" href="#_klasse_freigabestufe">4.1.2. Klasse <code>Freigabestufe</code></a></h4>
+<div class="paragraph">
+<p>&#8594; todo: Werte in Masterkatalog aufnehmen
+Klasse, welche die verschiedenen Freigabestufen als Auswahlliste zur Verfügung stellt. Die Freigabestufen regelt für jedes Objekt, für welche Gruppe es einsehbar ist.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Beschreibung</th>
+<th class="tableblock halign-left valign-top">Beispiel</th>
+<th class="tableblock halign-left valign-top">Freigabe</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><em>Diese Klasse führt keine zusätzlichen Attribute</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><strong>Anforderungen</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Code</code></p></td>
+<td class="tableblock halign-left valign-top" colspan="3"><p class="tableblock">Die Werte müssen eindeutig sein</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Name</code></p></td>
+<td class="tableblock halign-left valign-top" colspan="3"><p class="tableblock">Die Werte müssen eindeutig sein</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_klasse_bohrtyp"><a class="anchor" href="#_klasse_bohrtyp"></a><a class="link" href="#_klasse_bohrtyp">4.1.3. Klasse <code>Bohrtyp</code></a></h4>
 <div class="paragraph">
 <p>&#8594; todo: Werte in Masterkatalog aufnehmen
 Klasse, welche die verschiedenen Bohrtypen als Auswahlliste zur Verfügung stellt.</p>
@@ -578,7 +618,7 @@ Klasse, welche die verschiedenen Bohrtypen als Auswahlliste zur Verfügung stell
 </table>
 </div>
 <div class="sect3">
-<h4 id="_klasse_bohrzweck"><a class="anchor" href="#_klasse_bohrzweck"></a><a class="link" href="#_klasse_bohrzweck">4.1.3. Klasse <code>Bohrzweck</code></a></h4>
+<h4 id="_klasse_bohrzweck"><a class="anchor" href="#_klasse_bohrzweck"></a><a class="link" href="#_klasse_bohrzweck">4.1.4. Klasse <code>Bohrzweck</code></a></h4>
 <div class="paragraph">
 <p>&#8594; todo: Werte in Masterkatalog aufnehmen
 Klasse, welche die Zwecke einer Bohrung als Auswahlliste zur Verfügung stellt.</p>
@@ -617,7 +657,7 @@ Klasse, welche die Zwecke einer Bohrung als Auswahlliste zur Verfügung stellt.<
 </table>
 </div>
 <div class="sect3">
-<h4 id="_klasse_profilart"><a class="anchor" href="#_klasse_profilart"></a><a class="link" href="#_klasse_profilart">4.1.4. Klasse <code>Profilart</code></a></h4>
+<h4 id="_klasse_profilart"><a class="anchor" href="#_klasse_profilart"></a><a class="link" href="#_klasse_profilart">4.1.5. Klasse <code>Profilart</code></a></h4>
 <div class="paragraph">
 <p>&#8594; todo: Werte in Masterkatalog aufnehmen
 Klasse, welche die Art eines Bohrprofils als Auswahlliste zur Verfügung stellt (entweder geologische Einheit oder tektonische Strukturen).</p>
@@ -656,7 +696,7 @@ Klasse, welche die Art eines Bohrprofils als Auswahlliste zur Verfügung stellt 
 </table>
 </div>
 <div class="sect3">
-<h4 id="_klasse_profiltyp"><a class="anchor" href="#_klasse_profiltyp"></a><a class="link" href="#_klasse_profiltyp">4.1.5. Klasse <code>Profiltyp</code></a></h4>
+<h4 id="_klasse_profiltyp"><a class="anchor" href="#_klasse_profiltyp"></a><a class="link" href="#_klasse_profiltyp">4.1.6. Klasse <code>Profiltyp</code></a></h4>
 <div class="paragraph">
 <p>&#8594; todo: Werte in Masterkatalog aufnehmen
 Klasse, welche den Typ des Bohrprofils als Auswahlliste zur Verfügung stellt (z.B. "Originalaufnahme").</p>
@@ -695,7 +735,7 @@ Klasse, welche den Typ des Bohrprofils als Auswahlliste zur Verfügung stellt (z
 </table>
 </div>
 <div class="sect3">
-<h4 id="_klasse_ausbautyp"><a class="anchor" href="#_klasse_ausbautyp"></a><a class="link" href="#_klasse_ausbautyp">4.1.6. Klasse <code>Ausbautyp</code></a></h4>
+<h4 id="_klasse_ausbautyp"><a class="anchor" href="#_klasse_ausbautyp"></a><a class="link" href="#_klasse_ausbautyp">4.1.7. Klasse <code>Ausbautyp</code></a></h4>
 <div class="paragraph">
 <p>&#8594; todo: Werte in Masterkatalog aufnehmen
 Klasse, welche den Typ des Bohrlochausbaus als Auswahlliste zur Verfügung stellt.</p>
@@ -734,10 +774,10 @@ Klasse, welche den Typ des Bohrlochausbaus als Auswahlliste zur Verfügung stell
 </table>
 </div>
 <div class="sect3">
-<h4 id="_klasse_einfallswinkelcode"><a class="anchor" href="#_klasse_einfallswinkelcode"></a><a class="link" href="#_klasse_einfallswinkelcode">4.1.7. Klasse <code>Einfallswinkelcode</code></a></h4>
+<h4 id="_klasse_einfallswinkelbereich"><a class="anchor" href="#_klasse_einfallswinkelbereich"></a><a class="link" href="#_klasse_einfallswinkelbereich">4.1.8. Klasse <code>Einfallswinkelbereich</code></a></h4>
 <div class="paragraph">
 <p>&#8594; todo: Werte in Masterkatalog aufnehmen
-Klasse, welche die Codes der Einfallswinkel als Auswahlliste zur Verfügung stellt. Hintergrund: Kapitel 1.1.8 in [3]</p>
+Klasse, welche die Bereiche der Einfallswinkel als Auswahlliste zur Verfügung stellt. Hintergrund: Kapitel 1.1.8 in [3]</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -939,7 +979,7 @@ Klasse, welche die Codes der Einfallswinkel als Auswahlliste zur Verfügung stel
 <td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><strong>Beziehungsattribute</strong></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>rFreigabe</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>rFreigabestufe</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Verweis auf die Freigabestufe</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">(OID der Freigabestufe)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
@@ -963,9 +1003,9 @@ Klasse, welche die Codes der Einfallswinkel als Auswahlliste zur Verfügung stel
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>rEinfallswinkelcode</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Verweis auf den Einfallswinkelcode</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(OID des Einfallswinkelscodes)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>rEinfallswinkelbereich</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verweis auf den Einfallswinkelbereich</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(OID des Einfallswinkelbereichs)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 <tr>
@@ -1224,7 +1264,7 @@ Klasse, welche die Codes der Einfallswinkel als Auswahlliste zur Verfügung stel
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-09-06 11:42:27 UTC
+Last updated 2024-09-06 13:02:44 UTC
 </div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js"></script>
