@@ -3,27 +3,27 @@
 [cols=5*,options="header"]
 |===
 | OID | Code | Name | SortierNr | Bemerkung
-| 10b931ad-f9f0-4d53-8397-7e0538d16f1b
+m| 10b931ad-f9f0-4d53-8397-7e0538d16f1b
 | Erdwaermesonde
 | Erdwärmesonde
 | 1
 | - - -
-| ab952e03-5a92-4679-bfbf-88ba4b5446f3
+m| ab952e03-5a92-4679-bfbf-88ba4b5446f3
 | Wasserwaermenutzung
 | Wasserwärmenutzung
 | 2
 | - - -
-| 77813e35-6d14-44cb-aada-d8cafd982580
+m| 77813e35-6d14-44cb-aada-d8cafd982580
 | geologischer_Bericht
 | geologischer Bericht
 | 3
 | - - -
-| 17a88407-5999-47b1-a84c-eb7a9880d420
+m| 17a88407-5999-47b1-a84c-eb7a9880d420
 | anderer
 | anderer
 | 98
 | - - -
-| 05b480b7-3c50-46b9-9688-bea3bdbc5c1e
+m| 05b480b7-3c50-46b9-9688-bea3bdbc5c1e
 | unbekannt
 | unbekannt
 | 99
