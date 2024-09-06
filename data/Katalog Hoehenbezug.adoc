@@ -1,5 +1,6 @@
 ==== Katalog `+Hoehenbezug+`
-In Dokument [4]: [Stack.RefHeight]
+In Dokument [4]: [Stack.RefHeight] +
+Achtung: Werte in [4] unterscheiden sich zu jenen im Datenmodell DMBoreholes -> Klärung nötig.
 
 [cols=5*,options="header"]
 |===
