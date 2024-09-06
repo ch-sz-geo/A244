@@ -151,10 +151,10 @@ m| geaendertAm
 | Datum und Zeit, an dem der Datensatz zuletzt geändert wurde; wird durch das System gesetzt
 | 2024-07-30T08:07:57
 | +++<span style="color:red;">intern</span>+++
-m| ???Identifikator???
-| todo: Klären, ob es dieses Attribut braucht, da die Objekte über eine OID verfügen. Hinweis AFU: "in SQLight-DB bereits bestehendes Attribut fuer Fremdschluessel zur Verknuepfung von Erdwaermesonden in a034"+
-(in Datenquelle: [id])
-| - - -
+m| Name
+| Name der Bohrung +
+(in [3]: [Borehole.TitlePublic]; in Datenquelle: [titel])
+| Bericht über die Baugrunduntersuchung Bahnhofstrasse
 | öffentlich
 m| Ansatzhoehe
 | Ansatzhöhe des Bohrstandortes in Meter über Meer. Als Referenzpunkt gilt die Geländeoberfläche (Oberkannte Terrain, OKT). Ist die Ansatzhöhe nicht bekannt oder nicht mehr nachvollziehbar, so gilt -9999. +
@@ -177,7 +177,7 @@ m| Felstiefe
 | 6.5
 | öffentlich
 m| Bohrbeginn
-| Datum, an dem mit der Bohrung gestartet wurde.
+| Datum des Starts der Bohrarbeiten.
 | 1985-09-27
 | öffentlich
 m| Bohrende
@@ -193,6 +193,11 @@ m| Einfallswinkel
 m| hatWasser
 | Schalter, um anzugeben, ob bei der Bohrung auf Wasser gestossen wurde (ja/nein). +
 (in [3]: [Borehole_Extended.Groundwater]; in Datenquelle: [grundwasserangetroffen])
+| ja
+| öffentlich
+m| Wassertiefe
+| Tiefe, ab welcher auf Wasser gestossen wurde. +
+(in Datenquelle: aus [bemerkung] zu entnehmen)
 | ja
 | öffentlich
 m| Baugesuchsnummer
@@ -211,7 +216,8 @@ m| NummerAlt
 | GA12.2.1179
 | öffentlich
 m| Bemerkung
-| öffentliche Bemerkung zum Objekt
+| öffentliche Bemerkung zum Objekt +
+(in Datenquelle: [bemerkung])
 | ab 50m geringe Wasserzutritte
 | öffentlich
 4+| *Geometrie*
@@ -220,6 +226,10 @@ m| Geometrie
 | (ohne Beispiel)
 | öffentlich
 4+| *Beziehungsattribute*
+m| rFreigabe
+| Verweis auf die Freigabestufe
+| (OID der Freigabestufe)
+| öffentlich
 m| rBohrtyp
 | Verweis auf den Bohrtyp [Borehole.Kind]
 | (OID des Bohrtyps)
@@ -235,6 +245,10 @@ m| rWassertyp
 m| rEinfallswinkelcode
 | Verweis auf den Einfallswinkelcode
 | (OID des Einfallswinkelscodes)
+| öffentlich
+m| rHoehenbezug
+| Verweis auf den Höhenbezug
+| (OID des Höhenbezugs)
 | öffentlich
 |===
 
@@ -289,7 +303,7 @@ m| Autor
 | öffentlich
 m| istHauptprofil
 | Schalter, um anzugeben, ob es sich um das Hauptprofil handelt (ja/nein). +
-(in [3]: [Borehole_Extended.Groundwater]; in Datenquelle: [grundwasserangetroffen])
+(in [3]: [Stack.isMain])
 | ja
 | öffentlich
 m| Dokumentlink
@@ -346,19 +360,13 @@ m| geaendertAm
 | 2024-07-30T08:07:57
 | +++<span style="color:red;">intern</span>+++
 m| Laenge
-|
-* Gesamtlänge des Ausbaus in gebohrten Metern. Diese Länge entspricht der Summe der Längen der Ausbausegmente. Sie kann sich von der Gesamtlänge der Bohrung und der Länge des Bohrprofils unterscheiden. +
+| Gesamtlänge des Ausbaus in gebohrten Metern. Diese Länge entspricht der Summe der Längen der Ausbausegmente. Sie kann sich von der Gesamtlänge der Bohrung und der Länge des Bohrprofils unterscheiden. +
 (in [4]: [DrillCompl.Length])
-oder
-
-* Länge des vermessenen Bohrpfads in gebohrten Metern (Measured Depth); Der Wert entspricht dem grössten gemessenen Tiefenwert (Attribut «Depth» in der Klasse «DevSurvMeasure») + 
-(in [4]: [DeviationSurvey.Length])
 | 123.45
 | öffentlich
 m| Referenzhoehe
 | Höhenangabe der Referenzhöhe in m ü.M. +
-(in [4]: [DeviationSurvey.ElvRefHeight]) oder +
-(in [4]: [DrillCompl.ElvRefHeight])
+((in [4]: [DrillCompl.ElvRefHeight])
 | 871.02
 | öffentlich
 m| Beschreibung
@@ -379,6 +387,10 @@ m| rBohrung
 m| rAusbautyp
 | Verweis auf den Typ des Borhlochausbaus
 | (OID des Ausbautyps)
+| öffentlich
+m| rHoehenbezug
+| Verweis auf den Höhenbezug
+| (OID des Höhenbezugs)
 | öffentlich
 |===
 
