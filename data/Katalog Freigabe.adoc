@@ -1,0 +1,21 @@
+==== Katalog `+Freigabestufe+`
+
+[cols=5*,options="header"]
+|===
+| OID | Code | Name | SortierNr | Bemerkung
+m| c5a4762e-7004-4da8-87ed-603ab9bcb917
+| oeffentlich
+| öffentlich
+| 1
+| Dieses Objekt ist öffentlich einsehbar
+m| 2cba4a97-77e6-44a0-b43f-c4039d11b2a3
+| verwaltungsintern
+| verwaltungsintern
+| 2
+| Die Daten des Objektes sind für andere Ämter sichtbar.
+m| 651d56b2-fb00-4517-907d-c074d7346817
+| zustaendigeStelle
+| zuständige Stelle
+| 3
+| Die Daten des Objektes sind nur der für den Datensatz zuständigen Stelle einsehbar.
+|===
