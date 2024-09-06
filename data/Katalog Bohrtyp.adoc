@@ -1,5 +1,5 @@
 ==== Katalog `+Bohrtyp+`
-In der Bundesdokumentation [3] dient der Bohrtyp einer ersten Zuordnung als Vorauswahl. Die detaillierten Angaben sind in einem eigenen Modul geplant. +
+In der Bundesdokumentation [3] dient der Bohrtyp einer ersten Zuordnung als Vorauswahl (Bohrung, Rammsondierung, Sondierschlitz). Die detaillierten Angaben sind in einem eigenen Modul geplant. +
 Das kantonale Modell strukturiert die Bohrtypen feiner. Es bedient sich dazu der Grobeinteilung des Bundes, verfeinert diese aber bereits im Katalog "Bohrtyp".
 
 [cols=5*,options="header"]
