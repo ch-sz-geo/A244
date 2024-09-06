@@ -1,0 +1,22 @@
+==== Katalog `+Profiltyp+`
+In Dokument [4]: [Stack.Type]
+
+[cols=5*,options="header"]
+|===
+| OID | Code | Name | SortierNr | Bemerkung
+m| 0be40f7d-ccb7-4372-9a8b-aa764ff9b4b5
+| Originalaufnahme
+| Originalaufnahme
+| 1
+| - - -
+m| a52ba330-90f2-4311-8fc0-2a2dffeebd15
+| Neuinterpretation
+| Neuinterpretation
+| 2
+| - - -
+m| ae02dfa2-1ff6-4419-9512-bb7417e434d2
+| unbekannt
+| unbekannt
+| 99
+| - - -
+|===

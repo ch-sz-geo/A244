@@ -1,0 +1,17 @@
+==== Katalog `+Profilart+`
+In Dokument [4]: [Stack.Kind]
+
+[cols=5*,options="header"]
+|===
+| OID | Code | Name | SortierNr | Bemerkung
+m| 9a8b9bc5-3877-4f5c-9103-0013f96c5f2b
+| geologische_Schicht
+| geologische Schicht
+| 1
+| - - -
+m| 8cb5d6f4-1f6b-4d9e-b3b8-d5f79423e3e8
+| tektonische_Struktur
+| tektonische Struktur
+| 2
+| - - -
+|===
