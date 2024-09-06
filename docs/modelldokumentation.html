@@ -830,10 +830,10 @@ Klasse, welche die Codes der Einfallswinkel als Auswahlliste zur Verfügung stel
 <td class="tableblock halign-left valign-top"><p class="tableblock"><span style="color:red;">intern</span></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>???Identifikator???</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">todo: Klären, ob es dieses Attribut braucht, da die Objekte über eine OID verfügen. Hinweis AFU: "in SQLight-DB bereits bestehendes Attribut fuer Fremdschluessel zur Verknuepfung von Erdwaermesonden in a034"+
-(in Datenquelle: [id])</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">- - -</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Name</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name der Bohrung<br>
+(in [3]: [Borehole.TitlePublic]; in Datenquelle: [titel])</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bericht über die Baugrunduntersuchung Bahnhofstrasse</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 <tr>
@@ -866,7 +866,7 @@ Klasse, welche die Codes der Einfallswinkel als Auswahlliste zur Verfügung stel
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>Bohrbeginn</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Datum, an dem mit der Bohrung gestartet wurde.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datum des Starts der Bohrarbeiten.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">1985-09-27</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
@@ -888,6 +888,13 @@ Klasse, welche die Codes der Einfallswinkel als Auswahlliste zur Verfügung stel
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>hatWasser</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Schalter, um anzugeben, ob bei der Bohrung auf Wasser gestossen wurde (ja/nein).<br>
 (in [3]: [Borehole_Extended.Groundwater]; in Datenquelle: [grundwasserangetroffen])</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ja</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Wassertiefe</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tiefe, ab welcher auf Wasser gestossen wurde.<br>
+(in Datenquelle: aus [bemerkung] zu entnehmen)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ja</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
@@ -914,7 +921,8 @@ Klasse, welche die Codes der Einfallswinkel als Auswahlliste zur Verfügung stel
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>Bemerkung</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">öffentliche Bemerkung zum Objekt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentliche Bemerkung zum Objekt<br>
+(in Datenquelle: [bemerkung])</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ab 50m geringe Wasserzutritte</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
@@ -929,6 +937,12 @@ Klasse, welche die Codes der Einfallswinkel als Auswahlliste zur Verfügung stel
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><strong>Beziehungsattribute</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>rFreigabe</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verweis auf die Freigabestufe</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(OID der Freigabestufe)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>rBohrtyp</code></p></td>
@@ -952,6 +966,12 @@ Klasse, welche die Codes der Einfallswinkel als Auswahlliste zur Verfügung stel
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>rEinfallswinkelcode</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Verweis auf den Einfallswinkelcode</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">(OID des Einfallswinkelscodes)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>rHoehenbezug</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verweis auf den Höhenbezug</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(OID des Höhenbezugs)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 </tbody>
@@ -1046,7 +1066,7 @@ Klasse, welche die Codes der Einfallswinkel als Auswahlliste zur Verfügung stel
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>istHauptprofil</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Schalter, um anzugeben, ob es sich um das Hauptprofil handelt (ja/nein).<br>
-(in [3]: [Borehole_Extended.Groundwater]; in Datenquelle: [grundwasserangetroffen])</p></td>
+(in [3]: [Stack.isMain])</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ja</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
@@ -1146,19 +1166,15 @@ Klasse, welche die Codes der Einfallswinkel als Auswahlliste zur Verfügung stel
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>Laenge</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">* Gesamtlänge des Ausbaus in gebohrten Metern. Diese Länge entspricht der Summe der Längen der Ausbausegmente. Sie kann sich von der Gesamtlänge der Bohrung und der Länge des Bohrprofils unterscheiden.<br>
-(in [4]: [DrillCompl.Length])
-oder</p>
-<p class="tableblock">* Länge des vermessenen Bohrpfads in gebohrten Metern (Measured Depth); Der Wert entspricht dem grössten gemessenen Tiefenwert (Attribut «Depth» in der Klasse «DevSurvMeasure»)<br>
-(in [4]: [DeviationSurvey.Length])</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gesamtlänge des Ausbaus in gebohrten Metern. Diese Länge entspricht der Summe der Längen der Ausbausegmente. Sie kann sich von der Gesamtlänge der Bohrung und der Länge des Bohrprofils unterscheiden.<br>
+(in [4]: [DrillCompl.Length])</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">123.45</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>Referenzhoehe</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Höhenangabe der Referenzhöhe in m ü.M.<br>
-(in [4]: [DeviationSurvey.ElvRefHeight]) oder<br>
-(in [4]: [DrillCompl.ElvRefHeight])</p></td>
+((in [4]: [DrillCompl.ElvRefHeight])</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">871.02</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
@@ -1193,6 +1209,12 @@ oder</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock">(OID des Ausbautyps)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>rHoehenbezug</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verweis auf den Höhenbezug</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(OID des Höhenbezugs)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -1202,7 +1224,7 @@ oder</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-09-06 05:54:14 UTC
+Last updated 2024-09-06 11:42:27 UTC
 </div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js"></script>
