@@ -5,47 +5,47 @@ Das kantonale Modell strukturiert die Bohrtypen feiner. Es bedient sich dazu der
 [cols=5*,options="header"]
 |===
 | OID | Code | Name | SortierNr | Bemerkung
-| bf1d9e57-9b8e-4b8e-8fe0-4a7b690c81a0
+m| bf1d9e57-9b8e-4b8e-8fe0-4a7b690c81a0
 | Bohrung
 | Bohrung
 | 100
 | allgemeiner Typ für Bohrungen; nicht weiter spezifiziert
-| 0160ef9d-f2db-485b-8847-29fa6cb4eb3e
+m| 0160ef9d-f2db-485b-8847-29fa6cb4eb3e
 | Bohrung.Imlochhammer
 | Imlochhammer
 | 101
 | spezifische Bohrung: Imlochhammer
-| d54bcd9f-ba01-41e2-87cd-5e7f5895af24
+m| d54bcd9f-ba01-41e2-87cd-5e7f5895af24
 | Bohrung.Kernbohrung
 | Kernbohrung
 | 102
 | spezifische Bohrung: Kernbohrung
-| 7c00ab0a-6a5c-46b4-bca1-294d212ff34e
+m| 7c00ab0a-6a5c-46b4-bca1-294d212ff34e
 | Bohrung.Schneckenbohrung
 | Schneckenbohrung
 | 103
 | spezifische Bohrung: Schneckenbohrung
-| 9aaaf028-419c-465e-9699-e8af9ded39d1
+m| 9aaaf028-419c-465e-9699-e8af9ded39d1
 | Bohrung.Spuehlbohrung
 | Spühlbohrung
 | 104
 | spezifische Bohrung: Spühlbohrung
-| b4d06fff-3d3d-4b7e-bca2-ffcda53f739f
+m| b4d06fff-3d3d-4b7e-bca2-ffcda53f739f
 | Rammsondierung
 | Rammsondierung
 | 200
 | allgemeiner Typ für Rammsondierung; nicht weiter spezifiziert
-| a998cfbf-b9a9-4fe3-a10d-09bf146c8ad5
+m| a998cfbf-b9a9-4fe3-a10d-09bf146c8ad5
 | Sondierschlitz
 | Sondierschlitz
 | 300
 | allgemeiner Typ für Sondierschlitz; nicht weiter spezifiziert
-| 629a27be-5142-4a03-ab48-27df87489b89
+m| 629a27be-5142-4a03-ab48-27df87489b89
 | anderer
 | anderer
 | 998
 | anderer Bohrtyp, die in der Liste noch nicht aufgeführt ist
-| 8e66c42d-64d6-4a2d-ad2c-c631b8fdaa33
+m| 8e66c42d-64d6-4a2d-ad2c-c631b8fdaa33
 | unbekannt
 | unbekannt
 | 999
