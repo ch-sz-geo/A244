@@ -1,0 +1,36 @@
+==== Katalog `+Einfallswinkelbereich+`
+
+[cols=5*,options="header"]
+|===
+| OID | Code | Name | SortierNr | Bemerkung
+m| 2b86e667-6bed-4648-8dbf-aec4dda447b5
+| -1111
+| vertikal nach unten; Inklination = 0
+| 10
+| - - -
+m| 2e199178-936c-4093-a831-c447c0a34b04
+| -0045
+| geneigt; 0° < Inklination < 90°
+| 20
+| - - -
+m| 454ea89e-a1c9-4d48-8de9-55b4c11e4226
+| -0090
+| horizontal; Inklination = 90°
+| 30
+| - - -
+m| f417ad0d-eca6-4d3a-8412-112f4066c5d1
+| -0135
+| steigend; 90° < Inklination < 180°
+| 40
+| - - -
+m| 6451ff64-0012-4970-a76d-20352ad419ca
+| -0180
+| vertikal nach oben; Inklination = 180°
+| 50
+| - - -
+m| 3e785b0b-b76e-4f67-b57d-d34b177252d2
+| -9999
+| unbekannt
+| 99
+| - - -
+|===
