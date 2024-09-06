@@ -122,9 +122,9 @@ m|Name
 3+| Die Werte müssen eindeutig sein
 |===
 
-==== Klasse `+Einfallswinkelcode+`
+==== Klasse `+Einfallswinkelbereich+`
 -> todo: Werte in Masterkatalog aufnehmen
-Klasse, welche die Codes der Einfallswinkel als Auswahlliste zur Verfügung stellt. Hintergrund: Kapitel 1.1.8 in [3]
+Klasse, welche die Bereiche der Einfallswinkel als Auswahlliste zur Verfügung stellt. Hintergrund: Kapitel 1.1.8 in [3]
 
 [cols=4*,options="header"]
 |===
@@ -257,9 +257,9 @@ m| rWassertyp
 | Verweis auf ein oder mehrere Wassertypen, falls auf Wasser gestossen wurde
 | (ID der Beziehungstabelle)
 | öffentlich
-m| rEinfallswinkelcode
-| Verweis auf den Einfallswinkelcode
-| (OID des Einfallswinkelscodes)
+m| rEinfallswinkelbereich
+| Verweis auf den Einfallswinkelbereich
+| (OID des Einfallswinkelbereichs)
 | öffentlich
 m| rHoehenbezug
 | Verweis auf den Höhenbezug
