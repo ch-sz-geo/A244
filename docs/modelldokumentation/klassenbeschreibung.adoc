@@ -410,6 +410,156 @@ m| rHoehenbezug
 | öffentlich
 |===
 
+=== Topic `+Geologie+`
+Das Thema `+Geologie+` umfasst die Klassen zur Beschreibung der in einer Bohrung angetroffenen geologischen Einheiten - deren lithologische, chronostratigraphische, tektonische und lithostratigraphische Zugehörigkeit - sowie die angetroffenen strukturgeologischen Elemente.
+
+==== Klasse `+Schicht+`
+Die Klasse `+Schicht+` beschreibt eine erbohrte geologische Einheit, so wie diese im Bohrprofil wiedergegeben ist.
+
+[cols=4*,options="header"]
+|===
+| Name | Beschreibung | Beispiel | Freigabe
+4+| *Klassenattribute*
+m| OID
+| technischer Objektidentifikator
+| ceaa37a9-8614-43fc-9a8b-688f95c30218
+| öffentlich
+m| erfasstVon
+| Loginname der Person, welche den Datensatz erstellt hat (Autor); wird durch das System gesetzt
+| Musterha
+| +++<span style="color:red;">intern</span>+++
+m| erfasstAm
+| Datum und Zeit, an dem der Datensatz erstellt wurde; wird durch das System gesetzt
+| 1980-03-21T15:38:12
+| +++<span style="color:red;">intern</span>+++
+m| geaendertVon
+| Loginname der Person, welche den Datensatz zuletzt geändert hat (Editor); wird durch das System gesetzt
+| Muelleran
+| +++<span style="color:red;">intern</span>+++
+m| geaendertAm
+| Datum und Zeit, an dem der Datensatz zuletzt geändert wurde; wird durch das System gesetzt
+| 2024-07-30T08:07:57
+| +++<span style="color:red;">intern</span>+++
+m| TiefeVon
+| Tiefe der ersten lithologischen Grenze in gebohrten Metern +
+(in [3]: [GeolLayer.DepthFrom])
+| 15.8
+| öffentlich
+m| TiefeBis
+| Tiefe der zweiten lithologischen Grenze in gebohrten Metern +
+(in [3]: [GeolLayer.DepthTo])
+| 16.2
+| öffentlich
+m| Beschrieb
+| Beschreibung der erbohrten geologischen Einheit. Bei Kernverlust wird dies in diesem Feld vermerkt +
+(in [3]: [GeolLayer.LayerDescr])
+| todo
+| öffentlich
+m| geologischerBeschrieb
+| Beschreibung der Zuordnung der erbohrten geologischen Einheit zu einer chrono-, lithostratigraphischen Einheit und / oder einer tektonischen Domäne +
+(in [3]: [GeolLayer.GeolDescr])
+| todo
+| öffentlich
+4+| *Geometrie*
+m| - - -
+| - - -
+| - - -
+| - - -
+4+| *Beziehungsattribute*
+m| todo rBohrung
+| Verweis auf die Bohrung
+| (OID der Bohrung)
+| öffentlich
+|===
+
+==== Klasse `+Tektonikelement+`
+Die Klasse `+Tektonikelement+` beschreibt die erbohrten tektonischen Strukturen, wie z.B. eine Störungszone.
+
+[cols=4*,options="header"]
+|===
+| Name | Beschreibung | Beispiel | Freigabe
+4+| *Klassenattribute*
+m| OID
+| technischer Objektidentifikator
+| ceaa37a9-8614-43fc-9a8b-688f95c30218
+| öffentlich
+m| erfasstVon
+| Loginname der Person, welche den Datensatz erstellt hat (Autor); wird durch das System gesetzt
+| Musterha
+| +++<span style="color:red;">intern</span>+++
+m| erfasstAm
+| Datum und Zeit, an dem der Datensatz erstellt wurde; wird durch das System gesetzt
+| 1980-03-21T15:38:12
+| +++<span style="color:red;">intern</span>+++
+m| geaendertVon
+| Loginname der Person, welche den Datensatz zuletzt geändert hat (Editor); wird durch das System gesetzt
+| Muelleran
+| +++<span style="color:red;">intern</span>+++
+m| geaendertAm
+| Datum und Zeit, an dem der Datensatz zuletzt geändert wurde; wird durch das System gesetzt
+| 2024-07-30T08:07:57
+| +++<span style="color:red;">intern</span>+++
+m| TiefeVon
+| Tiefe der zuerst erreichten Grenze der erbohrten tektonischen Struktur in gebohrten Metern. Wenn die erbohrte Struktur nur eine geringe Ausdehnung entlang des Bohrlochverlaufs aufweist, gilt TiefeVon = TiefeBis +
+(in [3]: [TectoLayer.DepthFrom])
+| 15.8
+| öffentlich
+m| TiefeBis
+| Tiefe der als zweites erreichten Grenze der erbohrten tektonischen Struktur in gebohrten Metern. Wenn die erbohrte Struktur nur eine geringe Mächtigkeit entlang des Bohrlochverlaufs aufweist, gilt TiefeVon = TiefeBis. Wenn nicht, gilt der TiefeBis > TiefeVon +
+(in [3]: [TectoLayer.DepthTo])
+| 16.2
+| öffentlich
+m| Beschrieb
+| Beschreibung der erbohrten tektonischen Struktur +
+(in [3]: [TectoLayer.LayerDescr])
+| todo
+| öffentlich
+m| Einfallswinkel
+| relativer Einfallswinkel der erbohrten tektonischen Struktur bezogen auf die Bohrachse, wenn auf dem Bohrprotokoll vermerkt. Gemessen von der Bohrachse (0°) bis in die Senkrechte auf diese (90°). +
+(in [3]: [TectoLayer.RelDip])
+| 0
+| öffentlich
+4+| *Geometrie*
+m| - - -
+| - - -
+| - - -
+| - - -
+4+| *Beziehungsattribute*
+m| todo rBohrung
+| Verweis auf die Bohrung
+| (OID der Bohrung)
+| öffentlich
+|===
+
+==== Klasse `+Gestein+`
+Die Klasse `+Gestein+` beschreibt die quartären Lockergesteine gemäss gängiger Klassifikationsstandards, so wie sie im Feld, d.h. während der Aufnahme der Bohrung, angewendet werden können.
+
+[cols=4*,options="header"]
+|===
+| Name | Beschreibung | Beispiel | Freigabe
+4+| *Klassenattribute*
+m| OID
+| technischer Objektidentifikator
+| ceaa37a9-8614-43fc-9a8b-688f95c30218
+| öffentlich
+m| erfasstVon
+| Loginname der Person, welche den Datensatz erstellt hat (Autor); wird durch das System gesetzt
+| Musterha
+| +++<span style="color:red;">intern</span>+++
+m| erfasstAm
+| Datum und Zeit, an dem der Datensatz erstellt wurde; wird durch das System gesetzt
+| 1980-03-21T15:38:12
+| +++<span style="color:red;">intern</span>+++
+m| geaendertVon
+| Loginname der Person, welche den Datensatz zuletzt geändert hat (Editor); wird durch das System gesetzt
+| Muelleran
+| +++<span style="color:red;">intern</span>+++
+m| geaendertAm
+| Datum und Zeit, an dem der Datensatz zuletzt geändert wurde; wird durch das System gesetzt
+| 2024-07-30T08:07:57
+| +++<span style="color:red;">intern</span>+++
+|===
+
 ifdef::backend-pdf[]
 <<<
 endif::[]
