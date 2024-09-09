@@ -227,6 +227,13 @@ th {
 <li><a href="#_klasse_bohrlochausbau">4.2.3. Klasse <code>Bohrlochausbau</code></a></li>
 </ul>
 </li>
+<li><a href="#_topic_geologie">4.3. Topic <code>Geologie</code></a>
+<ul class="sectlevel3">
+<li><a href="#_klasse_schicht">4.3.1. Klasse <code>Schicht</code></a></li>
+<li><a href="#_klasse_tektonikelement">4.3.2. Klasse <code>Tektonikelement</code></a></li>
+<li><a href="#_klasse_gestein">4.3.3. Klasse <code>Gestein</code></a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -264,7 +271,7 @@ th {
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">letzte Änderung</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2024-09-06</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2024-09-09</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Themen-Nummer</p></td>
@@ -1260,12 +1267,281 @@ Klasse, welche die Bereiche der Einfallswinkel als Auswahlliste zur Verfügung s
 </table>
 </div>
 </div>
+<div class="sect2">
+<h3 id="_topic_geologie"><a class="anchor" href="#_topic_geologie"></a><a class="link" href="#_topic_geologie">4.3. Topic <code>Geologie</code></a></h3>
+<div class="paragraph">
+<p>Das Thema <code>Geologie</code> umfasst die Klassen zur Beschreibung der in einer Bohrung angetroffenen geologischen Einheiten - deren lithologische, chronostratigraphische, tektonische und lithostratigraphische Zugehörigkeit - sowie die angetroffenen strukturgeologischen Elemente.</p>
+</div>
+<div class="sect3">
+<h4 id="_klasse_schicht"><a class="anchor" href="#_klasse_schicht"></a><a class="link" href="#_klasse_schicht">4.3.1. Klasse <code>Schicht</code></a></h4>
+<div class="paragraph">
+<p>Die Klasse <code>Schicht</code> beschreibt eine erbohrte geologische Einheit, so wie diese im Bohrprofil wiedergegeben ist.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Beschreibung</th>
+<th class="tableblock halign-left valign-top">Beispiel</th>
+<th class="tableblock halign-left valign-top">Freigabe</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><strong>Klassenattribute</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>OID</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">technischer Objektidentifikator</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ceaa37a9-8614-43fc-9a8b-688f95c30218</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>erfasstVon</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Loginname der Person, welche den Datensatz erstellt hat (Autor); wird durch das System gesetzt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Musterha</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span style="color:red;">intern</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>erfasstAm</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datum und Zeit, an dem der Datensatz erstellt wurde; wird durch das System gesetzt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1980-03-21T15:38:12</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span style="color:red;">intern</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>geaendertVon</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Loginname der Person, welche den Datensatz zuletzt geändert hat (Editor); wird durch das System gesetzt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Muelleran</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span style="color:red;">intern</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>geaendertAm</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datum und Zeit, an dem der Datensatz zuletzt geändert wurde; wird durch das System gesetzt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2024-07-30T08:07:57</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span style="color:red;">intern</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>TiefeVon</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tiefe der ersten lithologischen Grenze in gebohrten Metern<br>
+(in [3]: [GeolLayer.DepthFrom])</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">15.8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>TiefeBis</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tiefe der zweiten lithologischen Grenze in gebohrten Metern<br>
+(in [3]: [GeolLayer.DepthTo])</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">16.2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Beschrieb</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Beschreibung der erbohrten geologischen Einheit. Bei Kernverlust wird dies in diesem Feld vermerkt<br>
+(in [3]: [GeolLayer.LayerDescr])</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">todo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>geologischerBeschrieb</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Beschreibung der Zuordnung der erbohrten geologischen Einheit zu einer chrono-, lithostratigraphischen Einheit und / oder einer tektonischen Domäne<br>
+(in [3]: [GeolLayer.GeolDescr])</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">todo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><strong>Geometrie</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>- - -</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">- - -</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">- - -</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">- - -</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><strong>Beziehungsattribute</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>todo rBohrung</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verweis auf die Bohrung</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(OID der Bohrung)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_klasse_tektonikelement"><a class="anchor" href="#_klasse_tektonikelement"></a><a class="link" href="#_klasse_tektonikelement">4.3.2. Klasse <code>Tektonikelement</code></a></h4>
+<div class="paragraph">
+<p>Die Klasse <code>Tektonikelement</code> beschreibt die erbohrten tektonischen Strukturen, wie z.B. eine Störungszone.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Beschreibung</th>
+<th class="tableblock halign-left valign-top">Beispiel</th>
+<th class="tableblock halign-left valign-top">Freigabe</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><strong>Klassenattribute</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>OID</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">technischer Objektidentifikator</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ceaa37a9-8614-43fc-9a8b-688f95c30218</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>erfasstVon</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Loginname der Person, welche den Datensatz erstellt hat (Autor); wird durch das System gesetzt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Musterha</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span style="color:red;">intern</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>erfasstAm</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datum und Zeit, an dem der Datensatz erstellt wurde; wird durch das System gesetzt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1980-03-21T15:38:12</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span style="color:red;">intern</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>geaendertVon</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Loginname der Person, welche den Datensatz zuletzt geändert hat (Editor); wird durch das System gesetzt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Muelleran</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span style="color:red;">intern</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>geaendertAm</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datum und Zeit, an dem der Datensatz zuletzt geändert wurde; wird durch das System gesetzt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2024-07-30T08:07:57</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span style="color:red;">intern</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>TiefeVon</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tiefe der zuerst erreichten Grenze der erbohrten tektonischen Struktur in gebohrten Metern. Wenn die erbohrte Struktur nur eine geringe Ausdehnung entlang des Bohrlochverlaufs aufweist, gilt TiefeVon = TiefeBis<br>
+(in [3]: [TectoLayer.DepthFrom])</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">15.8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>TiefeBis</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tiefe der als zweites erreichten Grenze der erbohrten tektonischen Struktur in gebohrten Metern. Wenn die erbohrte Struktur nur eine geringe Mächtigkeit entlang des Bohrlochverlaufs aufweist, gilt TiefeVon = TiefeBis. Wenn nicht, gilt der TiefeBis &gt; TiefeVon<br>
+(in [3]: [TectoLayer.DepthTo])</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">16.2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Beschrieb</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Beschreibung der erbohrten tektonischen Struktur<br>
+(in [3]: [TectoLayer.LayerDescr])</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">todo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Einfallswinkel</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">relativer Einfallswinkel der erbohrten tektonischen Struktur bezogen auf die Bohrachse, wenn auf dem Bohrprotokoll vermerkt. Gemessen von der Bohrachse (0°) bis in die Senkrechte auf diese (90°).<br>
+(in [3]: [TectoLayer.RelDip])</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><strong>Geometrie</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>- - -</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">- - -</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">- - -</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">- - -</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><strong>Beziehungsattribute</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>todo rBohrung</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verweis auf die Bohrung</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(OID der Bohrung)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_klasse_gestein"><a class="anchor" href="#_klasse_gestein"></a><a class="link" href="#_klasse_gestein">4.3.3. Klasse <code>Gestein</code></a></h4>
+<div class="paragraph">
+<p>Die Klasse <code>Gestein</code> beschreibt die quartären Lockergesteine gemäss gängiger Klassifikationsstandards, so wie sie im Feld, d.h. während der Aufnahme der Bohrung, angewendet werden können.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Beschreibung</th>
+<th class="tableblock halign-left valign-top">Beispiel</th>
+<th class="tableblock halign-left valign-top">Freigabe</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><strong>Klassenattribute</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>OID</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">technischer Objektidentifikator</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ceaa37a9-8614-43fc-9a8b-688f95c30218</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>erfasstVon</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Loginname der Person, welche den Datensatz erstellt hat (Autor); wird durch das System gesetzt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Musterha</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span style="color:red;">intern</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>erfasstAm</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datum und Zeit, an dem der Datensatz erstellt wurde; wird durch das System gesetzt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1980-03-21T15:38:12</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span style="color:red;">intern</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>geaendertVon</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Loginname der Person, welche den Datensatz zuletzt geändert hat (Editor); wird durch das System gesetzt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Muelleran</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span style="color:red;">intern</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>geaendertAm</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datum und Zeit, an dem der Datensatz zuletzt geändert wurde; wird durch das System gesetzt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2024-07-30T08:07:57</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span style="color:red;">intern</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-09-06 13:43:56 UTC
+Last updated 2024-09-09 14:48:18 UTC
 </div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js"></script>
