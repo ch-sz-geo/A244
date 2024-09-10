@@ -137,6 +137,321 @@ m|Name
 3+| Die Werte müssen eindeutig sein
 |===
 
+==== Klasse `+Setzungspotential+`
+-> todo: Attribut kann weder im Modell noch in dessen Dokumentation gefunden werden. Wie weiter?
+- - -
+
+[cols=4*,options="header"]
+|===
+| Name | Beschreibung | Beispiel | Freigabe
+4+| _Diese Klasse führt keine zusätzlichen Attribute_
+4+| *Anforderungen*
+m|Code
+3+| Die Werte müssen eindeutig sein
+m|Name
+3+| Die Werte müssen eindeutig sein
+|===
+
+==== Klasse `+Strukturtyp+`
+-> todo: Werte in Masterkatalog aufnehmen
+Klasse, welche die Werte des Typs der erbohrten tektonischen Struktur zur Verfügung stellt. Hintergrund: Kapitel 2.2.5.1 [3]
+
+[cols=4*,options="header"]
+|===
+| Name | Beschreibung | Beispiel | Freigabe
+4+| _Diese Klasse führt keine zusätzlichen Attribute_
+4+| *Anforderungen*
+m|Code
+3+| Die Werte müssen eindeutig sein
+m|Name
+3+| Die Werte müssen eindeutig sein
+|===
+
+==== Klasse `+Klassifikation+`
+-> todo: Werte in Masterkatalog aufnehmen
+Klasse, welche die Werte für die Klassifikation der Haupt- und Nebenkomponente oder des gesamten Materials gemäss leicht erweiterter SN 670 004-2b-Norm zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.1 in [3]
+
+[cols=4*,options="header"]
+|===
+| Name | Beschreibung | Beispiel | Freigabe
+4+| _Diese Klasse führt keine zusätzlichen Attribute_
+4+| *Anforderungen*
+m|Code
+3+| Die Werte müssen eindeutig sein
+m|Name
+3+| Die Werte müssen eindeutig sein
+|===
+
+==== Klasse `+Korngroesse+`
+-> todo: Werte in Masterkatalog aufnehmen
+Klasse, welche die Werte der Korngrösse der Hauptkomponente zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.2 in [3]
+
+[cols=4*,options="header"]
+|===
+| Name | Beschreibung | Beispiel | Freigabe
+4+| _Diese Klasse führt keine zusätzlichen Attribute_
+4+| *Anforderungen*
+m|Code
+3+| Die Werte müssen eindeutig sein
+m|Name
+3+| Die Werte müssen eindeutig sein
+|===
+
+==== Klasse `+Kornrundung+`
+-> todo: Werte in Masterkatalog aufnehmen
+Klasse, welche die Werte der Kornrundung der Grobkomponenten geäss erweiterter EN-14688-1 Norm zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.3 in [3]
+
+[cols=4*,options="header"]
+|===
+| Name | Beschreibung | Beispiel | Freigabe
+4+| _Diese Klasse führt keine zusätzlichen Attribute_
+4+| *Anforderungen*
+m|Code
+3+| Die Werte müssen eindeutig sein
+m|Name
+3+| Die Werte müssen eindeutig sein
+|===
+
+==== Klasse `+Plastizitaet+`
+-> todo: Werte in Masterkatalog aufnehmen
+Klasse, welche die Werte der Plastizität des Lockergesteins gemäss SN 670 004-2b-Norm zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.4 in [3]
+
+[cols=4*,options="header"]
+|===
+| Name | Beschreibung | Beispiel | Freigabe
+4+| _Diese Klasse führt keine zusätzlichen Attribute_
+4+| *Anforderungen*
+m|Code
+3+| Die Werte müssen eindeutig sein
+m|Name
+3+| Die Werte müssen eindeutig sein
+|===
+
+==== Klasse `+Konsistenz+`
+-> todo: Werte in Masterkatalog aufnehmen
+Klasse, welche die Werte der Konsistenz des Lockergesteins gemäss SN 670 004-2b-Norm zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.5 in [3]
+
+[cols=4*,options="header"]
+|===
+| Name | Beschreibung | Beispiel | Freigabe
+4+| _Diese Klasse führt keine zusätzlichen Attribute_
+4+| *Anforderungen*
+m|Code
+3+| Die Werte müssen eindeutig sein
+m|Name
+3+| Die Werte müssen eindeutig sein
+|===
+
+==== Klasse `+Feuchte+`
+-> todo: Werte in Masterkatalog aufnehmen
+Klasse, welche die Werte der Feuchte des Lockergesteins zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.6 in [3]
+
+[cols=4*,options="header"]
+|===
+| Name | Beschreibung | Beispiel | Freigabe
+4+| _Diese Klasse führt keine zusätzlichen Attribute_
+4+| *Anforderungen*
+m|Code
+3+| Die Werte müssen eindeutig sein
+m|Name
+3+| Die Werte müssen eindeutig sein
+|===
+
+==== Klasse `+Kohaesion+`
+-> todo: Werte in Masterkatalog aufnehmen
+Klasse, welche die Werte der Kohäsion des Lockergesteins zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.7 in [3]
+
+[cols=4*,options="header"]
+|===
+| Name | Beschreibung | Beispiel | Freigabe
+4+| _Diese Klasse führt keine zusätzlichen Attribute_
+4+| *Anforderungen*
+m|Code
+3+| Die Werte müssen eindeutig sein
+m|Name
+3+| Die Werte müssen eindeutig sein
+|===
+
+==== Klasse `+Organik+`
+-> todo: Werte in Masterkatalog aufnehmen
+Klasse, welche die Werte des organischen Materials des Lockergesteins zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.8 in [3]
+
+[cols=4*,options="header"]
+|===
+| Name | Beschreibung | Beispiel | Freigabe
+4+| _Diese Klasse führt keine zusätzlichen Attribute_
+4+| *Anforderungen*
+m|Code
+3+| Die Werte müssen eindeutig sein
+m|Name
+3+| Die Werte müssen eindeutig sein
+|===
+
+==== Klasse `+Kornform+`
+-> todo: Werte in Masterkatalog aufnehmen
+Klasse, welche die Werte der Kornform gemäss erweiteter EN-14688-1 zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.9 in [3]
+
+[cols=4*,options="header"]
+|===
+| Name | Beschreibung | Beispiel | Freigabe
+4+| _Diese Klasse führt keine zusätzlichen Attribute_
+4+| *Anforderungen*
+m|Code
+3+| Die Werte müssen eindeutig sein
+m|Name
+3+| Die Werte müssen eindeutig sein
+|===
+
+==== Klasse `+Farbe+`
+-> todo: Werte in Masterkatalog aufnehmen
+Klasse, welche die Werte der Farbe des Lockergesteins zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.10 in [3]
+
+[cols=4*,options="header"]
+|===
+| Name | Beschreibung | Beispiel | Freigabe
+4+| _Diese Klasse führt keine zusätzlichen Attribute_
+4+| *Anforderungen*
+m|Code
+3+| Die Werte müssen eindeutig sein
+m|Name
+3+| Die Werte müssen eindeutig sein
+|===
+
+==== Klasse `+Verwitterungszustand+`
+-> todo: Werte in Masterkatalog aufnehmen
+Klasse, welche die Werte der Verwitterung des Lockergesteins zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.11 in [3]
+
+[cols=4*,options="header"]
+|===
+| Name | Beschreibung | Beispiel | Freigabe
+4+| _Diese Klasse führt keine zusätzlichen Attribute_
+4+| *Anforderungen*
+m|Code
+3+| Die Werte müssen eindeutig sein
+m|Name
+3+| Die Werte müssen eindeutig sein
+|===
+
+==== Klasse `+Lagerungsdichte+`
+-> todo: Werte in Masterkatalog aufnehmen
+Klasse, welche die Werte der Lagerungsdichte des Lockergesteins gemäss SN 670 004-2b Norm zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.12 in [3]
+
+[cols=4*,options="header"]
+|===
+| Name | Beschreibung | Beispiel | Freigabe
+4+| _Diese Klasse führt keine zusätzlichen Attribute_
+4+| *Anforderungen*
+m|Code
+3+| Die Werte müssen eindeutig sein
+m|Name
+3+| Die Werte müssen eindeutig sein
+|===
+
+==== Klasse `+Bodenzustand+`
+-> todo: Werte in Masterkatalog aufnehmen
+Klasse, welche die Werte des Bodenzustandes des Lockergesteins gemäss SN 670 004-2b Norm zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.13 in [3]
+
+[cols=4*,options="header"]
+|===
+| Name | Beschreibung | Beispiel | Freigabe
+4+| _Diese Klasse führt keine zusätzlichen Attribute_
+4+| *Anforderungen*
+m|Code
+3+| Die Werte müssen eindeutig sein
+m|Name
+3+| Die Werte müssen eindeutig sein
+|===
+
+==== Klasse `+Bestimmungsart+`
+-> todo: Werte in Masterkatalog aufnehmen
+Klasse, welche die Werte den Bestimmungstyps zur Klassifikation des Lockergesteins zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.14 in [3]
+
+[cols=4*,options="header"]
+|===
+| Name | Beschreibung | Beispiel | Freigabe
+4+| _Diese Klasse führt keine zusätzlichen Attribute_
+4+| *Anforderungen*
+m|Code
+3+| Die Werte müssen eindeutig sein
+m|Name
+3+| Die Werte müssen eindeutig sein
+|===
+
+==== Klasse `+Standard+`
+-> todo: Werte in Masterkatalog aufnehmen
+Bezeichnung des Standards, nach dem die Interpretation durchgeführt wurde. Je nach Standard werden andere Codelisten in den nachfolgenden Attributen verwendet. Bei der Verwendung anderer Standards müssen die jeweiligen Codelisten zugänglich gemacht werden. Hintergrund: Kapitel 2.2.3.1 in [3]
+
+[cols=4*,options="header"]
+|===
+| Name | Beschreibung | Beispiel | Freigabe
+4+| _Diese Klasse führt keine zusätzlichen Attribute_
+4+| *Anforderungen*
+m|Code
+3+| Die Werte müssen eindeutig sein
+m|Name
+3+| Die Werte müssen eindeutig sein
+|===
+
+==== Klasse `+Lithologie+`
+-> todo: Werte in Masterkatalog aufnehmen
+Klasse, welche die Werte für die lithologische Zuordnung der geologischen Einheit zur Verfügung stellt.
+
+[cols=4*,options="header"]
+|===
+| Name | Beschreibung | Beispiel | Freigabe
+4+| _Diese Klasse führt keine zusätzlichen Attribute_
+4+| *Anforderungen*
+m|Code
+3+| Die Werte müssen eindeutig sein
+m|Name
+3+| Die Werte müssen eindeutig sein
+|===
+
+==== Klasse `+Chronostratigrafie+`
+-> todo: Werte in Masterkatalog aufnehmen
+Klasse, welche die Werte für die chronostratigrafischen Zuordnung zur Verfügung stellt.
+
+[cols=4*,options="header"]
+|===
+| Name | Beschreibung | Beispiel | Freigabe
+4+| _Diese Klasse führt keine zusätzlichen Attribute_
+4+| *Anforderungen*
+m|Code
+3+| Die Werte müssen eindeutig sein
+m|Name
+3+| Die Werte müssen eindeutig sein
+|===
+
+==== Klasse `+Tektonik+`
+-> todo: Werte in Masterkatalog aufnehmen
+Klasse, welche die Werte der tektonischen Einheit zur Verfügung stellt.
+
+[cols=4*,options="header"]
+|===
+| Name | Beschreibung | Beispiel | Freigabe
+4+| _Diese Klasse führt keine zusätzlichen Attribute_
+4+| *Anforderungen*
+m|Code
+3+| Die Werte müssen eindeutig sein
+m|Name
+3+| Die Werte müssen eindeutig sein
+|===
+
+==== Klasse `+Stratigrafie+`
+-> todo: Werte in Masterkatalog aufnehmen
+Klasse, welche die Werte der lithostratigrafischen Einheit zur Verfügung stellt.
+
+[cols=4*,options="header"]
+|===
+| Name | Beschreibung | Beispiel | Freigabe
+4+| _Diese Klasse führt keine zusätzlichen Attribute_
+4+| *Anforderungen*
+m|Code
+3+| Die Werte müssen eindeutig sein
+m|Name
+3+| Die Werte müssen eindeutig sein
+|===
+
 === Topic `+Bohrprofile+`
 
 ==== Klasse `+Bohrung+`
@@ -242,27 +557,27 @@ m| Geometrie
 | öffentlich
 4+| *Beziehungsattribute*
 m| rFreigabestufe
-| Verweis auf die Freigabestufe
+| Verweis auf ein Objekt der Klasse `+Freigabestufe+`
 | (OID der Freigabestufe)
 | öffentlich
 m| rBohrtyp
-| Verweis auf den Bohrtyp [Borehole.Kind]
+| Verweis auf ein Objekt der Klasse `+Bohrtyp+` [Borehole.Kind]
 | (OID des Bohrtyps)
 | öffentlich
 m| rBohrzweck
-| Verweis auf den Bohrzweck
+| Verweis auf ein Objekt der Klasse `+Bohrzweck+`
 | (OID des Bohrzwecks)
 | öffentlich
 m| rWassertyp
-| Verweis auf ein oder mehrere Wassertypen, falls auf Wasser gestossen wurde
+| Verweis auf ein oder mehrere Objekte der Klasse `+Wassertyp+`, falls auf Wasser gestossen wurde
 | (ID der Beziehungstabelle)
 | öffentlich
 m| rEinfallswinkelbereich
-| Verweis auf den Einfallswinkelbereich
+| Verweis auf ein Objekt der Klasse `+Einfallswinkelbereich+`
 | (OID des Einfallswinkelbereichs)
 | öffentlich
 m| rHoehenbezug
-| Verweis auf den Höhenbezug
+| Verweis auf ein Objekt der Klasse `+Hoehenbezug+`
 | (OID des Höhenbezugs)
 | öffentlich
 |===
@@ -295,8 +610,9 @@ m| geaendertAm
 | 2024-07-30T08:07:57
 | +++<span style="color:red;">intern</span>+++
 m| Titel
-| todo: Dieses Attribut gibt es nicht mehr in [3]. Soll es als kantonale Erweiterung geführt werden?
-| todo
+| Titel bzw. Name der Bohrung +
+(in [4]: [Borehole.TitlePublic])
+| Bohrung "im Loch"
 | öffentlich
 m| Bericht
 | OID des Berichtes, in welchem das Bohrprofil beschrieben wird. Das Attribut erfüllt den Zweck eines lose gekoppelten Fremdschlüssels. +
@@ -334,16 +650,16 @@ m| - - -
 | - - -
 4+| *Beziehungsattribute*
 m| rBohrung
-| Verweis auf die Bohrung
-| (OID der Bohrung)
+| Verweis auf ein Objekt der Klasse `+Bohrung+`
+| (OID des Objektes)
 | öffentlich
 m| rProfilart
-| Verweis auf die Profilart
-| (OID der Profilart)
+| Verweis auf ein Objekt der Klasse `+Profilart+`
+| (OID des Objektes)
 | öffentlich
 m| rProfiltyp
-| Verweis auf den Profiltyp
-| (OID der Profiltyp)
+| Verweis auf ein Objekt der Klasse `+Profiltyp+`
+| (OID des Objektes)
 | öffentlich
 |===
 
@@ -397,16 +713,16 @@ m| - - -
 | - - -
 4+| *Beziehungsattribute*
 m| rBohrung
-| Verweis auf die Bohrung
-| (OID der Bohrung)
+| Verweis auf ein Objekt der Klasse `+Bohrung+`
+| (OID des Objektes)
 | öffentlich
 m| rAusbautyp
-| Verweis auf den Typ des Borhlochausbaus
-| (OID des Ausbautyps)
+| Verweis auf ein Objekt der Klasse `+Borhlochausbau+`
+| (OID des Objektes)
 | öffentlich
 m| rHoehenbezug
-| Verweis auf den Höhenbezug
-| (OID des Höhenbezugs)
+| Verweis auf ein Objekt der Klasse `+Hoehenbezug+`
+| (OID des Objektes)
 | öffentlich
 |===
 
@@ -467,8 +783,8 @@ m| - - -
 | - - -
 4+| *Beziehungsattribute*
 m| todo rBohrung
-| Verweis auf die Bohrung
-| (OID der Bohrung)
+| Verweis auf ein Objekt der Klasse `+Bohrung+`
+| (OID des Objektes)
 | öffentlich
 |===
 
@@ -526,8 +842,8 @@ m| - - -
 | - - -
 4+| *Beziehungsattribute*
 m| todo rBohrung
-| Verweis auf die Bohrung
-| (OID der Bohrung)
+| Verweis auf ein Objekt der Klasse `+Bohrung+`
+| (OID des Objektes)
 | öffentlich
 |===
 
@@ -558,7 +874,141 @@ m| geaendertAm
 | Datum und Zeit, an dem der Datensatz zuletzt geändert wurde; wird durch das System gesetzt
 | 2024-07-30T08:07:57
 | +++<span style="color:red;">intern</span>+++
+4+| *Geometrie*
+m| - - -
+| - - -
+| - - -
+| - - -
+4+| *Beziehungsattribute*
+m| rSchicht
+| Verweis auf ein Objekt der Klasse `+Schicht+`
+| (OID des Objektes)
+| öffentlich
+m| rHauptkomponente_Klassifikation
+| Verweis auf ein Objekt der Klasse `+Klassifikation+`
+| (OID des Objektes)
+| öffentlich
+m| rHauptkomponente_Korngroesse
+| Verweis auf ein Objekt der Klasse `+Korngroesse+`
+| (OID des Objektes)
+| öffentlich
+m| rNebenkomponente_Klassifikation
+| Verweis auf ein Objekt der Klasse `+Klassifikation+`
+| (OID des Objektes)
+| öffentlich
+m| rNebenkomponente_Korngroesse
+| Verweis auf ein Objekt der Klasse `+Korngroesse+`
+| (OID des Objektes)
+| öffentlich
+m| rBeimengen_Klassifikation
+| Verweis auf ein Objekt der Klasse `+Klassifikation+`
+| (OID des Objektes)
+| öffentlich
+m| rKornrundung
+| Verweis auf ein Objekt der Klasse `+Kornrundung+`
+| (OID des Objektes)
+| öffentlich
+m| rPlastizitaet
+| Verweis auf ein Objekt der Klasse `+Plastizitaet+`
+| (OID des Objektes)
+| öffentlich
+m| rKonsistenz
+| Verweis auf ein Objekt der Klasse `+Konsistenz+`
+| (OID des Objektes)
+| öffentlich
+m| rFeuchte
+| Verweis auf ein Objekt der Klasse `+Feuchte+`
+| (OID des Objektes)
+| öffentlich
+m| rKohaesion
+| Verweis auf ein Objekt der Klasse `+Kohaesion+`
+| (OID des Objektes)
+| öffentlich
+m| rOrganik
+| Verweis auf ein Objekt der Klasse `+Organik+`
+| (OID des Objektes)
+| öffentlich
+m| rKornform
+| Verweis auf ein Objekt der Klasse `+Kornform+`
+| (OID des Objektes)
+| öffentlich
+m| rFarbe
+| Verweis auf ein Objekt der Klasse `+Farbe+`
+| (OID des Objektes)
+| öffentlich
+m| rVerwitterungszustand
+| Verweis auf ein Objekt der Klasse `+Verwitterungszustand+`
+| (OID des Objektes)
+| öffentlich
+m| rLagerungsdichte
+| Verweis auf ein Objekt der Klasse `+Lagerungsdichte+`
+| (OID des Objektes)
+| öffentlich
+m| rBodenzustand
+| Verweis auf ein Objekt der Klasse `+Bodenzustand+`
+| (OID des Objektes)
+| öffentlich
+m| rBestimmungsart
+| Verweis auf ein Objekt der Klasse `+Bestimmungsart+`
+| (OID des Objektes)
+| öffentlich
 |===
+
+==== Klasse `+Interpretation+`
+Die Klasse `+Interpretation+` beschreibt die lithologischen, chronostratigraphischen, tektonischen und lithostratigraphischen Interpretation der erbohrten geologischen Einheit.
+
+[cols=4*,options="header"]
+|===
+| Name | Beschreibung | Beispiel | Freigabe
+4+| *Klassenattribute*
+m| OID
+| technischer Objektidentifikator
+| ceaa37a9-8614-43fc-9a8b-688f95c30218
+| öffentlich
+m| erfasstVon
+| Loginname der Person, welche den Datensatz erstellt hat (Autor); wird durch das System gesetzt
+| Musterha
+| +++<span style="color:red;">intern</span>+++
+m| erfasstAm
+| Datum und Zeit, an dem der Datensatz erstellt wurde; wird durch das System gesetzt
+| 1980-03-21T15:38:12
+| +++<span style="color:red;">intern</span>+++
+m| geaendertVon
+| Loginname der Person, welche den Datensatz zuletzt geändert hat (Editor); wird durch das System gesetzt
+| Muelleran
+| +++<span style="color:red;">intern</span>+++
+m| geaendertAm
+| Datum und Zeit, an dem der Datensatz zuletzt geändert wurde; wird durch das System gesetzt
+| 2024-07-30T08:07:57
+| +++<span style="color:red;">intern</span>+++
+4+| *Geometrie*
+m| - - -
+| - - -
+| - - -
+| - - -
+4+| *Beziehungsattribute*
+m| rStandard
+| Verweis auf ein Objekt der Klasse `+Standard+`
+| (OID des Objektes)
+| öffentlich
+m| rLithologie
+| Verweis auf ein Objekt der Klasse `+Lithologie+`
+| (OID der Lithologie)
+| öffentlich
+m| rChronostratigrafie
+| Verweis auf ein Objekt der Klasse `+Chronostratigrafie+`
+| (OID des Objektes)
+| öffentlich
+m| rTektonik
+| Verweis auf ein Objekt der Klasse `+Tektonik+`
+| (OID des Objektes)
+| öffentlich
+m| rStratigrafie
+| Verweis auf ein Objekt der Klasse `+Stratigrafie+`
+| (OID des Objektes)
+| öffentlich
+|===
+
 
 ifdef::backend-pdf[]
 <<<
