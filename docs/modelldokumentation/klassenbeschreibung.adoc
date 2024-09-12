@@ -454,6 +454,10 @@ m|Name
 
 === Topic `+Bohrprofile+`
 
+!!! +
+todo: Die Klassenbeschreibung ist noch nicht definitiv. Es wird auf den neusten Modellentwuf der swisstopo gewartet. Zudem sind die Rückmeldungen der Fachstelle (vom 2024-09-12) zu berücksichtigen und einzupflegen. +
+!!!
+
 ==== Klasse `+Bohrung+`
 Die Klasse `+Bohrung+` beschreibt eine Bohrung mit ihren Eigenschaften.
 
