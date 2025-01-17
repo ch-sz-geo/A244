@@ -32,15 +32,18 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@8575951200e472d5f2d95c625da0c7bec8217c42 # v1.161.0
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.1' # Not needed with a .ruby-version file
-          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-          cache-version: 0 # Increment this number if you need to re-download cached gems
-      - name: install Gem
+          ruby-version: 3.2 # Stelle sicher, dass die Version kompatibel ist
+          #bundler-cache: true # Automatisch 'bundle install' ausführen und Gems cachen
+      
+      - name: Verify Installation
         run: gem install asciidoctor
+      - name: Verify Installation
+        run: asciidoctor --version
       - name: create file
         run: |
           asciidoctor -o ./docs/modelldokumentation.html ./docs/modelldokumentation/modelldokumentation.adoc
