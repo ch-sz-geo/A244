@@ -1,3 +1,33 @@
 = Dateibeschreibung
 
-* *<Dateiname>:* Diese Datei enthält <zu ergänzen>.
+[cols=*,options="header"]
+|===
+| Dateiname | Beschreibung | Modell (Version)
+| *Katalog Ausbautyp.adoc*
+| Kataloge für den `*Ausbautyp*`.
+| SZ_Bohrungen_Umwelt_V1 (2024-09-03)
+| *Katalog Bohrtyp.adoc*
+| Kataloge für den `*Borhtyp*`.
+| SZ_Bohrungen_Umwelt_V1 (2024-09-03)
+| *Katalog Bohrzweck.adoc*
+| Kataloge für den `*Bohrzweck*`.
+| SZ_Bohrungen_Umwelt_V1 (2024-09-03)
+| *Katalog Einfallswinkelbereich.adoc*
+| Kataloge für den `*Einfallswinkelbereich*`.
+| SZ_Bohrungen_Umwelt_V1 (2024-09-03)
+| *Katalog Freigabe.adoc*
+| Kataloge für die `*Freigabe*`.
+| SZ_Bohrungen_Umwelt_V1 (2024-09-03)
+| *Katalog Hoehenbezug.adoc*
+| Kataloge für den `*Höhenbezug*`.
+| SZ_Bohrungen_Umwelt_V1 (2024-09-03)
+| *Katalog Profilart.adoc*
+| Kataloge für die `*Profilart*`.
+| SZ_Bohrungen_Umwelt_V1 (2024-09-03)
+| *Katalog Profiltyp.adoc*
+| Kataloge für den `*Profiltyp*`.
+| SZ_Bohrungen_Umwelt_V1 (2024-09-03)
+| *Katalog Wassertyp.adoc*
+| Kataloge für den `*Wassertyp*`.
+| SZ_Bohrungen_Umwelt_V1 (2024-09-03)
+|===
