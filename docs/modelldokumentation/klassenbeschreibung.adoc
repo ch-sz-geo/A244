@@ -33,7 +33,7 @@ m| Bemerkung
 |===
 
 ==== Klasse `+Freigabestufe+`
--> todo: Werte in Masterkatalog aufnehmen
+-> todo: Werte in Masterkatalog aufnehmen +
 Klasse, welche die verschiedenen Freigabestufen als Auswahlliste zur Verfügung stellt. Die Freigabestufen regelt für jedes Objekt, für welche Gruppe es einsehbar ist.
 
 [cols=4*,options="header"]
@@ -48,7 +48,7 @@ m|Name
 |===
 
 ==== Klasse `+Bohrtyp+`
--> todo: Werte in Masterkatalog aufnehmen
+-> todo: Werte in Masterkatalog aufnehmen +
 Klasse, welche die verschiedenen Bohrtypen als Auswahlliste zur Verfügung stellt.
 
 [cols=4*,options="header"]
@@ -63,7 +63,7 @@ m|Name
 |===
 
 ==== Klasse `+Bohrzweck+`
--> todo: Werte in Masterkatalog aufnehmen
+-> todo: Werte in Masterkatalog aufnehmen +
 Klasse, welche die Zwecke einer Bohrung als Auswahlliste zur Verfügung stellt.
 
 [cols=4*,options="header"]
@@ -78,7 +78,7 @@ m|Name
 |===
 
 ==== Klasse `+Profilart+`
--> todo: Werte in Masterkatalog aufnehmen
+-> todo: Werte in Masterkatalog aufnehmen +
 Klasse, welche die Art eines Bohrprofils als Auswahlliste zur Verfügung stellt (entweder geologische Einheit oder tektonische Strukturen).
 
 [cols=4*,options="header"]
@@ -93,7 +93,7 @@ m|Name
 |===
 
 ==== Klasse `+Profiltyp+`
--> todo: Werte in Masterkatalog aufnehmen
+-> todo: Werte in Masterkatalog aufnehmen +
 Klasse, welche den Typ des Bohrprofils als Auswahlliste zur Verfügung stellt (z.B. "Originalaufnahme").
 
 [cols=4*,options="header"]
@@ -108,7 +108,7 @@ m|Name
 |===
 
 ==== Klasse `+Ausbautyp+`
--> todo: Werte in Masterkatalog aufnehmen
+-> todo: Werte in Masterkatalog aufnehmen +
 Klasse, welche den Typ des Bohrlochausbaus als Auswahlliste zur Verfügung stellt.
 
 [cols=4*,options="header"]
@@ -123,7 +123,7 @@ m|Name
 |===
 
 ==== Klasse `+Einfallswinkelbereich+`
--> todo: Werte in Masterkatalog aufnehmen
+-> todo: Werte in Masterkatalog aufnehmen +
 Klasse, welche die Bereiche der Einfallswinkel als Auswahlliste zur Verfügung stellt. Hintergrund: Kapitel 1.1.8 in [3]
 
 [cols=4*,options="header"]
@@ -153,7 +153,7 @@ m|Name
 |===
 
 ==== Klasse `+Strukturtyp+`
--> todo: Werte in Masterkatalog aufnehmen
+-> todo: Werte in Masterkatalog aufnehmen +
 Klasse, welche die Werte des Typs der erbohrten tektonischen Struktur zur Verfügung stellt. Hintergrund: Kapitel 2.2.5.1 [3]
 
 [cols=4*,options="header"]
@@ -168,7 +168,7 @@ m|Name
 |===
 
 ==== Klasse `+Klassifikation+`
--> todo: Werte in Masterkatalog aufnehmen
+-> todo: Werte in Masterkatalog aufnehmen +
 Klasse, welche die Werte für die Klassifikation der Haupt- und Nebenkomponente oder des gesamten Materials gemäss leicht erweiterter SN 670 004-2b-Norm zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.1 in [3]
 
 [cols=4*,options="header"]
@@ -183,7 +183,7 @@ m|Name
 |===
 
 ==== Klasse `+Korngroesse+`
--> todo: Werte in Masterkatalog aufnehmen
+-> todo: Werte in Masterkatalog aufnehmen +
 Klasse, welche die Werte der Korngrösse der Hauptkomponente zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.2 in [3]
 
 [cols=4*,options="header"]
@@ -198,7 +198,7 @@ m|Name
 |===
 
 ==== Klasse `+Kornrundung+`
--> todo: Werte in Masterkatalog aufnehmen
+-> todo: Werte in Masterkatalog aufnehmen +
 Klasse, welche die Werte der Kornrundung der Grobkomponenten geäss erweiterter EN-14688-1 Norm zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.3 in [3]
 
 [cols=4*,options="header"]
@@ -213,7 +213,7 @@ m|Name
 |===
 
 ==== Klasse `+Plastizitaet+`
--> todo: Werte in Masterkatalog aufnehmen
+-> todo: Werte in Masterkatalog aufnehmen +
 Klasse, welche die Werte der Plastizität des Lockergesteins gemäss SN 670 004-2b-Norm zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.4 in [3]
 
 [cols=4*,options="header"]
@@ -228,7 +228,7 @@ m|Name
 |===
 
 ==== Klasse `+Konsistenz+`
--> todo: Werte in Masterkatalog aufnehmen
+-> todo: Werte in Masterkatalog aufnehmen +
 Klasse, welche die Werte der Konsistenz des Lockergesteins gemäss SN 670 004-2b-Norm zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.5 in [3]
 
 [cols=4*,options="header"]
@@ -243,7 +243,7 @@ m|Name
 |===
 
 ==== Klasse `+Feuchte+`
--> todo: Werte in Masterkatalog aufnehmen
+-> todo: Werte in Masterkatalog aufnehmen +
 Klasse, welche die Werte der Feuchte des Lockergesteins zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.6 in [3]
 
 [cols=4*,options="header"]
@@ -258,7 +258,7 @@ m|Name
 |===
 
 ==== Klasse `+Kohaesion+`
--> todo: Werte in Masterkatalog aufnehmen
+-> todo: Werte in Masterkatalog aufnehmen +
 Klasse, welche die Werte der Kohäsion des Lockergesteins zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.7 in [3]
 
 [cols=4*,options="header"]
@@ -273,7 +273,7 @@ m|Name
 |===
 
 ==== Klasse `+Organik+`
--> todo: Werte in Masterkatalog aufnehmen
+-> todo: Werte in Masterkatalog aufnehmen +
 Klasse, welche die Werte des organischen Materials des Lockergesteins zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.8 in [3]
 
 [cols=4*,options="header"]
@@ -288,7 +288,7 @@ m|Name
 |===
 
 ==== Klasse `+Kornform+`
--> todo: Werte in Masterkatalog aufnehmen
+-> todo: Werte in Masterkatalog aufnehmen +
 Klasse, welche die Werte der Kornform gemäss erweiteter EN-14688-1 zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.9 in [3]
 
 [cols=4*,options="header"]
@@ -303,7 +303,7 @@ m|Name
 |===
 
 ==== Klasse `+Farbe+`
--> todo: Werte in Masterkatalog aufnehmen
+-> todo: Werte in Masterkatalog aufnehmen +
 Klasse, welche die Werte der Farbe des Lockergesteins zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.10 in [3]
 
 [cols=4*,options="header"]
@@ -318,7 +318,7 @@ m|Name
 |===
 
 ==== Klasse `+Verwitterungszustand+`
--> todo: Werte in Masterkatalog aufnehmen
+-> todo: Werte in Masterkatalog aufnehmen +
 Klasse, welche die Werte der Verwitterung des Lockergesteins zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.11 in [3]
 
 [cols=4*,options="header"]
@@ -333,7 +333,7 @@ m|Name
 |===
 
 ==== Klasse `+Lagerungsdichte+`
--> todo: Werte in Masterkatalog aufnehmen
+-> todo: Werte in Masterkatalog aufnehmen +
 Klasse, welche die Werte der Lagerungsdichte des Lockergesteins gemäss SN 670 004-2b Norm zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.12 in [3]
 
 [cols=4*,options="header"]
@@ -348,7 +348,7 @@ m|Name
 |===
 
 ==== Klasse `+Bodenzustand+`
--> todo: Werte in Masterkatalog aufnehmen
+-> todo: Werte in Masterkatalog aufnehmen +
 Klasse, welche die Werte des Bodenzustandes des Lockergesteins gemäss SN 670 004-2b Norm zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.13 in [3]
 
 [cols=4*,options="header"]
@@ -363,7 +363,7 @@ m|Name
 |===
 
 ==== Klasse `+Bestimmungsart+`
--> todo: Werte in Masterkatalog aufnehmen
+-> todo: Werte in Masterkatalog aufnehmen +
 Klasse, welche die Werte den Bestimmungstyps zur Klassifikation des Lockergesteins zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.14 in [3]
 
 [cols=4*,options="header"]
@@ -378,7 +378,7 @@ m|Name
 |===
 
 ==== Klasse `+Standard+`
--> todo: Werte in Masterkatalog aufnehmen
+-> todo: Werte in Masterkatalog aufnehmen +
 Bezeichnung des Standards, nach dem die Interpretation durchgeführt wurde. Je nach Standard werden andere Codelisten in den nachfolgenden Attributen verwendet. Bei der Verwendung anderer Standards müssen die jeweiligen Codelisten zugänglich gemacht werden. Hintergrund: Kapitel 2.2.3.1 in [3]
 
 [cols=4*,options="header"]
@@ -393,7 +393,7 @@ m|Name
 |===
 
 ==== Klasse `+Lithologie+`
--> todo: Werte in Masterkatalog aufnehmen
+-> todo: Werte in Masterkatalog aufnehmen +
 Klasse, welche die Werte für die lithologische Zuordnung der geologischen Einheit zur Verfügung stellt.
 
 [cols=4*,options="header"]
@@ -408,7 +408,7 @@ m|Name
 |===
 
 ==== Klasse `+Chronostratigrafie+`
--> todo: Werte in Masterkatalog aufnehmen
+-> todo: Werte in Masterkatalog aufnehmen +
 Klasse, welche die Werte für die chronostratigrafischen Zuordnung zur Verfügung stellt.
 
 [cols=4*,options="header"]
@@ -423,7 +423,7 @@ m|Name
 |===
 
 ==== Klasse `+Tektonik+`
--> todo: Werte in Masterkatalog aufnehmen
+-> todo: Werte in Masterkatalog aufnehmen +
 Klasse, welche die Werte der tektonischen Einheit zur Verfügung stellt.
 
 [cols=4*,options="header"]
@@ -438,8 +438,23 @@ m|Name
 |===
 
 ==== Klasse `+Stratigrafie+`
--> todo: Werte in Masterkatalog aufnehmen
+-> todo: Werte in Masterkatalog aufnehmen +
 Klasse, welche die Werte der lithostratigrafischen Einheit zur Verfügung stellt.
+
+[cols=4*,options="header"]
+|===
+| Name | Beschreibung | Beispiel | Freigabe
+4+| _Diese Klasse führt keine zusätzlichen Attribute_
+4+| *Anforderungen*
+m|Code
+3+| Die Werte müssen eindeutig sein
+m|Name
+3+| Die Werte müssen eindeutig sein
+|===
+
+==== Klasse `+Gewissheitsgrad+`
+-> todo: Werte in Masterkatalog aufnehmen +
+Klasse, welche die Werte zum Gewissheitsgrad enthalten.
 
 [cols=4*,options="header"]
 |===
@@ -476,7 +491,7 @@ m| erfasstVon
 m| erfasstAm
 | Datum und Zeit, an dem der Datensatz erstellt wurde; wird durch das System gesetzt
 | 1980-03-21T15:38:12
-| +++<span style="color:red;">intern</span>+++
+| öffentlich
 m| geaendertVon
 | Loginname der Person, welche den Datensatz zuletzt geändert hat (Editor); wird durch das System gesetzt
 | Muelleran
@@ -484,7 +499,7 @@ m| geaendertVon
 m| geaendertAm
 | Datum und Zeit, an dem der Datensatz zuletzt geändert wurde; wird durch das System gesetzt
 | 2024-07-30T08:07:57
-| +++<span style="color:red;">intern</span>+++
+| öffentlich
 m| Name
 | Name der Bohrung +
 (in [3]: [Borehole.TitlePublic]; in Datenquelle: [titel])
@@ -604,7 +619,7 @@ m| erfasstVon
 m| erfasstAm
 | Datum und Zeit, an dem der Datensatz erstellt wurde; wird durch das System gesetzt
 | 1980-03-21T15:38:12
-| +++<span style="color:red;">intern</span>+++
+| öffentlich
 m| geaendertVon
 | Loginname der Person, welche den Datensatz zuletzt geändert hat (Editor); wird durch das System gesetzt
 | Muelleran
@@ -612,7 +627,7 @@ m| geaendertVon
 m| geaendertAm
 | Datum und Zeit, an dem der Datensatz zuletzt geändert wurde; wird durch das System gesetzt
 | 2024-07-30T08:07:57
-| +++<span style="color:red;">intern</span>+++
+| öffentlich
 m| Titel
 | Titel bzw. Name der Bohrung +
 (in [4]: [Borehole.TitlePublic])
@@ -648,7 +663,7 @@ m| Dokumentlink
 | Q:\...\2021-12-27-0856_N4AxenstrasseLageDerSondierungen2013_CSD.pdf
 | +++<span style="color:red;">intern</span>+++
 4+| *Geometrie*
-m| - - -
+| - - -
 | - - -
 | - - -
 | - - -
@@ -686,7 +701,7 @@ m| erfasstVon
 m| erfasstAm
 | Datum und Zeit, an dem der Datensatz erstellt wurde; wird durch das System gesetzt
 | 1980-03-21T15:38:12
-| +++<span style="color:red;">intern</span>+++
+| öffentlich
 m| geaendertVon
 | Loginname der Person, welche den Datensatz zuletzt geändert hat (Editor); wird durch das System gesetzt
 | Muelleran
@@ -694,7 +709,7 @@ m| geaendertVon
 m| geaendertAm
 | Datum und Zeit, an dem der Datensatz zuletzt geändert wurde; wird durch das System gesetzt
 | 2024-07-30T08:07:57
-| +++<span style="color:red;">intern</span>+++
+| öffentlich
 m| Laenge
 | Gesamtlänge des Ausbaus in gebohrten Metern. Diese Länge entspricht der Summe der Längen der Ausbausegmente. Sie kann sich von der Gesamtlänge der Bohrung und der Länge des Bohrprofils unterscheiden. +
 (in [4]: [DrillCompl.Length])
@@ -711,7 +726,7 @@ m| Beschreibung
 | Das Bohrloch wurde zwecks Aufnahme der Instrumente vollständig verrohrt.
 | öffentlich
 4+| *Geometrie*
-m| - - -
+| - - -
 | - - -
 | - - -
 | - - -
@@ -751,7 +766,7 @@ m| erfasstVon
 m| erfasstAm
 | Datum und Zeit, an dem der Datensatz erstellt wurde; wird durch das System gesetzt
 | 1980-03-21T15:38:12
-| +++<span style="color:red;">intern</span>+++
+| öffentlich
 m| geaendertVon
 | Loginname der Person, welche den Datensatz zuletzt geändert hat (Editor); wird durch das System gesetzt
 | Muelleran
@@ -759,7 +774,7 @@ m| geaendertVon
 m| geaendertAm
 | Datum und Zeit, an dem der Datensatz zuletzt geändert wurde; wird durch das System gesetzt
 | 2024-07-30T08:07:57
-| +++<span style="color:red;">intern</span>+++
+| öffentlich
 m| TiefeVon
 | Tiefe der ersten lithologischen Grenze in gebohrten Metern +
 (in [3]: [GeolLayer.DepthFrom])
@@ -781,7 +796,7 @@ m| geologischerBeschrieb
 | todo
 | öffentlich
 4+| *Geometrie*
-m| - - -
+| - - -
 | - - -
 | - - -
 | - - -
@@ -810,7 +825,7 @@ m| erfasstVon
 m| erfasstAm
 | Datum und Zeit, an dem der Datensatz erstellt wurde; wird durch das System gesetzt
 | 1980-03-21T15:38:12
-| +++<span style="color:red;">intern</span>+++
+| öffentlich
 m| geaendertVon
 | Loginname der Person, welche den Datensatz zuletzt geändert hat (Editor); wird durch das System gesetzt
 | Muelleran
@@ -818,7 +833,7 @@ m| geaendertVon
 m| geaendertAm
 | Datum und Zeit, an dem der Datensatz zuletzt geändert wurde; wird durch das System gesetzt
 | 2024-07-30T08:07:57
-| +++<span style="color:red;">intern</span>+++
+| öffentlich
 m| TiefeVon
 | Tiefe der zuerst erreichten Grenze der erbohrten tektonischen Struktur in gebohrten Metern. Wenn die erbohrte Struktur nur eine geringe Ausdehnung entlang des Bohrlochverlaufs aufweist, gilt TiefeVon = TiefeBis +
 (in [3]: [TectoLayer.DepthFrom])
@@ -840,7 +855,7 @@ m| Einfallswinkel
 | 0
 | öffentlich
 4+| *Geometrie*
-m| - - -
+| - - -
 | - - -
 | - - -
 | - - -
@@ -869,7 +884,7 @@ m| erfasstVon
 m| erfasstAm
 | Datum und Zeit, an dem der Datensatz erstellt wurde; wird durch das System gesetzt
 | 1980-03-21T15:38:12
-| +++<span style="color:red;">intern</span>+++
+| öffentlich
 m| geaendertVon
 | Loginname der Person, welche den Datensatz zuletzt geändert hat (Editor); wird durch das System gesetzt
 | Muelleran
@@ -877,9 +892,9 @@ m| geaendertVon
 m| geaendertAm
 | Datum und Zeit, an dem der Datensatz zuletzt geändert wurde; wird durch das System gesetzt
 | 2024-07-30T08:07:57
-| +++<span style="color:red;">intern</span>+++
+| öffentlich
 4+| *Geometrie*
-m| - - -
+| - - -
 | - - -
 | - - -
 | - - -
@@ -976,7 +991,7 @@ m| erfasstVon
 m| erfasstAm
 | Datum und Zeit, an dem der Datensatz erstellt wurde; wird durch das System gesetzt
 | 1980-03-21T15:38:12
-| +++<span style="color:red;">intern</span>+++
+| öffentlich
 m| geaendertVon
 | Loginname der Person, welche den Datensatz zuletzt geändert hat (Editor); wird durch das System gesetzt
 | Muelleran
@@ -984,9 +999,9 @@ m| geaendertVon
 m| geaendertAm
 | Datum und Zeit, an dem der Datensatz zuletzt geändert wurde; wird durch das System gesetzt
 | 2024-07-30T08:07:57
-| +++<span style="color:red;">intern</span>+++
+| öffentlich
 4+| *Geometrie*
-m| - - -
+| - - -
 | - - -
 | - - -
 | - - -
@@ -1013,6 +1028,92 @@ m| rStratigrafie
 | öffentlich
 |===
 
+=== Topic `+Hydrogeologie+`
+Das Topic `+Hydrogeologie+` führt Informationen zur Hydrogeologie. Es umfasst die Klasse `+Grundwasser+`.
+
+==== Klasse `+Grundwasser+`
+Stösst man bei einer Bohrung auf Wasser, werden Daten erhoben, die auf der Klasse `+Grundwasser+` erfasst werden.
+
+[cols=4*,options="header"]
+|===
+| Name | Beschreibung | Beispiel | Freigabe
+m| OID
+| technischer Objektidentifikator
+| ceaa37a9-8614-43fc-9a8b-688f95c30218
+| öffentlich
+m| erfasstVon
+| Loginname der Person, welche den Datensatz erstellt hat (Autor); wird durch das System gesetzt
+| Musterha
+| +++<span style="color:red;">intern</span>+++
+m| erfasstAm
+| Datum und Zeit, an dem der Datensatz erstellt wurde; wird durch das System gesetzt
+| 1980-03-21T15:38:12
+| öffentlich
+m| geaendertVon
+| Loginname der Person, welche den Datensatz zuletzt geändert hat (Editor); wird durch das System gesetzt
+| Muelleran
+| +++<span style="color:red;">intern</span>+++
+m| geaendertAm
+| Datum und Zeit, an dem der Datensatz zuletzt geändert wurde; wird durch das System gesetzt
+| 2024-07-30T08:07:57
+| öffentlich
+m| GWSpiegelUT
+| todo
+| todo
+| öffentlich
+m| GWLeiterUT
+| todo
+| todo
+| öffentlich
+m| GWStauerUT
+| todo
+| todo
+| öffentlich
+m| GWMaechtigkeit
+| todo
+| todo
+| öffentlich
+m| GWgespanntKote
+| todo
+| todo
+| öffentlich
+m| GWTemperatur
+| todo
+| todo
+| öffentlich
+m| Leitfaehigkeit
+| todo
+| todo
+| öffentlich
+m| KWert
+| todo
+| todo
+| öffentlich
+m| Pumpmenge
+| todo
+| todo
+| öffentlich
+m| GwspAbsenkung
+| todo
+| todo
+| öffentlich
+4+| *Geometrie*
+| - - -
+| - - -
+| - - -
+| - - -
+4+| *Beziehungsattribute*
+m| rTiefenstockwerk
+| Verweis auf ein Objekt der Klasse `+Gewissheitsgrad+` +
+Gibt den Grad der Gewissheit an, ob ein tieferes Grundwasserstockwerk vorhanden ist.
+| (OID des Objektes)
+| öffentlich
+m| rGrundwasserspannung
+| Verweis auf ein Objekt der Klasse `+Gewissheitsgrad+` +
+Gibt den Grad der Gewissheit an, ob das Grundwasser gespannt ist.
+| (OID der Lithologie)
+| öffentlich
+|===
 
 ifdef::backend-pdf[]
 <<<
