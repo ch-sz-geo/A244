@@ -10,8 +10,8 @@
 |letzte Änderung | {docdate}
 | Themen-Nummer | A244
 | ID nach kGeoiV | --- 
-| Beteiligte | Kuno Epper (Kep), Amt für Geoinformation (AGI) + 
-Zlatko Mrnjec (ZM), Amt für Umwelt und Energie (AfU)
+| Beteiligte | Zlatko Mrnjec (ZM), Amt für Umwelt und Energie (AfU) + 
+Kuno Epper (Kep), Amt für Geoinformation (AGI)
 | Status a| - [x] Entwurf 
 - [ ] bereit für Vernehmlassung
 - [ ] gültig
@@ -39,7 +39,7 @@ h| Nr. h| Titel h| Autor(en) h| Version
 | [[doc-03]] [03] | https://www.sz.ch/public/upload/assets/48275/214_110.pdf?fp=2[kantonales Geoinformationsgesetz (kGeoiG) (SRSZ 214.110)] | Kt. SZ | 24.06.2010
 | [[doc-04]] [04] | https://www.sz.ch/public/upload/assets/5600/214_111.pdf?fp=11[Verordnung zum kantonalen Geoinformationsgesetz (kGeoiV) (SRSZ 214.111)] | Kt. SZ | 18.12.2012
 | [[doc-05]] [05] | Datenmodell Bohrdaten; Beschreibung des Kernmodells mit Objektkatalog und UML-Modell | Bundesamt für Landestopografie swisstopo | 2.0 vom September 2014
-| [[doc-06]] [06] | Datenmodell Bohrdaten - Module Geology, Documents, Well-track, Drilling & Completion (unveröffentlichter Entwurf)| Bundesamt für Landestopografie swisstopo | 1.03 vom 23.06.2017
+| [[doc-06]] [06] | Datenmodell Bohrdaten - Module Geology, Documents, Well-track, Drilling & Completion (Entwurf; unveröffentlicht)| Bundesamt für Landestopografie swisstopo | 1.03 vom 23.06.2017
 |=======
 ====
 
