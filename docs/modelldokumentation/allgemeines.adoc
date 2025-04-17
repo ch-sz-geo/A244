@@ -13,17 +13,21 @@ Dieses Dokument beschreibt den Geobasisdatensatz
 Verschiedene Ämter vefügen über Informationen zu Bohrdaten und pflegen diese in je einem separaten Thema. Diese sind:
 
 * Das Amt für Umwelt und Energie führt Bohrdaten, welche sich aus dem Umweltbereicht (z.B. Erdwärmesonden) ergeben -> A244
-* Das Amt für Wald und Natur führt Bohrdaten, welche sich aus geologischen Untersuchungen ergeben -> A???
-* Das Tiefbauamt führt Bohrdaten, welche sich aus der Bautätigkeit ergeben -> A???
+* Das Amt für Wald und Natur führt Bohrdaten, welche sich aus geologischen Untersuchungen ergeben -> (Themennummer noch ausstehend)
+* Das Tiefbauamt führt Bohrdaten, welche sich aus der Bautätigkeit ergeben -> (Themennummer noch ausstehend)
 
 Der Bund (swisstopo) hat dieses Thema über den Geobasisdatensatz "Archiv Bohrdaten" (ID 50.4) modelliert. Die Modelldokumentation <<allgemeines.adoc#doc-05,[5]>> ist über das https://www.geologieportal.ch/[Geologie-Portal des Bundes] einsehbar. Der Kanton SZ orientiert sich am Bundesmodell und erweitert dieses an wenigen Stellen.
 
 ===  Verweise auf andere Themen
-In allgemeiner Form sind Bohrdaten im Thema
+Früher führte das Amt für Umwelt und Energie (AfU) Informationen in Zusammenhang mit Bohrungen im "geologischen Archiv". Dieses umfasst die "Bohrdaten" und die "Bohrprofile". Unter den "Bohrdaten" verstand man die geologischen Berichte, wohingegen die "Bohrprofile" Detailinformationen zu den einzelnen Bohrungen enthielten. Um einer Verwechslungsgefahr vorzubeugen, trennte man die beiden ähnlich klingenden Bereiche in unterschiedliche Themen und berücksichtigte, dass auch andere Ämter Informationen zu Bohrungen erfassen.
+
+Neu sind die Informationen über geologische Berichte im Thema
 
 * https://ch-sz-geo.github.io/A144/docs/modelldokumentation.html[geologische Berichte des Bereichs "Umwelt" (A144)]
 
-beschrieben. Das Thema A144 gibt einen Überblick über alle geologischen Untersuchungen, wo hingegen das Thema A244 die spezifischen Informationen zu einzelnen Bohrungen widergibt.
+enthalten. Spezifische Informationen über die Bohrprofile werden neu in dem hier vorliegenden Thema A244 beschrieben.
+
+Die Themen A144 und A244 sind auf die Datenbearbeitung des AfU ausgelegt. Sie dienen als Vorlage für weitere amtsspezifische Themen, wie z.B. für das Amt für Wald und Natur oder das Tiefbauamt.
 
 === Zielgruppen
 Dieses Dokument richtet sich an folgende Nutzergruppen:
