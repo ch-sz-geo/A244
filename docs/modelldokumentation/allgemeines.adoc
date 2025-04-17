@@ -27,7 +27,7 @@ Neu sind die Informationen über geologische Berichte im Thema
 
 enthalten. Spezifische Informationen über die Bohrprofile werden neu in dem hier vorliegenden Thema A244 beschrieben.
 
-Die Themen A144 und A244 sind auf die Datenbearbeitung des AfU ausgelegt. Sie dienen als Vorlage für weitere amtsspezifische Themen, wie z.B. für das Amt für Wald und Natur oder das Tiefbauamt.
+Das Themea A144 ist auf die Datenbearbeitung des AfU ausgelegt. Es dient als Vorlage für weitere amtsspezifische Themen, wie z.B. für das Amt für Wald und Natur, das Tiefbauamt oder das Amt für Gewässer.
 
 === Zielgruppen
 Dieses Dokument richtet sich an folgende Nutzergruppen:
