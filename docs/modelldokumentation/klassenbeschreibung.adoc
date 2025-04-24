@@ -130,21 +130,6 @@ m|Name
 3+| Die Werte müssen eindeutig sein
 |===
 
-==== Klasse `+Setzungspotential+`
--> todo: Attribut kann weder im Modell noch in dessen Dokumentation gefunden werden. Wie weiter?
-- - -
-
-[cols=4*,options="header"]
-|===
-| Name | Beschreibung | Beispiel | Freigabe
-4+| _Diese Klasse führt keine zusätzlichen Attribute_
-4+| *Anforderungen*
-m|Code
-3+| Die Werte müssen eindeutig sein
-m|Name
-3+| Die Werte müssen eindeutig sein
-|===
-
 ==== Klasse `+Strukturtyp+`
 Klasse, welche die Werte des Typs der erbohrten tektonischen Struktur zur Verfügung stellt. Hintergrund: Kapitel 2.2.5.1 [3]
 
@@ -1050,23 +1035,23 @@ m| geaendertAm
 | 2024-07-30T08:07:57
 | öffentlich
 m| GWSpiegelUT
-| todo
+| Höhe unter Terrain, auf welcher der Grundwasserspiegel zu liegen kommt (gespannt und freie Druckverhältnisse)
 | todo
 | öffentlich
 m| GWLeiterUT
-| todo
+| Höhe unter Terrain, ab welcher der Grundwasserleiter beginnt (Gesteinsmedium, welches das Grundwasser enthält)
 | todo
 | öffentlich
 m| GWStauerUT
-| todo
+| Höhe unter Terrain, ab welcher das Grundwasservorkommen nach unter durch eine dichte Schicht abgeschlossen wird
 | todo
 | öffentlich
 m| GWMaechtigkeit
 | todo
 | todo
 | öffentlich
-m| GWgespanntKote
-| todo
+m| GWKote
+| Höhe, auf welcher der Grundwasserspiegel in freien Druckverhältnissen zu liegen kommen würde.
 | todo
 | öffentlich
 m| GWTemperatur
@@ -1086,7 +1071,7 @@ m| Pumpmenge
 | todo
 | öffentlich
 m| GwspAbsenkung
-| todo
+| Resuktion des Grundwasserspiegels bei Wasserentnahme über eine längere Zeit.
 | todo
 | öffentlich
 4+| *Geometrie*
@@ -1105,6 +1090,9 @@ m| rGrundwasserspannung
 Gibt den Grad der Gewissheit an, ob das Grundwasser gespannt ist.
 | (OID der Lithologie)
 | öffentlich
+4+| *Erfassungsregeln*
+m| GWKote
+3+| Der Wert wird nur erfasst, falls `+rGrundwasserspannung+` auf einen der folgenden Werte verweist: "ja", "vermutet"
 |===
 
 ifdef::backend-pdf[]
