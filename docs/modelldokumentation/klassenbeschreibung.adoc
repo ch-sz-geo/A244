@@ -1034,27 +1034,27 @@ m| geaendertAm
 | Datum und Zeit, an dem der Datensatz zuletzt geändert wurde; wird durch das System gesetzt
 | 2024-07-30T08:07:57
 | öffentlich
-m| GWSpiegel
+m| Spiegel
 | Höhe unter Terrain, auf welcher der Grundwasserspiegel zu liegen kommt (gespannt und freie Druckverhältnisse); Einheit: Meter
 | todo
 | öffentlich
-m| GWLeiter
+m| Leiter
 | Höhe unter Terrain, ab welcher der Grundwasserleiter beginnt (Gesteinsmedium, welches das Grundwasser enthält); Einheit: Meter
 | todo
 | öffentlich
-m| GWStauer
+m| Stauer
 | Höhe unter Terrain, ab welcher das Grundwasservorkommen nach unten durch eine undurchlässige Schicht abgeschlossen wird; Einheit: Meter
 | todo
 | öffentlich
-m| GWMaechtigkeit
+m| Maechtigkeit
 | todo; Einheit: Meter
 | todo
 | öffentlich
-m| GWKote
+m| Kote
 | Höhe, auf welcher der Grundwasserspiegel in freien Druckverhältnissen zu liegen kommen würde; Einheit: Meter
 | todo
 | öffentlich
-m| GWTemperatur
+m| Temperatur
 | todo
 | todo
 | öffentlich
