@@ -1034,24 +1034,24 @@ m| geaendertAm
 | Datum und Zeit, an dem der Datensatz zuletzt geändert wurde; wird durch das System gesetzt
 | 2024-07-30T08:07:57
 | öffentlich
-m| GWSpiegelUT
-| Höhe unter Terrain, auf welcher der Grundwasserspiegel zu liegen kommt (gespannt und freie Druckverhältnisse)
+m| GWSpiegel
+| Höhe unter Terrain, auf welcher der Grundwasserspiegel zu liegen kommt (gespannt und freie Druckverhältnisse); Einheit: Meter
 | todo
 | öffentlich
-m| GWLeiterUT
-| Höhe unter Terrain, ab welcher der Grundwasserleiter beginnt (Gesteinsmedium, welches das Grundwasser enthält)
+m| GWLeiter
+| Höhe unter Terrain, ab welcher der Grundwasserleiter beginnt (Gesteinsmedium, welches das Grundwasser enthält); Einheit: Meter
 | todo
 | öffentlich
-m| GWStauerUT
-| Höhe unter Terrain, ab welcher das Grundwasservorkommen nach unter durch eine dichte Schicht abgeschlossen wird
+m| GWStauer
+| Höhe unter Terrain, ab welcher das Grundwasservorkommen nach unten durch eine undurchlässige Schicht abgeschlossen wird; Einheit: Meter
 | todo
 | öffentlich
 m| GWMaechtigkeit
-| todo
+| todo; Einheit: Meter
 | todo
 | öffentlich
 m| GWKote
-| Höhe, auf welcher der Grundwasserspiegel in freien Druckverhältnissen zu liegen kommen würde.
+| Höhe, auf welcher der Grundwasserspiegel in freien Druckverhältnissen zu liegen kommen würde; Einheit: Meter
 | todo
 | öffentlich
 m| GWTemperatur
@@ -1067,11 +1067,11 @@ m| KWert
 | todo
 | öffentlich
 m| Pumpmenge
-| todo
+| todo; Einheit: Liter pro Minute
 | todo
 | öffentlich
-m| GwspAbsenkung
-| Resuktion des Grundwasserspiegels bei Wasserentnahme über eine längere Zeit.
+m| Absenkung
+| Absenkung des Grundwasserspiegels bei Wasserentnahme über eine längere Zeit; Einheit: Meter
 | todo
 | öffentlich
 4+| *Geometrie*
