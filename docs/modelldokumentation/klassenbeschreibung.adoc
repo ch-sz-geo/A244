@@ -130,6 +130,20 @@ m|Name
 3+| Die Werte müssen eindeutig sein
 |===
 
+==== Klasse `+Wasserart+`
+Klasse, welche die verschiedenen Wasserarten als Auswahlliste zur Verfügung stellt.
+
+[cols=4*,options="header"]
+|===
+| Name | Beschreibung | Beispiel | Freigabe
+4+| _Diese Klasse führt keine zusätzlichen Attribute_
+4+| *Anforderungen*
+m|Code
+3+| Die Werte müssen eindeutig sein
+m|Name
+3+| Die Werte müssen eindeutig sein
+|===
+
 ==== Klasse `+Strukturtyp+`
 Klasse, welche die Werte des Typs der erbohrten tektonischen Struktur zur Verfügung stellt. Hintergrund: Kapitel 2.2.5.1 [3]
 
@@ -571,6 +585,10 @@ m| rWassertyp
 m| rEinfallswinkelbereich
 | Verweis auf ein Objekt der Klasse `+Einfallswinkelbereich+`
 | (OID des Einfallswinkelbereichs)
+| öffentlich
+m| rWasserart
+| Verweis auf ein Objekt der Klasse `+Wasserart+`
+| (OID der Wasserart)
 | öffentlich
 m| rHoehenbezug
 | Verweis auf ein Objekt der Klasse `+Hoehenbezug+`
