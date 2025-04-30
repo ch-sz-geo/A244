@@ -47,7 +47,7 @@ m|Name
 |===
 
 ==== Klasse `+Bohrtyp+`
-Klasse, welche die verschiedenen Bohrtypen als Auswahlliste zur Verfügung stellt.
+Klasse, welche die verschiedenen Bohrtypen als Auswahlliste zur Verfügung stellt. 
 
 [cols=4*,options="header"]
 |===
@@ -75,7 +75,7 @@ m|Name
 |===
 
 ==== Klasse `+Profilart+`
-Klasse, welche die Art eines Bohrprofils als Auswahlliste zur Verfügung stellt (entweder geologische Einheit oder tektonische Strukturen).
+Klasse, welche Auskunft darüber gibt, was im Bohrprofil dargestellt wird (entweder geologische Einheit oder tektonische Strukturen). Hintergrund: Kapitel 2.2.1.1 in [3]. Die Werte von `+Code+` entsprechend den Werten gemäss den Angaben in [3] und dienen der Zuordnung bei der Transformation ins Bundesmodell. Die Werte von `+Name+` hingegen wurden zum Teil leicht angepasst.
 
 [cols=4*,options="header"]
 |===
@@ -89,7 +89,7 @@ m|Name
 |===
 
 ==== Klasse `+Profiltyp+`
-Klasse, welche den Typ des Bohrprofils als Auswahlliste zur Verfügung stellt (z.B. "Originalaufnahme").
+Klasse, welche Auskunft darüber den Typ des Bohrprofils Auskunft gibt (z.B. "Originalaufnahme"). Hintergrund: Kapitel 2.2.1.2 in [3]. Die Werte von `+Code+` entsprechend den Werten gemäss den Angaben in [3] und dienen der Zuordnung bei der Transformation ins Bundesmodell. Die Werte von `+Name+` hingegen wurden zum Teil leicht angepasst.
 
 [cols=4*,options="header"]
 |===
@@ -101,6 +101,21 @@ m|Code
 m|Name
 3+| Die Werte müssen eindeutig sein
 |===
+
+==== Klasse `+Setzungspotential+`
+Klasse, welche das Setzungspotenzial als Auswahlliste zur Verfügung stellt. Die Werte dieser Auswahlliste sind in den vorliegenden Bundesdokumentationen nicht mehr auffindbar. Dennoch werden die Auswahlliste als kantonale Erweiterung geführt.
+
+[cols=4*,options="header"]
+|===
+| Name | Beschreibung | Beispiel | Freigabe
+4+| _Diese Klasse führt keine zusätzlichen Attribute_
+4+| *Anforderungen*
+m|Code
+3+| Die Werte müssen eindeutig sein
+m|Name
+3+| Die Werte müssen eindeutig sein
+|===
+
 
 ==== Klasse `+Ausbautyp+`
 Klasse, welche den Typ des Bohrlochausbaus als Auswahlliste zur Verfügung stellt.
@@ -117,7 +132,7 @@ m|Name
 |===
 
 ==== Klasse `+Einfallswinkelbereich+`
-Klasse, welche die Bereiche der Einfallswinkel als Auswahlliste zur Verfügung stellt. Hintergrund: Kapitel 1.1.8 in [3]
+Klasse, welche die Bereiche der Einfallswinkel als Auswahlliste zur Verfügung stellt. Hintergrund: Kapitel 1.1.8 in [3]. Die Werte von `+Code+` entsprechend den Werten gemäss den Angaben in [3] und dienen der Zuordnung bei der Transformation ins Bundesmodell. Die Werte von `+Name+` hingegen wurden zum Teil leicht angepasst.
 
 [cols=4*,options="header"]
 |===
@@ -145,7 +160,7 @@ m|Name
 |===
 
 ==== Klasse `+Strukturtyp+`
-Klasse, welche die Werte des Typs der erbohrten tektonischen Struktur zur Verfügung stellt. Hintergrund: Kapitel 2.2.5.1 [3]
+Klasse, welche die Werte des Typs der erbohrten tektonischen Struktur zur Verfügung stellt. Hintergrund: Kapitel 2.2.5.1 [3]. Die Werte von `+Code+` entsprechend den Werten gemäss den Angaben in [3] und dienen der Zuordnung bei der Transformation ins Bundesmodell. Die Werte von `+Name+` hingegen wurden zum Teil leicht angepasst.
 
 [cols=4*,options="header"]
 |===
@@ -159,8 +174,7 @@ m|Name
 |===
 
 ==== Klasse `+Klassifikation+`
--> todo: Werte in Masterkatalog aufnehmen +
-Klasse, welche die Werte für die Klassifikation der Haupt- und Nebenkomponente oder des gesamten Materials gemäss leicht erweiterter SN 670 004-2b-Norm zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.1 in [3]
+Klasse, welche die Werte für die Klassifikation der Haupt- und Nebenkomponente oder des gesamten Materials gemäss leicht erweiterter SN 670 004-2b-Norm zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.1 in [3]. Die Werte von `+Code+` entsprechend den Werten gemäss den Angaben in [3] und dienen der Zuordnung bei der Transformation ins Bundesmodell. Die Werte von `+Name+` hingegen wurden zum Teil leicht angepasst.
 
 [cols=4*,options="header"]
 |===
@@ -174,8 +188,7 @@ m|Name
 |===
 
 ==== Klasse `+Korngroesse+`
--> todo: Werte in Masterkatalog aufnehmen +
-Klasse, welche die Werte der Korngrösse der Hauptkomponente zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.2 in [3]
+Klasse, welche die Werte der Korngrösse der Hauptkomponente zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.2 in [3]. Die Werte von `+Code+` entsprechend den Werten gemäss den Angaben in [3] und dienen der Zuordnung bei der Transformation ins Bundesmodell. Die Werte von `+Name+` hingegen wurden zum Teil leicht angepasst.
 
 [cols=4*,options="header"]
 |===
@@ -189,8 +202,7 @@ m|Name
 |===
 
 ==== Klasse `+Kornrundung+`
--> todo: Werte in Masterkatalog aufnehmen +
-Klasse, welche die Werte der Kornrundung der Grobkomponenten geäss erweiterter EN-14688-1 Norm zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.3 in [3]
+Klasse, welche die Werte der Kornrundung der Grobkomponenten geäss erweiterter EN-14688-1 Norm zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.3 in [3]. Die Werte von `+Code+` entsprechend den Werten gemäss den Angaben in [3] und dienen der Zuordnung bei der Transformation ins Bundesmodell. Die Werte von `+Name+` hingegen wurden zum Teil leicht angepasst.
 
 [cols=4*,options="header"]
 |===
@@ -204,8 +216,7 @@ m|Name
 |===
 
 ==== Klasse `+Plastizitaet+`
--> todo: Werte in Masterkatalog aufnehmen +
-Klasse, welche die Werte der Plastizität des Lockergesteins gemäss SN 670 004-2b-Norm zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.4 in [3]
+Klasse, welche die Werte der Plastizität des Lockergesteins gemäss SN 670 004-2b-Norm zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.4 in [3]. Die Werte von `+Code+` entsprechend den Werten gemäss den Angaben in [3] und dienen der Zuordnung bei der Transformation ins Bundesmodell. Die Werte von `+Name+` hingegen wurden zum Teil leicht angepasst.
 
 [cols=4*,options="header"]
 |===
@@ -219,8 +230,7 @@ m|Name
 |===
 
 ==== Klasse `+Konsistenz+`
--> todo: Werte in Masterkatalog aufnehmen +
-Klasse, welche die Werte der Konsistenz des Lockergesteins gemäss SN 670 004-2b-Norm zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.5 in [3]
+Klasse, welche die Werte der Konsistenz des Lockergesteins gemäss SN 670 004-2b-Norm zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.5 in [3]. Die Werte von `+Code+` entsprechend den Werten gemäss den Angaben in [3] und dienen der Zuordnung bei der Transformation ins Bundesmodell. Die Werte von `+Name+` hingegen wurden zum Teil leicht angepasst.
 
 [cols=4*,options="header"]
 |===
@@ -234,8 +244,7 @@ m|Name
 |===
 
 ==== Klasse `+Feuchte+`
--> todo: Werte in Masterkatalog aufnehmen +
-Klasse, welche die Werte der Feuchte des Lockergesteins zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.6 in [3]
+Klasse, welche die Werte der Feuchte des Lockergesteins zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.6 in [3]. Die Werte von `+Code+` entsprechend den Werten gemäss den Angaben in [3] und dienen der Zuordnung bei der Transformation ins Bundesmodell. Die Werte von `+Name+` hingegen wurden zum Teil leicht angepasst.
 
 [cols=4*,options="header"]
 |===
@@ -249,8 +258,7 @@ m|Name
 |===
 
 ==== Klasse `+Kohaesion+`
--> todo: Werte in Masterkatalog aufnehmen +
-Klasse, welche die Werte der Kohäsion des Lockergesteins zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.7 in [3]
+Klasse, welche die Werte der Kohäsion des Lockergesteins zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.7 in [3]. Die Werte von `+Code+` entsprechend den Werten gemäss den Angaben in [3] und dienen der Zuordnung bei der Transformation ins Bundesmodell. Die Werte von `+Name+` hingegen wurden zum Teil leicht angepasst.
 
 [cols=4*,options="header"]
 |===
@@ -264,8 +272,7 @@ m|Name
 |===
 
 ==== Klasse `+Organik+`
--> todo: Werte in Masterkatalog aufnehmen +
-Klasse, welche die Werte des organischen Materials des Lockergesteins zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.8 in [3]
+Klasse, welche die Werte des organischen Materials des Lockergesteins zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.8 in [3]. Die Werte von `+Code+` entsprechend den Werten gemäss den Angaben in [3] und dienen der Zuordnung bei der Transformation ins Bundesmodell. Die Werte von `+Name+` hingegen wurden zum Teil leicht angepasst.
 
 [cols=4*,options="header"]
 |===
@@ -279,8 +286,7 @@ m|Name
 |===
 
 ==== Klasse `+Kornform+`
--> todo: Werte in Masterkatalog aufnehmen +
-Klasse, welche die Werte der Kornform gemäss erweiteter EN-14688-1 zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.9 in [3]
+Klasse, welche die Werte der Kornform gemäss erweiteter EN-14688-1 zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.9 in [3]. Die Werte von `+Code+` entsprechend den Werten gemäss den Angaben in [3] und dienen der Zuordnung bei der Transformation ins Bundesmodell. Die Werte von `+Name+` hingegen wurden zum Teil leicht angepasst.
 
 [cols=4*,options="header"]
 |===
@@ -294,8 +300,7 @@ m|Name
 |===
 
 ==== Klasse `+Farbe+`
--> todo: Werte in Masterkatalog aufnehmen +
-Klasse, welche die Werte der Farbe des Lockergesteins zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.10 in [3]
+Klasse, welche die Werte der Farbe des Lockergesteins zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.10 in [3]. Die Werte von `+Code+` entsprechend den Werten gemäss den Angaben in [3] und dienen der Zuordnung bei der Transformation ins Bundesmodell. Die Werte von `+Name+` hingegen wurden zum Teil leicht angepasst.
 
 [cols=4*,options="header"]
 |===
@@ -309,8 +314,7 @@ m|Name
 |===
 
 ==== Klasse `+Verwitterungszustand+`
--> todo: Werte in Masterkatalog aufnehmen +
-Klasse, welche die Werte der Verwitterung des Lockergesteins zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.11 in [3]
+Klasse, welche die Werte der Verwitterung des Lockergesteins zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.11 in [3]. Die Werte von `+Code+` entsprechend den Werten gemäss den Angaben in [3] und dienen der Zuordnung bei der Transformation ins Bundesmodell. Die Werte von `+Name+` hingegen wurden zum Teil leicht angepasst.
 
 [cols=4*,options="header"]
 |===
@@ -324,8 +328,7 @@ m|Name
 |===
 
 ==== Klasse `+Lagerungsdichte+`
--> todo: Werte in Masterkatalog aufnehmen +
-Klasse, welche die Werte der Lagerungsdichte des Lockergesteins gemäss SN 670 004-2b Norm zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.12 in [3]
+Klasse, welche die Werte der Lagerungsdichte des Lockergesteins gemäss SN 670 004-2b Norm zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.12 in [3]. Die Werte von `+Code+` entsprechend den Werten gemäss den Angaben in [3] und dienen der Zuordnung bei der Transformation ins Bundesmodell. Die Werte von `+Name+` hingegen wurden zum Teil leicht angepasst.
 
 [cols=4*,options="header"]
 |===
@@ -339,8 +342,7 @@ m|Name
 |===
 
 ==== Klasse `+Bodenzustand+`
--> todo: Werte in Masterkatalog aufnehmen +
-Klasse, welche die Werte des Bodenzustandes des Lockergesteins gemäss SN 670 004-2b Norm zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.13 in [3]
+Klasse, welche die Werte des Bodenzustandes des Lockergesteins gemäss SN 670 004-2b Norm zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.13 in [3]. Die Werte von `+Code+` entsprechend den Werten gemäss den Angaben in [3] und dienen der Zuordnung bei der Transformation ins Bundesmodell. Die Werte von `+Name+` hingegen wurden zum Teil leicht angepasst.
 
 [cols=4*,options="header"]
 |===
@@ -354,8 +356,7 @@ m|Name
 |===
 
 ==== Klasse `+Bestimmungsart+`
--> todo: Werte in Masterkatalog aufnehmen +
-Klasse, welche die Werte den Bestimmungstyps zur Klassifikation des Lockergesteins zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.14 in [3]
+Klasse, welche die Werte des Bestimmungstyps zur Klassifikation des Lockergesteins zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.14 in [3]. Die Werte von `+Code+` entsprechend den Werten gemäss den Angaben in [3] und dienen der Zuordnung bei der Transformation ins Bundesmodell. Die Werte von `+Name+` hingegen wurden zum Teil leicht angepasst.
 
 [cols=4*,options="header"]
 |===
@@ -444,8 +445,7 @@ m|Name
 |===
 
 ==== Klasse `+Gewissheitsgrad+`
--> todo: Werte in Masterkatalog aufnehmen +
-Klasse, welche die Werte zum Gewissheitsgrad enthalten.
+Klasse, welche die Werte des Gewissheitsgrades führt. Der Gewissheitsgrad bezieht sich immer auf den über die Rollenbezeichnung definierten Kontext und tritt nur in Verbindung mit der Klasse `+Grundwasser+` auf. Dabei bedeutet zum Beispiel ein "ja" bei der Rolle `+rGrundwasserspannung+`, dass das Grundwasser mit Sicherheit gespannt ist. Als weiteres Beispiel würde ein "nein" bei der Rolle `+rTiefenstockwerk+` bedeuten, dass kein Tiefenstockwerk vorhanden ist.
 
 [cols=4*,options="header"]
 |===
