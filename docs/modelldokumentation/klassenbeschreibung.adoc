@@ -370,8 +370,14 @@ m|Name
 |===
 
 ==== Klasse `+Standard+`
--> todo: Werte in Masterkatalog aufnehmen +
-Bezeichnung des Standards, nach dem die Interpretation durchgeführt wurde. Je nach Standard werden andere Codelisten in den nachfolgenden Attributen verwendet. Bei der Verwendung anderer Standards müssen die jeweiligen Codelisten zugänglich gemacht werden. Hintergrund: Kapitel 2.2.3.1 in [3]
+Bezeichnung des Standards, nach dem die Interpretation der folgenden Werte durchgeführt wird:
+
+- Chronostratigrafie
+- Lithologie
+- Tektonik
+- Stratigrafie
+
+Die Werte stammen aus Kapitel 2.2.3.1 in [3]. Im Normalfall gelangen die durch den Bund publizierten Werte der Geologie-Codeliste zur Anwendung [<todo> Verlinkung auf https://models.geo.admin.ch/Swisstopo/GeologyModelLookUp_V2_1.xml]. Gelangt ein anderer Standard zu Anwendung, müssen die Werte zugänglich gemacht werden.
 
 [cols=4*,options="header"]
 |===
