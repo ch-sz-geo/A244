@@ -2,10 +2,10 @@
 === Topic `+Stammdaten+`
 Das Topic `+Stammdaten+` umfasst alle statischen Werte. Darunter fallen z.B. die Aufzählwerte von Listen (INTERLIS-Datentyp «Aufzählung»). Jede Liste wird in einer eigenen Klasse modelliert. +
 
-Die Stammdaten werden durch die zuständige Stelle vorgegeben und bei Bedarf durch die Abteilung Geoinformation nachgeführt und . Die Stammdaten werden durch die Abteilung Geoinformation im Internet veröffentlicht.
+Die Stammdaten werden durch die zuständige Stelle vorgegeben, bei Bedarf durch die Abteilung Geoinformation nachgeführt und im https://github.com/ch-sz-geo/A244/tree/main/data[data-Verzeichnis] des jeweiligen Themas veröffentlicht.
 
 ==== Klasse `+Katalogeintrag+`
-Die Klasse `+Katalogeintrag+` enthält die allgemeinen, für alle Kataloge gemeinsamen Attribute. Die Klasse selber ist abstrakt: Es gibt keine Objekte +Katalogeintrag+, sondern nur Objekte von den spezialisierten Klassen.
+Die Klasse `+Katalogeintrag+` enthält die allgemeinen, für alle Kataloge gemeinsamen Attribute. Die Klasse selber ist abstrakt: Es gibt keine Objekte `+Katalogeintrag+`, sondern nur Objekte von den spezialisierten Klassen.
 
 [cols=4*,options="header"]
 |===
@@ -75,7 +75,7 @@ m|Name
 |===
 
 ==== Klasse `+Profilart+`
-Klasse, welche Auskunft darüber gibt, was im Bohrprofil dargestellt wird (entweder geologische Einheit oder tektonische Strukturen). Hintergrund: Kapitel 2.2.1.1 in <<impressum.adoc#doc-06,[06]>>. Die Werte von `+Code+` entsprechen den Werten gemäss den Angaben in <<impressum.adoc#doc-06,[06]>> und dienen der Zuordnung bei der Transformation ins Bundesmodell. Die Werte von `+Name+` hingegen wurden zum Teil leicht angepasst.
+Klasse, welche Auskunft darüber gibt, was im Bohrprofil dargestellt wird (entweder geologische Einheit oder tektonische Strukturen). Hintergrund: Kapitel 2.2.1.1 in <<impressum.adoc#doc-06,[06]>>. Die Werte von `+Code+` entsprechen den Werten gemäss den Angaben in <<impressum.adoc#doc-06,[06]>> und dienen der Zuordnung bei der Transformation ins Bundesmodell. Die Werte von `+Name+` wurden zum Teil leicht angepasst.
 
 [cols=4*,options="header"]
 |===
@@ -89,7 +89,7 @@ m|Name
 |===
 
 ==== Klasse `+Profiltyp+`
-Klasse, welche Auskunft darüber den Typ des Bohrprofils Auskunft gibt (z.B. "Originalaufnahme"). Hintergrund: Kapitel 2.2.1.2 in <<impressum.adoc#doc-06,[06]>>. Die Werte von `+Code+` entsprechend den Werten gemäss den Angaben in <<impressum.adoc#doc-06,[06]>> und dienen der Zuordnung bei der Transformation ins Bundesmodell. Die Werte von `+Name+` hingegen wurden zum Teil leicht angepasst.
+Klasse, welche Auskunft darüber den Typ des Bohrprofils Auskunft gibt (z.B. "Originalaufnahme"). Hintergrund: Kapitel 2.2.1.2 in <<impressum.adoc#doc-06,[06]>>. Die Werte von `+Code+` entsprechend den Werten gemäss den Angaben in <<impressum.adoc#doc-06,[06]>> und dienen der Zuordnung bei der Transformation ins Bundesmodell. Die Werte von `+Name+` wurden zum Teil leicht angepasst.
 
 [cols=4*,options="header"]
 |===
@@ -116,7 +116,6 @@ m|Name
 3+| Die Werte müssen eindeutig sein
 |===
 
-
 ==== Klasse `+Ausbautyp+`
 Klasse, welche den Typ des Bohrlochausbaus als Auswahlliste zur Verfügung stellt.
 
@@ -132,7 +131,7 @@ m|Name
 |===
 
 ==== Klasse `+Einfallswinkelbereich+`
-Klasse, welche die Bereiche der Einfallswinkel als Auswahlliste zur Verfügung stellt. Hintergrund: Kapitel 1.1.8 in <<impressum.adoc#doc-06,[06]>>. Die Werte von `+Code+` entsprechend den Werten gemäss den Angaben in <<impressum.adoc#doc-06,[06]>> und dienen der Zuordnung bei der Transformation ins Bundesmodell. Die Werte von `+Name+` hingegen wurden zum Teil leicht angepasst.
+Klasse, welche die Bereiche der Einfallswinkel als Auswahlliste zur Verfügung stellt. Hintergrund: Kapitel 1.1.8 in <<impressum.adoc#doc-06,[06]>>. Die Werte von `+Code+` entsprechend den Werten gemäss den Angaben in <<impressum.adoc#doc-06,[06]>> und dienen der Zuordnung bei der Transformation ins Bundesmodell. Die Werte von `+Name+` wurden zum Teil leicht angepasst.
 
 [cols=4*,options="header"]
 |===
@@ -160,7 +159,7 @@ m|Name
 |===
 
 ==== Klasse `+Strukturtyp+`
-Klasse, welche die Werte des Typs der erbohrten tektonischen Struktur zur Verfügung stellt. Hintergrund: Kapitel 2.2.5.1 <<impressum.adoc#doc-06,[06]>>. Die Werte von `+Code+` entsprechend den Werten gemäss den Angaben in <<impressum.adoc#doc-06,[06]>> und dienen der Zuordnung bei der Transformation ins Bundesmodell. Die Werte von `+Name+` hingegen wurden zum Teil leicht angepasst.
+Klasse, welche die Werte des Typs der erbohrten tektonischen Struktur zur Verfügung stellt. Hintergrund: Kapitel 2.2.5.1 <<impressum.adoc#doc-06,[06]>>. Die Werte von `+Code+` entsprechend den Werten gemäss den Angaben in <<impressum.adoc#doc-06,[06]>> und dienen der Zuordnung bei der Transformation ins Bundesmodell. Die Werte von `+Name+` wurden zum Teil leicht angepasst.
 
 [cols=4*,options="header"]
 |===
@@ -174,7 +173,7 @@ m|Name
 |===
 
 ==== Klasse `+Klassifikation+`
-Klasse, welche die Werte für die Klassifikation der Haupt- und Nebenkomponente oder des gesamten Materials gemäss leicht erweiterter SN 670 004-2b-Norm zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.1 in <<impressum.adoc#doc-06,[06]>>. Die Werte von `+Code+` entsprechend den Werten gemäss den Angaben in <<impressum.adoc#doc-06,[06]>> und dienen der Zuordnung bei der Transformation ins Bundesmodell. Die Werte von `+Name+` hingegen wurden zum Teil leicht angepasst.
+Klasse, welche die Werte für die Klassifikation der Haupt- und Nebenkomponente oder des gesamten Materials gemäss leicht erweiterter SN 670 004-2b-Norm zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.1 in <<impressum.adoc#doc-06,[06]>>. Die Werte von `+Code+` entsprechend den Werten gemäss den Angaben in <<impressum.adoc#doc-06,[06]>> und dienen der Zuordnung bei der Transformation ins Bundesmodell. Die Werte von `+Name+` wurden zum Teil leicht angepasst.
 
 [cols=4*,options="header"]
 |===
@@ -188,7 +187,7 @@ m|Name
 |===
 
 ==== Klasse `+Korngroesse+`
-Klasse, welche die Werte der Korngrösse der Hauptkomponente zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.2 in <<impressum.adoc#doc-06,[06]>>. Die Werte von `+Code+` entsprechend den Werten gemäss den Angaben in <<impressum.adoc#doc-06,[06]>> und dienen der Zuordnung bei der Transformation ins Bundesmodell. Die Werte von `+Name+` hingegen wurden zum Teil leicht angepasst.
+Klasse, welche die Werte der Korngrösse der Hauptkomponente zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.2 in <<impressum.adoc#doc-06,[06]>>. Die Werte von `+Code+` entsprechend den Werten gemäss den Angaben in <<impressum.adoc#doc-06,[06]>> und dienen der Zuordnung bei der Transformation ins Bundesmodell. Die Werte von `+Name+` wurden zum Teil leicht angepasst.
 
 [cols=4*,options="header"]
 |===
@@ -202,7 +201,7 @@ m|Name
 |===
 
 ==== Klasse `+Kornrundung+`
-Klasse, welche die Werte der Kornrundung der Grobkomponenten geäss erweiterter EN-14688-1 Norm zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.3 in <<impressum.adoc#doc-06,[06]>>. Die Werte von `+Code+` entsprechend den Werten gemäss den Angaben in <<impressum.adoc#doc-06,[06]>> und dienen der Zuordnung bei der Transformation ins Bundesmodell. Die Werte von `+Name+` hingegen wurden zum Teil leicht angepasst.
+Klasse, welche die Werte der Kornrundung der Grobkomponenten geäss erweiterter EN-14688-1 Norm zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.3 in <<impressum.adoc#doc-06,[06]>>. Die Werte von `+Code+` entsprechend den Werten gemäss den Angaben in <<impressum.adoc#doc-06,[06]>> und dienen der Zuordnung bei der Transformation ins Bundesmodell. Die Werte von `+Name+` wurden zum Teil leicht angepasst.
 
 [cols=4*,options="header"]
 |===
@@ -216,7 +215,7 @@ m|Name
 |===
 
 ==== Klasse `+Plastizitaet+`
-Klasse, welche die Werte der Plastizität des Lockergesteins gemäss SN 670 004-2b-Norm zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.4 in <<impressum.adoc#doc-06,[06]>>. Die Werte von `+Code+` entsprechend den Werten gemäss den Angaben in <<impressum.adoc#doc-06,[06]>> und dienen der Zuordnung bei der Transformation ins Bundesmodell. Die Werte von `+Name+` hingegen wurden zum Teil leicht angepasst.
+Klasse, welche die Werte der Plastizität des Lockergesteins gemäss SN 670 004-2b-Norm zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.4 in <<impressum.adoc#doc-06,[06]>>. Die Werte von `+Code+` entsprechend den Werten gemäss den Angaben in <<impressum.adoc#doc-06,[06]>> und dienen der Zuordnung bei der Transformation ins Bundesmodell. Die Werte von `+Name+` wurden zum Teil leicht angepasst.
 
 [cols=4*,options="header"]
 |===
@@ -230,7 +229,7 @@ m|Name
 |===
 
 ==== Klasse `+Konsistenz+`
-Klasse, welche die Werte der Konsistenz des Lockergesteins gemäss SN 670 004-2b-Norm zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.5 in <<impressum.adoc#doc-06,[06]>>. Die Werte von `+Code+` entsprechend den Werten gemäss den Angaben in <<impressum.adoc#doc-06,[06]>> und dienen der Zuordnung bei der Transformation ins Bundesmodell. Die Werte von `+Name+` hingegen wurden zum Teil leicht angepasst.
+Klasse, welche die Werte der Konsistenz des Lockergesteins gemäss SN 670 004-2b-Norm zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.5 in <<impressum.adoc#doc-06,[06]>>. Die Werte von `+Code+` entsprechend den Werten gemäss den Angaben in <<impressum.adoc#doc-06,[06]>> und dienen der Zuordnung bei der Transformation ins Bundesmodell. Die Werte von `+Name+` wurden zum Teil leicht angepasst.
 
 [cols=4*,options="header"]
 |===
@@ -244,7 +243,7 @@ m|Name
 |===
 
 ==== Klasse `+Feuchte+`
-Klasse, welche die Werte der Feuchte des Lockergesteins zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.6 in <<impressum.adoc#doc-06,[06]>>. Die Werte von `+Code+` entsprechend den Werten gemäss den Angaben in <<impressum.adoc#doc-06,[06]>> und dienen der Zuordnung bei der Transformation ins Bundesmodell. Die Werte von `+Name+` hingegen wurden zum Teil leicht angepasst.
+Klasse, welche die Werte der Feuchte des Lockergesteins zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.6 in <<impressum.adoc#doc-06,[06]>>. Die Werte von `+Code+` entsprechend den Werten gemäss den Angaben in <<impressum.adoc#doc-06,[06]>> und dienen der Zuordnung bei der Transformation ins Bundesmodell. Die Werte von `+Name+` wurden zum Teil leicht angepasst.
 
 [cols=4*,options="header"]
 |===
@@ -258,7 +257,7 @@ m|Name
 |===
 
 ==== Klasse `+Kohaesion+`
-Klasse, welche die Werte der Kohäsion des Lockergesteins zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.7 in <<impressum.adoc#doc-06,[06]>>. Die Werte von `+Code+` entsprechend den Werten gemäss den Angaben in <<impressum.adoc#doc-06,[06]>> und dienen der Zuordnung bei der Transformation ins Bundesmodell. Die Werte von `+Name+` hingegen wurden zum Teil leicht angepasst.
+Klasse, welche die Werte der Kohäsion des Lockergesteins zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.7 in <<impressum.adoc#doc-06,[06]>>. Die Werte von `+Code+` entsprechend den Werten gemäss den Angaben in <<impressum.adoc#doc-06,[06]>> und dienen der Zuordnung bei der Transformation ins Bundesmodell. Die Werte von `+Name+` wurden zum Teil leicht angepasst.
 
 [cols=4*,options="header"]
 |===
@@ -272,7 +271,7 @@ m|Name
 |===
 
 ==== Klasse `+Organik+`
-Klasse, welche die Werte des organischen Materials des Lockergesteins zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.8 in <<impressum.adoc#doc-06,[06]>>. Die Werte von `+Code+` entsprechend den Werten gemäss den Angaben in <<impressum.adoc#doc-06,[06]>> und dienen der Zuordnung bei der Transformation ins Bundesmodell. Die Werte von `+Name+` hingegen wurden zum Teil leicht angepasst.
+Klasse, welche die Werte des organischen Materials des Lockergesteins zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.8 in <<impressum.adoc#doc-06,[06]>>. Die Werte von `+Code+` entsprechend den Werten gemäss den Angaben in <<impressum.adoc#doc-06,[06]>> und dienen der Zuordnung bei der Transformation ins Bundesmodell. Die Werte von `+Name+` wurden zum Teil leicht angepasst.
 
 [cols=4*,options="header"]
 |===
@@ -286,7 +285,7 @@ m|Name
 |===
 
 ==== Klasse `+Kornform+`
-Klasse, welche die Werte der Kornform gemäss erweiteter EN-14688-1 zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.9 in <<impressum.adoc#doc-06,[06]>>. Die Werte von `+Code+` entsprechend den Werten gemäss den Angaben in <<impressum.adoc#doc-06,[06]>> und dienen der Zuordnung bei der Transformation ins Bundesmodell. Die Werte von `+Name+` hingegen wurden zum Teil leicht angepasst.
+Klasse, welche die Werte der Kornform gemäss erweiteter EN-14688-1 zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.9 in <<impressum.adoc#doc-06,[06]>>. Die Werte von `+Code+` entsprechend den Werten gemäss den Angaben in <<impressum.adoc#doc-06,[06]>> und dienen der Zuordnung bei der Transformation ins Bundesmodell. Die Werte von `+Name+` wurden zum Teil leicht angepasst.
 
 [cols=4*,options="header"]
 |===
@@ -300,7 +299,7 @@ m|Name
 |===
 
 ==== Klasse `+Farbe+`
-Klasse, welche die Werte der Farbe des Lockergesteins zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.10 in <<impressum.adoc#doc-06,[06]>>. Die Werte von `+Code+` entsprechend den Werten gemäss den Angaben in <<impressum.adoc#doc-06,[06]>> und dienen der Zuordnung bei der Transformation ins Bundesmodell. Die Werte von `+Name+` hingegen wurden zum Teil leicht angepasst.
+Klasse, welche die Werte der Farbe des Lockergesteins zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.10 in <<impressum.adoc#doc-06,[06]>>. Die Werte von `+Code+` entsprechend den Werten gemäss den Angaben in <<impressum.adoc#doc-06,[06]>> und dienen der Zuordnung bei der Transformation ins Bundesmodell. Die Werte von `+Name+` wurden zum Teil leicht angepasst.
 
 [cols=4*,options="header"]
 |===
@@ -314,7 +313,7 @@ m|Name
 |===
 
 ==== Klasse `+Verwitterungszustand+`
-Klasse, welche die Werte der Verwitterung des Lockergesteins zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.11 in <<impressum.adoc#doc-06,[06]>>. Die Werte von `+Code+` entsprechend den Werten gemäss den Angaben in <<impressum.adoc#doc-06,[06]>> und dienen der Zuordnung bei der Transformation ins Bundesmodell. Die Werte von `+Name+` hingegen wurden zum Teil leicht angepasst.
+Klasse, welche die Werte der Verwitterung des Lockergesteins zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.11 in <<impressum.adoc#doc-06,[06]>>. Die Werte von `+Code+` entsprechend den Werten gemäss den Angaben in <<impressum.adoc#doc-06,[06]>> und dienen der Zuordnung bei der Transformation ins Bundesmodell. Die Werte von `+Name+` wurden zum Teil leicht angepasst.
 
 [cols=4*,options="header"]
 |===
@@ -328,7 +327,7 @@ m|Name
 |===
 
 ==== Klasse `+Lagerungsdichte+`
-Klasse, welche die Werte der Lagerungsdichte des Lockergesteins gemäss SN 670 004-2b Norm zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.12 in <<impressum.adoc#doc-06,[06]>>. Die Werte von `+Code+` entsprechend den Werten gemäss den Angaben in <<impressum.adoc#doc-06,[06]>> und dienen der Zuordnung bei der Transformation ins Bundesmodell. Die Werte von `+Name+` hingegen wurden zum Teil leicht angepasst.
+Klasse, welche die Werte der Lagerungsdichte des Lockergesteins gemäss SN 670 004-2b Norm zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.12 in <<impressum.adoc#doc-06,[06]>>. Die Werte von `+Code+` entsprechend den Werten gemäss den Angaben in <<impressum.adoc#doc-06,[06]>> und dienen der Zuordnung bei der Transformation ins Bundesmodell. Die Werte von `+Name+` wurden zum Teil leicht angepasst.
 
 [cols=4*,options="header"]
 |===
@@ -342,7 +341,7 @@ m|Name
 |===
 
 ==== Klasse `+Bodenzustand+`
-Klasse, welche die Werte des Bodenzustandes des Lockergesteins gemäss SN 670 004-2b Norm zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.13 in <<impressum.adoc#doc-06,[06]>>. Die Werte von `+Code+` entsprechend den Werten gemäss den Angaben in <<impressum.adoc#doc-06,[06]>> und dienen der Zuordnung bei der Transformation ins Bundesmodell. Die Werte von `+Name+` hingegen wurden zum Teil leicht angepasst.
+Klasse, welche die Werte des Bodenzustandes des Lockergesteins gemäss SN 670 004-2b Norm zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.13 in <<impressum.adoc#doc-06,[06]>>. Die Werte von `+Code+` entsprechend den Werten gemäss den Angaben in <<impressum.adoc#doc-06,[06]>> und dienen der Zuordnung bei der Transformation ins Bundesmodell. Die Werte von `+Name+` wurden zum Teil leicht angepasst.
 
 [cols=4*,options="header"]
 |===
@@ -356,7 +355,7 @@ m|Name
 |===
 
 ==== Klasse `+Bestimmungsart+`
-Klasse, welche die Werte des Bestimmungstyps zur Klassifikation des Lockergesteins zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.14 in <<impressum.adoc#doc-06,[06]>>. Die Werte von `+Code+` entsprechend den Werten gemäss den Angaben in <<impressum.adoc#doc-06,[06]>> und dienen der Zuordnung bei der Transformation ins Bundesmodell. Die Werte von `+Name+` hingegen wurden zum Teil leicht angepasst.
+Klasse, welche die Werte des Bestimmungstyps zur Klassifikation des Lockergesteins zur Verfügung stellt. Hintergrund: Kapitel 2.2.4.14 in <<impressum.adoc#doc-06,[06]>>. Die Werte von `+Code+` entsprechend den Werten gemäss den Angaben in <<impressum.adoc#doc-06,[06]>> und dienen der Zuordnung bei der Transformation ins Bundesmodell. Die Werte von `+Name+` wurden zum Teil leicht angepasst.
 
 [cols=4*,options="header"]
 |===
@@ -379,7 +378,7 @@ Bezeichnung des Standards, nach dem die Interpretation der folgenden Werte durch
 
 Hinweise über die besondere Pflege dieser vier Kataloge siehe Kapitel "Fachkataloge" weiter unten.
 
-Die Werte stammen aus Kapitel 2.2.3.1 in [3]. Im Normalfall gelangen die durch den Bund publizierten Werte der Geologie-Codeliste zur Anwendung (siehe entsprechendes XML im Bundes-Model-Repository. Zumn Zeitpunkt der Erstellung dieser Modelldokumentation war dies: https://models.geo.admin.ch/Swisstopo/GeologyModelLookUp_V2_1.xml. Gelangt ein anderer Standard zu Anwendung, müssen die Werte zugänglich gemacht werden.
+Die Werte stammen aus Kapitel 2.2.3.1 in <<impressum.adoc#doc-06,[06]>>. Im Normalfall gelangen die durch den Bund publizierten Werte der Geologie-Codeliste zur Anwendung (siehe entsprechendes XML im Bundes-Model-Repository). Zum Zeitpunkt der Erstellung dieser Modelldokumentation war dies: https://models.geo.admin.ch/Swisstopo/GeologyModelLookUp_V2_1.xml. Gelangt ein anderer Standard zu Anwendung, müssen die Werte zugänglich gemacht werden.
 
 [cols=4*,options="header"]
 |===
