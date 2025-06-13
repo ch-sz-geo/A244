@@ -1972,8 +1972,8 @@ Kuno Epper (Kep), Amt für Geoinformation (AGI)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>rWassertyp</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Verweis auf ein oder mehrere Objekte der Klasse <code>Wassertyp</code>, falls auf Wasser gestossen wurde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>rWasserart</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verweis auf ein oder mehrere Objekte der Klasse <code>Wasserart</code>, falls auf Wasser gestossen wurde</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">(ID der Beziehungstabelle)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
@@ -1981,18 +1981,6 @@ Kuno Epper (Kep), Amt für Geoinformation (AGI)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>rEinfallswinkelbereich</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Verweis auf ein Objekt der Klasse <code>Einfallswinkelbereich</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">(OID des Einfallswinkelbereichs)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>rWasserart</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Verweis auf ein Objekt der Klasse <code>Wasserart</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(OID der Wasserart)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>rHoehenbezug</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Verweis auf ein Objekt der Klasse <code>Hoehenbezug</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(OID des Höhenbezugs)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 </tbody>
@@ -2128,6 +2116,12 @@ Kuno Epper (Kep), Amt für Geoinformation (AGI)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>rProfiltyp</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Verweis auf ein Objekt der Klasse <code>Profiltyp</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">(OID des Objektes)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>rHoehenbezug</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verweis auf ein Objekt der Klasse <code>Hoehenbezug</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(OID des Höhenbezugs)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 </tbody>
@@ -2342,9 +2336,15 @@ Kuno Epper (Kep), Amt für Geoinformation (AGI)</p></td>
 <td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><strong>Beziehungsattribute</strong></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>todo rBohrung</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Verweis auf ein Objekt der Klasse <code>Bohrung</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>rBohrprofil</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verweis auf ein Objekt der Klasse <code>Bohrprofil</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">(OID des Objektes)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>rSetzungspotential</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verweis auf ein Objekt der Klasse <code>Setzungspotential</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(OID des Setzungspotentials)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 </tbody>
@@ -2445,9 +2445,15 @@ Kuno Epper (Kep), Amt für Geoinformation (AGI)</p></td>
 <td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><strong>Beziehungsattribute</strong></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>todo rBohrung</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Verweis auf ein Objekt der Klasse <code>Bohrung</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>rBohrprofil</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verweis auf ein Objekt der Klasse <code>Bohrprofil</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">(OID des Objektes)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>rStrukturtyp</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verweis auf ein Objekt der Klasse <code>Strukturtyp</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(OID des Strukturtyps)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 </tbody>
@@ -2697,6 +2703,12 @@ Kuno Epper (Kep), Amt für Geoinformation (AGI)</p></td>
 <td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><strong>Beziehungsattribute</strong></p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>rSchicht</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verweis auf ein Objekt der Klasse <code>Schicht</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(OID des Objektes)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>rStandard</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Verweis auf ein Objekt der Klasse <code>Standard</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">(OID des Objektes)</p></td>
@@ -2859,6 +2871,12 @@ Kuno Epper (Kep), Amt für Geoinformation (AGI)</p></td>
 <td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><strong>Beziehungsattribute</strong></p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>rBohrung</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verweis auf ein Objekt der Klasse <code>Bohrung</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(OID des Objektes)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>rTiefenstockwerk</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Verweis auf ein Objekt der Klasse <code>Gewissheitsgrad</code><br>
 Gibt den Grad der Gewissheit an, ob ein tieferes Grundwasserstockwerk vorhanden ist.</p></td>
@@ -2877,7 +2895,7 @@ Gibt den Grad der Gewissheit an, ob das Grundwasser gespannt ist.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>GWKote</code></p></td>
-<td class="tableblock halign-left valign-top" colspan="3"><p class="tableblock">Der Wert wird nur erfasst, falls <code>rGrundwasserspannung</code> auf einen der folgenden Werte verweist: "ja", "vermutet"</p></td>
+<td class="tableblock halign-left valign-top" colspan="3"><p class="tableblock">Der Wert wird nur erfasst, falls <code>rGrundwasserspannung</code> auf einen der folgenden Werte verweist: "ja", "vermutet".</p></td>
 </tr>
 </tbody>
 </table>
@@ -2888,7 +2906,7 @@ Gibt den Grad der Gewissheit an, ob das Grundwasser gespannt ist.</p></td>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-06-13 11:26:19 UTC
+Last updated 2025-06-13 11:49:03 UTC
 </div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js"></script>
