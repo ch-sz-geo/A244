@@ -589,21 +589,13 @@ m| rBohrzweck
 | Verweis auf ein Objekt der Klasse `+Bohrzweck+`
 | (OID des Bohrzwecks)
 | öffentlich
-m| rWassertyp
-| Verweis auf ein oder mehrere Objekte der Klasse `+Wassertyp+`, falls auf Wasser gestossen wurde
+m| rWasserart
+| Verweis auf ein oder mehrere Objekte der Klasse `+Wasserart+`, falls auf Wasser gestossen wurde
 | (ID der Beziehungstabelle)
 | öffentlich
 m| rEinfallswinkelbereich
 | Verweis auf ein Objekt der Klasse `+Einfallswinkelbereich+`
 | (OID des Einfallswinkelbereichs)
-| öffentlich
-m| rWasserart
-| Verweis auf ein Objekt der Klasse `+Wasserart+`
-| (OID der Wasserart)
-| öffentlich
-m| rHoehenbezug
-| Verweis auf ein Objekt der Klasse `+Hoehenbezug+`
-| (OID des Höhenbezugs)
 | öffentlich
 |===
 
@@ -685,6 +677,10 @@ m| rProfilart
 m| rProfiltyp
 | Verweis auf ein Objekt der Klasse `+Profiltyp+`
 | (OID des Objektes)
+| öffentlich
+m| rHoehenbezug
+| Verweis auf ein Objekt der Klasse `+Hoehenbezug+`
+| (OID des Höhenbezugs)
 | öffentlich
 |===
 
@@ -807,9 +803,13 @@ m| geologischerBeschrieb
 | - - -
 | - - -
 4+| *Beziehungsattribute*
-m| todo rBohrung
-| Verweis auf ein Objekt der Klasse `+Bohrung+`
+m| rBohrprofil
+| Verweis auf ein Objekt der Klasse `+Bohrprofil+`
 | (OID des Objektes)
+| öffentlich
+m| rSetzungspotential
+| Verweis auf ein Objekt der Klasse `+Setzungspotential+`
+| (OID des Setzungspotentials)
 | öffentlich
 |===
 
@@ -866,9 +866,13 @@ m| Einfallswinkel
 | - - -
 | - - -
 4+| *Beziehungsattribute*
-m| todo rBohrung
-| Verweis auf ein Objekt der Klasse `+Bohrung+`
+m| rBohrprofil
+| Verweis auf ein Objekt der Klasse `+Bohrprofil+`
 | (OID des Objektes)
+| öffentlich
+m| rStrukturtyp
+| Verweis auf ein Objekt der Klasse `+Strukturtyp+`
+| (OID des Strukturtyps)
 | öffentlich
 |===
 
@@ -1012,6 +1016,10 @@ m| geaendertAm
 | - - -
 | - - -
 4+| *Beziehungsattribute*
+m| rSchicht
+| Verweis auf ein Objekt der Klasse `+Schicht+`
+| (OID des Objektes)
+| öffentlich
 m| rStandard
 | Verweis auf ein Objekt der Klasse `+Standard+`
 | (OID des Objektes)
@@ -1109,6 +1117,10 @@ m| Absenkung
 | - - -
 | - - -
 4+| *Beziehungsattribute*
+m| rBohrung
+| Verweis auf ein Objekt der Klasse `+Bohrung+`
+| (OID des Objektes)
+| öffentlich
 m| rTiefenstockwerk
 | Verweis auf ein Objekt der Klasse `+Gewissheitsgrad+` +
 Gibt den Grad der Gewissheit an, ob ein tieferes Grundwasserstockwerk vorhanden ist.
@@ -1121,7 +1133,7 @@ Gibt den Grad der Gewissheit an, ob das Grundwasser gespannt ist.
 | öffentlich
 4+| *Erfassungsregeln*
 m| GWKote
-3+| Der Wert wird nur erfasst, falls `+rGrundwasserspannung+` auf einen der folgenden Werte verweist: "ja", "vermutet"
+3+| Der Wert wird nur erfasst, falls `+rGrundwasserspannung+` auf einen der folgenden Werte verweist: "ja", "vermutet".
 |===
 
 ifdef::backend-pdf[]
