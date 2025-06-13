@@ -1084,16 +1084,16 @@ m| Stauer
 | todo
 | öffentlich
 m| Maechtigkeit
-| todo; Einheit: Meter
-| todo
+| Mächtigkeit des Grundwassers in Meter
+| 3
 | öffentlich
 m| Kote
 | Höhe, auf welcher der Grundwasserspiegel in freien Druckverhältnissen zu liegen kommen würde; Einheit: Meter
 | todo
 | öffentlich
 m| Temperatur
-| todo
-| todo
+| Wassertemperatur
+| 6
 | öffentlich
 m| Leitfaehigkeit
 | todo
