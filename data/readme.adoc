@@ -30,4 +30,7 @@
 | *Katalog Wassertyp.adoc*
 | Kataloge für den `*Wassertyp*`.
 | SZ_Bohrungen_Umwelt_V1 (2024-09-03)
+| *SZ_Bohrungen_Umwelt_V1_Stammdaten_2000-01-01.xtf*
+| Gesamtzusammenstellung aller Kataloge des Themas.
+| SZ_Bohrungen_Umwelt_V1 (2024-09-03)
 |===
