@@ -790,12 +790,12 @@ m| TiefeBis
 m| Beschrieb
 | Beschreibung der erbohrten geologischen Einheit. Bei Kernverlust wird dies in diesem Feld vermerkt +
 (in <<impressum.adoc#doc-06,[06]>>: [GeolLayer.LayerDescr])
-| todo
+| Mächtige Abfolge aus tonig-siltigen Sedimenten mit wechselnder Beimengung von Sand und Kies, teils schwach geschichtet.
 | öffentlich
 m| geologischerBeschrieb
 | Beschreibung der Zuordnung der erbohrten geologischen Einheit zu einer chrono-, lithostratigraphischen Einheit und / oder einer tektonischen Domäne +
 (in <<impressum.adoc#doc-06,[06]>>: [GeolLayer.GeolDescr])
-| todo
+| Die Einheit gehört zum Helvetikum und wird dem Mesozoikum zugeordnet.
 | öffentlich
 4+| *Geometrie*
 | - - -
@@ -853,7 +853,7 @@ m| TiefeBis
 m| Beschrieb
 | Beschreibung der erbohrten tektonischen Struktur +
 (in <<impressum.adoc#doc-06,[06]>>: [TectoLayer.LayerDescr])
-| todo
+| Die Bohrung erfasst gefaltete und leicht überschobene helvetische Einheiten.
 | öffentlich
 m| Einfallswinkel
 | relativer Einfallswinkel der erbohrten tektonischen Struktur bezogen auf die Bohrachse, wenn auf dem Bohrprotokoll vermerkt. Gemessen von der Bohrachse (0°) bis in die Senkrechte auf diese (90°). +
@@ -1073,15 +1073,15 @@ m| geaendertAm
 | öffentlich
 m| Spiegel
 | Höhe unter Terrain, auf welcher der Grundwasserspiegel zu liegen kommt (gespannt und freie Druckverhältnisse); Einheit: Meter
-| todo
+| 450.25
 | öffentlich
 m| Leiter
 | Höhe unter Terrain, ab welcher der Grundwasserleiter beginnt (Gesteinsmedium, welches das Grundwasser enthält); Einheit: Meter
-| todo
+| 460.4
 | öffentlich
 m| Stauer
 | Höhe unter Terrain, ab welcher das Grundwasservorkommen nach unten durch eine undurchlässige Schicht abgeschlossen wird; Einheit: Meter
-| todo
+| 430.4
 | öffentlich
 m| Maechtigkeit
 | Mächtigkeit des Grundwassers in Meter
@@ -1089,27 +1089,27 @@ m| Maechtigkeit
 | öffentlich
 m| Kote
 | Höhe, auf welcher der Grundwasserspiegel in freien Druckverhältnissen zu liegen kommen würde; Einheit: Meter
-| todo
+| 465.2
 | öffentlich
 m| Temperatur
 | Wassertemperatur
 | 6
 | öffentlich
 m| Leitfaehigkeit
-| todo
-| todo
+| elektrische Leitfähigkeit; gibt Auskunft darüber, wie das Wasser Strom leitet; Einheit: µS/cm
+| 350.005
 | öffentlich
 m| KWert
-| todo
-| todo
+| hydraulische Leitfähigkeit; zeigt an, wie durchlässig der Grundwasserleiter ist; Einheit: Meter pro Sekunde
+| 0.00207
 | öffentlich
 m| Pumpmenge
-| todo; Einheit: Liter pro Minute
-| todo
+| zur Ermittlung der Förderrate abgepumpte Wassermenge; Einheit: Liter pro Minute
+| 150.2
 | öffentlich
 m| Absenkung
 | Absenkung des Grundwasserspiegels bei Wasserentnahme über eine längere Zeit; Einheit: Meter
-| todo
+| 0.05
 | öffentlich
 4+| *Geometrie*
 | - - -
