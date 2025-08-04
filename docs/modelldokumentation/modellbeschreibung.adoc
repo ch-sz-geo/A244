@@ -1,6 +1,11 @@
-== <todo> Modellbeschreibung
+== Modellbeschreibung
 
-<Beschreibung einfügen>
+Dieses Geodatenmodell bildet die Grundlage für die Erfassung und das Verwalten von Bohrungen und deren Profilaufnahmen, wie sie im Rahmen der Bewilligungs- oder Amtstätigkeit des Amts für Umwelt und Energie anfallen. Es setzt sich zusammen aus den vier Themen «Stammdaten», «Bohrprofile», «Geologie» und «Hydrogeologie»:
+
+- *«Stammdaten»* enthält sämtliche für die Erfassung relevante Kataloge.
+- Im Thema *«Bohrprofile»* werden Informationen zum Bohrloch erfasst und mit den erarbeiteten Bohrprofilen verknüpft.
+- Im Thema *«Geologie»* können derweil die geologischen Attribute und Interpretationen eines Bohrprofils erfasst werden.
+- Abschliessend wird im Thema *«Hydrogeologie»* beim Bohren angetroffenes Grundwasser erfasst und beschrieben. 
 
 ifdef::backend-pdf[]
 <<<
