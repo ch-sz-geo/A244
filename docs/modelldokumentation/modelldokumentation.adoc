@@ -1,4 +1,4 @@
-:title: <Themenname> (<Themennummer>)
+:title: Bohrdaten des Bereichs Umwelt (A244)
 :subtitle: Modelldokumentation
 ifdef::backend-pdf[]
 = {title}
