@@ -1,14 +1,11 @@
-INTERLIS 2.3;
+INTERLIS 2.4;
 !!==============================================================================
 !!@ Title               = "Bohrungen des Bereichs 'Umwelt'";
 !!@ shortDescription    = "Datenmodell für die Erfassung von Bohrungen aud dem Zuständigkeitsgebiet des Amtes für Umwelt und Energie (AfU)";
 !!@ technicalContact    = "mailto:geoportal@sz.ch";
 !!@ furtherInformation  = "https://www.sz.ch";
 !!@ Themennummer        = "A244";
-!!@ iliCompilerVersion  = "ili2c-5.5.3-6c54f443006d3ca72d3e5a2392e7d5a2f75b6e8b";
-!!------------------------------------------------------------------------------
-!! Todo:
-!!   - Ist es ok, wenn wir wieder nach den verschiedenen Bereiche "Umwelt", "Tiefbau", ... unterschiedliche Modelle erstellen?
+!!@ iliCompilerVersion  = "ili2c-5.6.3-720ae8bf5621734004b9d234fde4d2fe9556b943";
 !!------------------------------------------------------------------------------
 !!      Version     | wer | was
 !! Datum      | Nr  |     |
@@ -16,7 +13,7 @@ INTERLIS 2.3;
 !! 2024-09-03 | 1.0 | Kep | Erstfassung
 !!==============================================================================
 MODEL SZ_Bohrungen_Umwelt_V1 (de)
-  AT "http://models.geo.sz.ch"
+  AT "https://models.geo.sz.ch"
   VERSION "2024-09-03" =
 
   IMPORTS UNQUALIFIED INTERLIS;
@@ -38,6 +35,7 @@ MODEL SZ_Bohrungen_Umwelt_V1 (de)
       Bemerkung  :             TEXT*1000;
     END Katalogeintrag;
 
+!! --- Kataloge zur Klasse "Bohrung" -------------------------------------------
     CLASS Freigabestufe EXTENDS Katalogeintrag =
       UNIQUE Code;
       UNIQUE Name; 
@@ -53,11 +51,17 @@ MODEL SZ_Bohrungen_Umwelt_V1 (de)
       UNIQUE Name;
     END Bohrzweck;
 
-    CLASS Wassertyp EXTENDS Katalogeintrag =
+    CLASS Einfallswinkelbereich EXTENDS Katalogeintrag =
       UNIQUE Code;
       UNIQUE Name;
-    END Wassertyp;
+    END Einfallswinkelbereich;
 
+    CLASS Wasserart EXTENDS Katalogeintrag =
+      UNIQUE Code;
+      UNIQUE Name;
+    END Wasserart;
+
+!! --- Kataloge zur Klasse "Bohrlochausbau" und "Bohrprofil" -------------------
     CLASS Profilart EXTENDS Katalogeintrag =
       UNIQUE Code;
       UNIQUE Name;
@@ -78,22 +82,13 @@ MODEL SZ_Bohrungen_Umwelt_V1 (de)
       UNIQUE Name;
     END Ausbautyp;
 
-    CLASS Einfallswinkelbereich EXTENDS Katalogeintrag =
-      UNIQUE Code;
-      UNIQUE Name;
-    END Einfallswinkelbereich;
-
-!! --- Kataoge Geologie --------------------------------------------------------
+!! --- Kataloge zur Klasse "Schicht" -------------------------------------------
     CLASS Setzungspotential EXTENDS Katalogeintrag =
       UNIQUE Code;
       UNIQUE Name;
     END Setzungspotential;
 
-    CLASS Strukturtyp EXTENDS Katalogeintrag =
-      UNIQUE Code;
-      UNIQUE Name;
-    END Strukturtyp;
-
+!! --- Kataloge zur Klasse "Gestein" -------------------------------------------
     CLASS Klassifikation EXTENDS Katalogeintrag =
       UNIQUE Code;
       UNIQUE Name;
@@ -164,33 +159,52 @@ MODEL SZ_Bohrungen_Umwelt_V1 (de)
       UNIQUE Name;
     END Bestimmungsart;
 
-!! --- Kataoge geologische Interpretation --------------------------------------
+!! --- Kataloge zur Klasse "Interpretation" ------------------------------------
     CLASS Standard EXTENDS Katalogeintrag =
       UNIQUE Code;
       UNIQUE Name;
     END Standard;
+	!! Die weiteren Klassen sind dem Topic "Fachkataloge" zugeordnet.
 
-    CLASS Lithologie EXTENDS Katalogeintrag =
+!! --- Kataloge zur Klasse "Tektonikelement" -----------------------------------
+    CLASS Strukturtyp EXTENDS Katalogeintrag =
+      UNIQUE Code;
+      UNIQUE Name;
+    END Strukturtyp;
+
+!! --- Kataloge Hydrogeologie --------------------------------------------------
+    CLASS Gewissheitsgrad EXTENDS Katalogeintrag =
+      UNIQUE Code;
+      UNIQUE Name;
+    END Gewissheitsgrad;
+
+  END Stammdaten;
+
+!!------------------------------------------------------------------------------
+  TOPIC Fachkataloge =
+   DEPENDS ON SZ_Bohrungen_Umwelt_V1.Stammdaten;
+!!------------------------------------------------------------------------------
+    CLASS Lithologie EXTENDS SZ_Bohrungen_Umwelt_V1.Stammdaten.Katalogeintrag =
       UNIQUE Code;
       UNIQUE Name;
     END Lithologie;
 
-    CLASS Chronostratigrafie EXTENDS Katalogeintrag =
+    CLASS Chronostratigrafie EXTENDS SZ_Bohrungen_Umwelt_V1.Stammdaten.Katalogeintrag =
       UNIQUE Code;
       UNIQUE Name;
     END Chronostratigrafie;
 
-    CLASS Tektonik EXTENDS Katalogeintrag =
+    CLASS Tektonik EXTENDS SZ_Bohrungen_Umwelt_V1.Stammdaten.Katalogeintrag =
       UNIQUE Code;
       UNIQUE Name;
     END Tektonik;
 
-    CLASS Stratigrafie EXTENDS Katalogeintrag =
+    CLASS Stratigrafie EXTENDS SZ_Bohrungen_Umwelt_V1.Stammdaten.Katalogeintrag =
       UNIQUE Code;
       UNIQUE Name;
     END Stratigrafie;
 
-  END Stammdaten;
+  END Fachkataloge;
 
 !!------------------------------------------------------------------------------
   TOPIC Bohrprofile =
@@ -211,9 +225,8 @@ MODEL SZ_Bohrungen_Umwelt_V1 (de)
       Bohrende          :             XMLDate;
       Einfallswinkel    :             0 .. 180;
       hatWasser         :  MANDATORY  BOOLEAN;
-      Wassertiefe       :             0.00 .. 9999.99;
       Baugesuchsnummer  :             TEXT*20;
-      NummerAlt         :             TEXT*20;  
+      NummerAlt         :             TEXT*20;
       Nummer            :             TEXT*8;
       Bemerkung         :             MTEXT*1000;
       Lage              :  MANDATORY  Punkt;
@@ -226,7 +239,7 @@ MODEL SZ_Bohrungen_Umwelt_V1 (de)
       erfasstAm       :  MANDATORY  XMLDateTime;
       geaendertVon    :  MANDATORY  TEXT*100;
       geaendertAm     :  MANDATORY  XMLDateTime;
-      Titel           :             TEXT*250;  !! todo: im Bundesmodell als BAG OF modelliert. Wie soll das hier geschehen? Zudem: "isMain" ist als Attribut in Struktur. Wie damit umgehen? 
+      Titel           :             TEXT*250; 
       Bericht         :             TEXT*36;
       Bezeichnung     :             TEXT*30;
       Erstelldatum    :             XMLDate;  
@@ -236,9 +249,14 @@ MODEL SZ_Bohrungen_Umwelt_V1 (de)
     END Bohrprofil;
 
     CLASS Bohrlochausbau =
-      Laenge         :  MANDATORY  0.00 .. 9999.99; 
+      OID AS UUIDOID;
+      erfasstVon     :  MANDATORY  TEXT*100;
+      erfasstAm      :  MANDATORY  XMLDateTime;
+      geaendertVon   :  MANDATORY  TEXT*100;
+      geaendertAm    :  MANDATORY  XMLDateTime;
+      Laenge         :  MANDATORY  0.00 .. 9999.99;
       Referenzhoehe  :  MANDATORY  0.00 .. 9999.99;
-      Beschreibung   :             TEXT*1000;
+      Beschreibung   :             MTEXT*1000;
     END Bohrlochausbau;
 
     ASSOCIATION Bohrung__Bohrprofil =
@@ -257,47 +275,47 @@ MODEL SZ_Bohrungen_Umwelt_V1 (de)
     END Freigabestufe__Bohrung;
 
     ASSOCIATION Bohrtyp__Bohrung =
-      rBohrtyp (EXTERNAL)  --  {1}     SZ_Bohrungen_Umwelt_V1.Stammdaten.Bohrtyp;
+      rBohrtyp (EXTERNAL)  --  {0..1}  SZ_Bohrungen_Umwelt_V1.Stammdaten.Bohrtyp;
       rBohrung             --  {0..*}  Bohrung;
     END Bohrtyp__Bohrung;
 
     ASSOCIATION Bohrzweck__Bohrung =
-      rBohrzweck (EXTERNAL)  --  {1}     SZ_Bohrungen_Umwelt_V1.Stammdaten.Bohrzweck;
+      rBohrzweck (EXTERNAL)  --  {0..1}  SZ_Bohrungen_Umwelt_V1.Stammdaten.Bohrzweck;
       rBohrung               --  {0..*}  Bohrung;
     END Bohrzweck__Bohrung;
-
-    ASSOCIATION Wassertyp__Bohrung =
-      rWassertyp (EXTERNAL)  --  {0..*}  SZ_Bohrungen_Umwelt_V1.Stammdaten.Wassertyp;
-      rBohrung               --  {0..*}  Bohrung;
-    END Wassertyp__Bohrung;
 
     ASSOCIATION Einfallswinkelbereich__Bohrung =
       rEinfallswinkelbereich (EXTERNAL)  --  {0..1}  SZ_Bohrungen_Umwelt_V1.Stammdaten.Einfallswinkelbereich;
       rBohrung                           --  {0..*}  Bohrung;
     END Einfallswinkelbereich__Bohrung;
 
+    ASSOCIATION Wasserart__Bohrung = 
+      rWasserart (EXTERNAL)  --  {0..*}  SZ_Bohrungen_Umwelt_V1.Stammdaten.Wasserart;
+      rBohrung               --  {0..*}  Bohrung;
+    END Wasserart__Bohrung;
+
     ASSOCIATION Profilart__Bohrprofil =
-      rProfilart (EXTERNAL)  --  {1}     SZ_Bohrungen_Umwelt_V1.Stammdaten.Profilart;  !! todo: Info an AfU, dass Kardinalität an Bundesmodell angepasst wurde 
+      rProfilart (EXTERNAL)  --  {0..1}  SZ_Bohrungen_Umwelt_V1.Stammdaten.Profilart; 
       rBohrprofil            --  {0..*}  Bohrprofil;
     END Profilart__Bohrprofil;
 
     ASSOCIATION Profiltyp__Bohrprofil =
-      rProfiltyp (EXTERNAL)  --  {1}  SZ_Bohrungen_Umwelt_V1.Stammdaten.Profiltyp;
+      rProfiltyp (EXTERNAL)  --  {0..1}  SZ_Bohrungen_Umwelt_V1.Stammdaten.Profiltyp;
       rBohrprofil            --  {0..*}  Bohrprofil;
     END Profiltyp__Bohrprofil;
 
     ASSOCIATION Hoehenbezug__Bohrprofil =
-      rHoehenbezug (EXTERNAL)  --  {1}  SZ_Bohrungen_Umwelt_V1.Stammdaten.Hoehenbezug;
+      rHoehenbezug (EXTERNAL)  --  {0..1}  SZ_Bohrungen_Umwelt_V1.Stammdaten.Hoehenbezug;
       rBohrprofil              --  {0..*}  Bohrprofil;
     END Hoehenbezug__Bohrprofil;
     
-    ASSOCIATION Ausbautyp__Bohrprofil =
-      rAusbautyp (EXTERNAL)  -<#>  {1}     SZ_Bohrungen_Umwelt_V1.Stammdaten.Ausbautyp;
-      rBohrlochausbau        --    {0..*}  Bohrlochausbau;
-    END Ausbautyp__Bohrprofil;
+    ASSOCIATION Ausbautyp__Bohrlochausbau =
+      rAusbautyp (EXTERNAL)  --  {1..*}  SZ_Bohrungen_Umwelt_V1.Stammdaten.Ausbautyp;
+      rBohrlochausbau        --  {0..*}  Bohrlochausbau;
+    END Ausbautyp__Bohrlochausbau;
 
     ASSOCIATION Hoehenbezug__Bohrlochausbau =
-      rHoehenbezug (EXTERNAL)  --  {1}  SZ_Bohrungen_Umwelt_V1.Stammdaten.Hoehenbezug;
+      rHoehenbezug (EXTERNAL)  --  {0..1}  SZ_Bohrungen_Umwelt_V1.Stammdaten.Hoehenbezug;
       rBohrlochausbau          --  {0..*}  Bohrlochausbau;
     END Hoehenbezug__Bohrlochausbau;
 
@@ -306,18 +324,19 @@ MODEL SZ_Bohrungen_Umwelt_V1 (de)
 !!------------------------------------------------------------------------------
   TOPIC Geologie =
    DEPENDS ON SZ_Bohrungen_Umwelt_V1.Stammdaten;
+   DEPENDS ON SZ_Bohrungen_Umwelt_V1.Fachkataloge;
    DEPENDS ON SZ_Bohrungen_Umwelt_V1.Bohrprofile;
 !!------------------------------------------------------------------------------
     CLASS Schicht =
       OID AS UUIDOID;
-      erfasstVon             :  MANDATORY  TEXT*100;
-      erfasstAm              :  MANDATORY  XMLDateTime;
-      geaendertVon           :  MANDATORY  TEXT*100;
-      geaendertAm            :  MANDATORY  XMLDateTime;
-      TiefeVon               :  MANDATORY  0.00 .. 99999.99;
-      TiefeBis               :  MANDATORY  0.00 .. 99999.99;
-      Beschrieb              :             TEXT*250;
-      geologischerBeschrieb  :             TEXT*250;
+      erfasstVon        :  MANDATORY  TEXT*100;
+      erfasstAm         :  MANDATORY  XMLDateTime;
+      geaendertVon      :  MANDATORY  TEXT*100;
+      geaendertAm       :  MANDATORY  XMLDateTime;
+      TiefeVon          :  MANDATORY  0.00 .. 99999.99;
+      TiefeBis          :  MANDATORY  0.00 .. 99999.99;
+      Beschreibung      :             MTEXT*250;
+      BeschreibungGeol  :             MTEXT*250;
       MANDATORY CONSTRAINT TiefeBis > TiefeVon;
     END Schicht;
 
@@ -329,7 +348,7 @@ MODEL SZ_Bohrungen_Umwelt_V1 (de)
       geaendertAm     :  MANDATORY  XMLDateTime;
       TiefeVon        :  MANDATORY  0.00 .. 99999.99;
       TiefeBis        :  MANDATORY  0.00 .. 99999.99;
-      Beschrieb       :             TEXT*250;
+      Beschreibung    :             MTEXT*250;
       Einfallswinkel  :             0..90;
       MANDATORY CONSTRAINT TiefeBis >= TiefeVon;
     END Tektonikelement;
@@ -376,39 +395,44 @@ MODEL SZ_Bohrungen_Umwelt_V1 (de)
     END Setzungspotential__Schicht;
 
     ASSOCIATION Strukturtyp__Tektonikelement =
-      rStrukturtyp (EXTERNAL)  --  {1}     SZ_Bohrungen_Umwelt_V1.Stammdaten.Strukturtyp;
+      rStrukturtyp (EXTERNAL)  --  {0..1}  SZ_Bohrungen_Umwelt_V1.Stammdaten.Strukturtyp;
       rTektonikelement         --  {0..*}  Tektonikelement;
     END Strukturtyp__Tektonikelement;
 
     ASSOCIATION Hauptkomponente_Klassifikation__Gestein =
-      rHauptkomponente_Klassifikation (EXTERNAL)  --  {1}     SZ_Bohrungen_Umwelt_V1.Stammdaten.Klassifikation;
+      rHauptkomponente_Klassifikation (EXTERNAL)  --  {0..1}  SZ_Bohrungen_Umwelt_V1.Stammdaten.Klassifikation;
       rGestein                                    --  {0..*}  Gestein;
     END Hauptkomponente_Klassifikation__Gestein;
-
-    ASSOCIATION Hauptkomponente_Korngroesse__Gestein =
-      rHauptkomponente_Korngroesse (EXTERNAL)  --  {0..1}  SZ_Bohrungen_Umwelt_V1.Stammdaten.Korngroesse;
-      rGestein                                 --  {0..*}  Gestein;
-    END Hauptkomponente_Korngroesse__Gestein;
 
     ASSOCIATION Nebenkomponente_Klassifikation__Gestein =
       rNebenkomponente_Klassifikation (EXTERNAL)  --  {0..1}  SZ_Bohrungen_Umwelt_V1.Stammdaten.Klassifikation;
       rGestein                                    --  {0..*}  Gestein;
     END Nebenkomponente_Klassifikation__Gestein;
 
-    ASSOCIATION Nebenkomponente_Korngroesse__Gestein =
-      rNebenkomponente_Korngroesse (EXTERNAL)  --  {0..1}  SZ_Bohrungen_Umwelt_V1.Stammdaten.Korngroesse;
-      rGestein                                 --  {0..*}  Gestein;
-    END Nebenkomponente_Korngroesse__Gestein;
-
     ASSOCIATION Beimengen_Klassifikation__Gestein =
       rBeimengen_Klassifikation (EXTERNAL)  --  {0..*}  SZ_Bohrungen_Umwelt_V1.Stammdaten.Klassifikation;
       rGestein                              --  {0..*}  Gestein;
     END Beimengen_Klassifikation__Gestein;
 
+    ASSOCIATION Hauptkomponente_Korngroesse__Gestein =
+      rHauptkomponente_Korngroesse (EXTERNAL)  --  {0..1}  SZ_Bohrungen_Umwelt_V1.Stammdaten.Korngroesse;
+      rGestein                                 --  {0..*}  Gestein;
+    END Hauptkomponente_Korngroesse__Gestein;
+
+    ASSOCIATION Nebenkomponente_Korngroesse__Gestein =
+      rNebenkomponente_Korngroesse (EXTERNAL)  --  {0..1}  SZ_Bohrungen_Umwelt_V1.Stammdaten.Korngroesse;
+      rGestein                                 --  {0..*}  Gestein;
+    END Nebenkomponente_Korngroesse__Gestein;
+
     ASSOCIATION Kornrundung__Gestein =
       rKornrundung (EXTERNAL)  --  {0..1}  SZ_Bohrungen_Umwelt_V1.Stammdaten.Kornrundung;
       rGestein                 --  {0..*}  Gestein;
     END Kornrundung__Gestein;
+
+    ASSOCIATION Kornform__Gestein =
+      rKornform (EXTERNAL)  --  {0..1}  SZ_Bohrungen_Umwelt_V1.Stammdaten.Kornform;
+      rGestein              --  {0..*}  Gestein;
+    END Kornform__Gestein;
 
     ASSOCIATION Plastizitaet__Gestein =
       rPlastizitaet (EXTERNAL)  --  {0..1}  SZ_Bohrungen_Umwelt_V1.Stammdaten.Plastizitaet;
@@ -435,15 +459,15 @@ MODEL SZ_Bohrungen_Umwelt_V1 (de)
       rGestein             --  {0..*}  Gestein;
     END Organik__Gestein;
 
-    ASSOCIATION Kornform__Gestein =
-      rKornform (EXTERNAL)  --  {0..1}  SZ_Bohrungen_Umwelt_V1.Stammdaten.Kornform;
-      rGestein              --  {0..*}  Gestein;
-    END Kornform__Gestein;
-
     ASSOCIATION Farbe__Gestein =
       rFarbe (EXTERNAL)  --  {0..1}  SZ_Bohrungen_Umwelt_V1.Stammdaten.Farbe;
       rGestein           --  {0..*}  Gestein;
     END Farbe__Gestein;
+
+    ASSOCIATION Bodenzustand__Gestein =
+      rBodenzustand (EXTERNAL)  --  {0..1}  SZ_Bohrungen_Umwelt_V1.Stammdaten.Bodenzustand;
+      rGestein                  --  {0..*}  Gestein;
+    END Bodenzustand__Gestein;
 
     ASSOCIATION Verwitterungszustand__Gestein =
       rVerwitterungszustand (EXTERNAL)  --  {0..1}  SZ_Bohrungen_Umwelt_V1.Stammdaten.Verwitterungszustand;
@@ -455,13 +479,8 @@ MODEL SZ_Bohrungen_Umwelt_V1 (de)
       rGestein                     --  {0..*}  Gestein;
     END Lagerungsdichte__Gestein;
 
-    ASSOCIATION Bodenzustand__Gestein =
-      rBodenzustand (EXTERNAL)  --  {0..1}  SZ_Bohrungen_Umwelt_V1.Stammdaten.Bodenzustand;
-      rGestein                  --  {0..*}  Gestein;
-    END Bodenzustand__Gestein;
-
     ASSOCIATION Bestimmungsart__Gestein =
-      rBestimmungsart (EXTERNAL)  --  {1}  SZ_Bohrungen_Umwelt_V1.Stammdaten.Bestimmungsart;
+      rBestimmungsart (EXTERNAL)  --  {0..1}  SZ_Bohrungen_Umwelt_V1.Stammdaten.Bestimmungsart;
       rGestein                    --  {0..*}  Gestein;
     END Bestimmungsart__Gestein;
 
@@ -472,25 +491,65 @@ MODEL SZ_Bohrungen_Umwelt_V1 (de)
     END Standard__Interpretation;
 
     ASSOCIATION Lithologie__Interpretation =
-      rLithologie (EXTERNAL)  --  {0..1}  SZ_Bohrungen_Umwelt_V1.Stammdaten.Lithologie;
+      rLithologie (EXTERNAL)  --  {0..1}  SZ_Bohrungen_Umwelt_V1.Fachkataloge.Lithologie;
       rInterpretation         --  {0..*}  Interpretation;
     END Lithologie__Interpretation;
 
     ASSOCIATION Chronostratigrafie__Interpretation =
-      rChronostratigrafie (EXTERNAL)  --  {0..1}  SZ_Bohrungen_Umwelt_V1.Stammdaten.Chronostratigrafie;
+      rChronostratigrafie (EXTERNAL)  --  {0..1}  SZ_Bohrungen_Umwelt_V1.Fachkataloge.Chronostratigrafie;
       rInterpretation                 --  {0..*}  Interpretation;
     END Chronostratigrafie__Interpretation;
 
     ASSOCIATION Tektonik__Interpretation =
-      rTektonik (EXTERNAL)  --  {0..1}  SZ_Bohrungen_Umwelt_V1.Stammdaten.Tektonik;
+      rTektonik (EXTERNAL)  --  {0..1}  SZ_Bohrungen_Umwelt_V1.Fachkataloge.Tektonik;
       rInterpretation       --  {0..*}  Interpretation;
     END Tektonik__Interpretation;
 
     ASSOCIATION Stratigrafie__Interpretation =
-      rStratigrafie (EXTERNAL)  --  {0..1}  SZ_Bohrungen_Umwelt_V1.Stammdaten.Stratigrafie;
+      rStratigrafie (EXTERNAL)  --  {0..1}  SZ_Bohrungen_Umwelt_V1.Fachkataloge.Stratigrafie;
       rInterpretation           --  {0..*}  Interpretation;
     END Stratigrafie__Interpretation;
 
   END Geologie;
+
+!!------------------------------------------------------------------------------
+  TOPIC Hydrogeologie =
+   DEPENDS ON SZ_Bohrungen_Umwelt_V1.Stammdaten;
+   DEPENDS ON SZ_Bohrungen_Umwelt_V1.Bohrprofile;
+!!------------------------------------------------------------------------------
+    CLASS Grundwasser =
+      OID AS UUIDOID;
+      erfasstVon      :  MANDATORY  TEXT*100;
+      erfasstAm       :  MANDATORY  XMLDateTime;
+      geaendertVon    :  MANDATORY  TEXT*100;
+      geaendertAm     :  MANDATORY  XMLDateTime;
+      Spiegel         :  MANDATORY  0.00 .. 99999.99;            !! in SQLight-DB bereits bestehendes Attribut "gwspiegelut"
+      Leiter          :             0.00 .. 99999.99;
+      Stauer          :             0.00 .. 99999.99;            !! in SQLight-DB bereits bestehendes Attribut "gwstauerut"
+      Maechtigkeit    :             0.00 .. 99999.99;            !! in SQLight-DB bereits bestehendes Attribut "maechtigkeitgwtraeger"
+      Kote            :             0.00 .. 99999.99;            !! in SQLight-DB bereits bestehendes Attribut "gwgespanntkote"
+      Temperatur      :             0.00 .. 99.99;               !! in SQLight-DB bereits bestehendes Attribut "gwtemperatur"
+      Leitfaehigkeit  :             0.000 .. 9999.000;           !! in SQLight-DB bereits bestehendes Attribut "leitfaehigkeit"
+      KWert           :             0.0000000 .. 99999.9999999;  !! in SQLight-DB bereits bestehendes Attribut "kwert"
+      Pumpmenge       :             0.0 .. 999999.9;             !! in SQLight-DB bereits bestehendes Attribut "pumpmenge"
+      Absenkung       :             0.00 .. 999.99;              !! in SQLight-DB bereits bestehendes Attribut "gwsp_absenkung"
+    END Grundwasser;
+
+    ASSOCIATION Bohrung__Grundwasser = 
+      rBohrung (EXTERNAL)  -<#>  {1}     SZ_Bohrungen_Umwelt_V1.Bohrprofile.Bohrung;
+      rGrundwasser         --    {0..*}  Grundwasser;
+    END Bohrung__Grundwasser;
+
+    ASSOCIATION Gewissheitsgrad_Tiefenstockwerk__Grundwasser =
+      rTiefenstockwerk (EXTERNAL)  --  {0..1}  SZ_Bohrungen_Umwelt_V1.Stammdaten.Gewissheitsgrad;
+      rGrundwasser                 --  {0..*}  Grundwasser;
+    END Gewissheitsgrad_Tiefenstockwerk__Grundwasser;
+
+    ASSOCIATION Gewissheitsgrad_Grundwasserspannung__Grundwasser =
+      rGrundwasserspannung (EXTERNAL)  --  {0..1}  SZ_Bohrungen_Umwelt_V1.Stammdaten.Gewissheitsgrad;
+      rGrundwasser                     --  {0..*}  Grundwasser;
+    END Gewissheitsgrad_Grundwasserspannung__Grundwasser;
+
+  END Hydrogeologie;
 
 END SZ_Bohrungen_Umwelt_V1.
