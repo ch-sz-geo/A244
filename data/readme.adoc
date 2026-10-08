@@ -7,7 +7,7 @@
 | Kataloge für den `*Ausbautyp*`.
 | SZ_Bohrungen_Umwelt_V1 (2024-09-03)
 | *Katalog Bohrtyp.adoc*
-| Kataloge für den `*Borhtyp*`.
+| Kataloge für den `*Bohrtyp*`.
 | SZ_Bohrungen_Umwelt_V1 (2024-09-03)
 | *Katalog Bohrzweck.adoc*
 | Kataloge für den `*Bohrzweck*`.
