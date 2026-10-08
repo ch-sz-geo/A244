@@ -13,7 +13,7 @@ INTERLIS 2.4;
 !! 2024-09-03 | 1.0 | Kep | Erstfassung
 !!==============================================================================
 MODEL SZ_Bohrungen_Umwelt_V1 (de)
-  AT "http://models.geo.sz.ch"
+  AT "https://models.geo.sz.ch"
   VERSION "2024-09-03" =
 
   IMPORTS UNQUALIFIED INTERLIS;
